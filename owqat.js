@@ -61,7 +61,7 @@ try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
-      link.href = new URL(localZone + "/", root);
+      const search = localZone === requestedZone ? location.search : "";
       link.hidden = false;
     }
   }
