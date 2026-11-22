@@ -19,3 +19,4 @@ const query = new URLSearchParams({
 });
 for (const card of cards) {
   for (const calendar of ["gregory", "persian"]) {
+    const formatter = new Intl.DateTimeFormat(card.lang, { timeZone, calendar, dateStyle: "long" });
