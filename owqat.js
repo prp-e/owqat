@@ -30,3 +30,4 @@ try {
   const { data } = await response.json();
   const { timings, date } = data;
   if (date.gregorian.date !== day || events.some(([key]) => !/^\d{2}:\d{2}$/.test(timings[key]))) {
+    throw new Error("Prayer times were incomplete or for a different date.");
