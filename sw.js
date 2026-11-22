@@ -11,3 +11,4 @@ const shell = [
   "icons/apple-touch-icon.png",
   "icons/icon-192.png",
   "icons/icon-512.png",
+].map((path) => new URL(path, scope).href);
