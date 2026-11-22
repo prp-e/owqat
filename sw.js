@@ -53,3 +53,4 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   const own = url.origin === scope.origin && url.pathname.startsWith(scope.pathname);
+  const api = url.origin === "https://api.aladhan.com" && /^\/v1\/timings\/\d{2}-\d{2}-\d{4}$/.test(url.pathname);
