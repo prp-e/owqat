@@ -34,3 +34,4 @@ try {
   }
   for (const card of cards) {
     const fa = card.lang === "fa";
+    const digits = (text) => fa ? String(text).replace(/[0-9]/g, (digit) => persianDigits[digit]) : text;
