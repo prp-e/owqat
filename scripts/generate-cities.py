@@ -9,3 +9,4 @@ archive, admin_path = sys.argv[1:]
 zones = json.loads(Path("zones.json").read_text())
 regions = dict(line.split("\t")[:2] for line in Path(admin_path).read_text().splitlines() if line)
 localized = {
+    "1133616": ["مزار شریف", "مزار شريف"],
