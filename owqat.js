@@ -20,6 +20,7 @@ const months = {
 const labels = {
   en: ["Time zone unavailable", "Choose a geographic time zone above.", "Prayer times are unavailable. Reload the page to try again.", "Lunar date from AlAdhan"],
   fa: ["منطقهٔ زمانی پیدا نشد", "یک منطقهٔ زمانی جغرافیایی از فهرست بالا انتخاب کنید.", "دریافت اوقات شرعی ممکن نشد. صفحه را دوباره بارگذاری کنید.", "تاریخ قمری طبق علاءالاذان"],
+  ar: ["المنطقة الزمنية غير متاحة", "اختر منطقة زمنية جغرافية من القائمة أعلاه.", "تعذّر تحميل مواقيت الصلاة. أعد تحميل الصفحة للمحاولة مجددًا.", "التاريخ الهجري من الأذان"],
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
 
