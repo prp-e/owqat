@@ -43,3 +43,4 @@ def transliterate_word(word):
             result.append(CONSONANTS.get(segment, segment))
     return "".join(result)
 
+
