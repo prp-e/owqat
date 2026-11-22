@@ -29,3 +29,4 @@ with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
 zones_by_location = defaultdict(list)
 for zone in cities:
     zones_by_location[tuple(zones[zone])].append(zone)
+index = {}
