@@ -4,3 +4,4 @@ import unicodedata
 from zipfile import ZipFile
 
 ARABIC_LETTER = re.compile(r"[\u0620-\u064a\u066e-\u06d3]")
+TO_PERSIAN = str.maketrans("كيىة", "کییه")
