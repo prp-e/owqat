@@ -3,3 +3,4 @@ import json
 from pathlib import Path
 import sys
 
+source = Path(sys.argv[1])
