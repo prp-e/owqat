@@ -62,6 +62,7 @@ try {
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       const search = localZone === requestedZone ? location.search : "";
+      link.href = new URL(localZone + "/" + search + "#choose-city", root);
       link.hidden = false;
     }
   }
