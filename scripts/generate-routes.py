@@ -44,3 +44,4 @@ for zone in sorted(zones):
         if output == TEMPLATE:
             continue
         output.parent.mkdir(parents=True, exist_ok=True)
+        title = escape(zone.rsplit("/", 1)[-1].replace("_", " "))
