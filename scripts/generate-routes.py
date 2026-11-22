@@ -30,3 +30,4 @@ for line in (DATABASE / "tzdata.zi").read_text().splitlines():
         _, target, alias = fields
         aliases[alias] = target
 
+for alias, target in aliases.items():
