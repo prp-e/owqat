@@ -9,3 +9,4 @@ const shell = [
   "city-names.json",
   "manifest.webmanifest",
   "icons/apple-touch-icon.png",
+  "icons/icon-192.png",
