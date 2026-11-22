@@ -39,6 +39,7 @@ function populatePicker(zones, selected) {
     groups.get(region).append(option);
   }
   picker.value = selected ?? "";
+  picker.disabled = false;
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
