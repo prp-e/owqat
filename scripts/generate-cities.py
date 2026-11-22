@@ -20,3 +20,4 @@ localized = {
 cities = defaultdict(list)
 with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
     for line in rows:
+        row = line.decode("utf-8").rstrip("\n").split("\t")
