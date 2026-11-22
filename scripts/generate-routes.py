@@ -29,3 +29,4 @@ for line in (DATABASE / "tzdata.zi").read_text().splitlines():
     if fields and fields[0] in {"L", "Link"}:
         _, target, alias = fields
         aliases[alias] = target
+
