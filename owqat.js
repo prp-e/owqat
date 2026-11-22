@@ -46,3 +46,4 @@ try {
       tile.className = key === "Sunrise" || key === "Sunset" ? "tile solar" : "tile";
       const label = document.createElement("dt");
       label.textContent = fa ? faLabel : enLabel;
+      const time = document.createElement("dd");
