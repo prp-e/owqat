@@ -16,3 +16,4 @@ def coordinate(text, degree_digits):
     return round((degrees + minutes / 60 + seconds / 3600) * (-1 if text[0] == "-" else 1), 6)
 
 
+zones = {}
