@@ -14,6 +14,7 @@ const events = [
 const cards = [...document.querySelectorAll(".card")];
 const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
 const months = {
+  fa: ["محرم", "صفر", "ربیع‌الاول", "ربیع‌الثانی", "جمادی‌الاول", "جمادی‌الثانی", "رجب", "شعبان", "رمضان", "شوال", "ذی‌القعده", "ذی‌الحجه"],
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
 
