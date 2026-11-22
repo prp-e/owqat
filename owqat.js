@@ -29,6 +29,7 @@ function populatePicker(zones, selected) {
     const region = zone.includes("/") ? zone.split("/")[0] : "Aliases";
     if (!groups.has(region)) {
       const group = document.createElement("optgroup");
+      group.label = region;
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
