@@ -35,3 +35,4 @@ async function networkFirst(request, api) {
           await Promise.all(dates.slice(0, Math.max(0, dates.length - 24)).map((key) => cache.delete(key)));
         }
       } catch {
+        // Storage limits should not prevent loading a live response.
