@@ -21,3 +21,4 @@ this copyright and permission notice appear with all copies of the Data
 Files or Software, or (b) this copyright and permission notice appear in
 associated Documentation.
 
+THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
