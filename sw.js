@@ -7,6 +7,7 @@ const shell = [
   "owqat.js?v=4",
   "zones.json",
   "city-names.json",
+  "cities/index.json",
   "manifest.webmanifest",
   "icons/apple-touch-icon.png",
   "icons/icon-192.png",
