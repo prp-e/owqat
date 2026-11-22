@@ -37,3 +37,4 @@ main { display: grid; gap: 28px; }
   padding: clamp(20px, 5vw, 42px);
   border-block-end: 1px solid #f5c87555;
   background:
+    radial-gradient(ellipse at top right, #8f642d66, transparent 65%),
