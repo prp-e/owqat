@@ -64,5 +64,6 @@ try {
       card.querySelector("[data-status]").textContent = fa ? "یک منطقهٔ دارای موقعیت جغرافیایی را از راهنمای پایین انتخاب کنید." : "Choose a geographic time zone using the guide below.";
     }
   } else {
+    for (const card of cards) {
   }
 }
