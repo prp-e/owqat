@@ -43,6 +43,7 @@ function populatePicker(zones, selected) {
   picker.addEventListener("change", () => {
     if (picker.value) location.assign(new URL(picker.value + "/", root));
   });
+}
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
