@@ -7,3 +7,4 @@ const events = [
   ["Sunset", "Sunset", "غروب آفتاب"],
   ["Maghrib", "Maghrib", "اذان مغرب"],
   ["Isha", "Isha", "عشاء"],
+  ["Midnight", "Religious midnight", "نیمه‌شب شرعی"],
