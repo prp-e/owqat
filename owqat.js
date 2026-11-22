@@ -75,6 +75,7 @@ async function chooseCity(zone) {
       option.value = id;
       option.textContent = fa ? `${label} · ${fa}` : label;
       select.append(option);
+    }
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
