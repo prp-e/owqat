@@ -61,6 +61,7 @@ async function chooseCity(zone) {
   const selected = new URLSearchParams(location.search).get("city");
   let cities;
   try {
+    const index = await readData("cities/index.json");
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
