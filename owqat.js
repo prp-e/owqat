@@ -51,3 +51,4 @@ try {
       time.textContent = digits(timings[key]);
       tile.append(label, time);
       tiles.append(tile);
+    }
