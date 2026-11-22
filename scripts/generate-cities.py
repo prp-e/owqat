@@ -28,6 +28,7 @@ with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
 
 city_ids = {row[0].encode("ascii") for rows in cities.values() for row in rows}
 source_names = local_names(alternates_path, city_ids)
+
 zones_by_location = defaultdict(list)
 for zone in cities:
     zones_by_location[tuple(zones[zone])].append(zone)
