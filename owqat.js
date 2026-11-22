@@ -72,6 +72,7 @@ async function chooseCity(zone) {
   if (cities.length) {
     for (const [id, , , , , label, fa] of cities) {
       const option = document.createElement("option");
+      option.value = id;
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
