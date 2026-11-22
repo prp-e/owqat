@@ -10,3 +10,4 @@ zones = json.loads(Path("zones.json").read_text())
 def exemplar_cities(tree, prefix=""):
     for key, entry in tree.items():
         if not isinstance(entry, dict):
+            continue
