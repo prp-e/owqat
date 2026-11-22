@@ -80,3 +80,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .guide [dir="rtl"] { padding-block-start: 16px; border-block-start: 1px solid var(--edge); }
 .zone-picker { display: grid; gap: 4px; width: min(100%, 22rem); }
 .zone-picker label { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: .875rem; }
+.zone-picker select { width: 100%; min-height: 42px; border: 1px solid #f5c87565; border-radius: 8px; padding: 6px 12px; color: #fff5e5; background: #242220; font: inherit; }
