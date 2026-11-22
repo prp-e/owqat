@@ -85,6 +85,7 @@ async function chooseCity(zone) {
       url.hash = "";
       location.assign(url);
     });
+    const focusCity = () => {
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
