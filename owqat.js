@@ -69,6 +69,7 @@ async function chooseCity(zone) {
   }
   const city = cities.find(([id]) => id === selected);
   const select = document.querySelector("#city");
+  if (cities.length) {
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
