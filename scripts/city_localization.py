@@ -41,3 +41,4 @@ def transliterate_word(word):
             result.append("ا" + VOWELS[segment] if offset == 0 and segment != "a" else VOWELS[segment])
         else:
             result.append(CONSONANTS.get(segment, segment))
+    return "".join(result)
