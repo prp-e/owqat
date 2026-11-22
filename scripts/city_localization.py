@@ -28,3 +28,4 @@ def local_names(archive, city_ids):
             score = (language != b"prs", fields[4:5] == [b"1"], fields[6:7] != [b"1"], fields[5:6] != [b"1"])
             key = (city_id.decode("ascii"), "ar" if language == b"ar" else "fa")
             if key not in names or score > names[key][0]:
+                names[key] = (score, name)
