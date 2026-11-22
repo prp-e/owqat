@@ -8,3 +8,4 @@ DATABASE = Path("/usr/share/zoneinfo")
 TEMPLATE = Path("Asia/Tehran/index.html")
 
 
+def coordinate(text, degree_digits):
