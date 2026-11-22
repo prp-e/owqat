@@ -6,3 +6,4 @@ const shell = [
   "owqat.css?v=4",
   "owqat.js?v=4",
   "zones.json",
+  "city-names.json",
