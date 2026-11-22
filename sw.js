@@ -29,3 +29,4 @@ async function networkFirst(request, api) {
     const response = await fetch(request);
     if (response.ok) {
       try {
+        await cache.put(request, response.clone());
