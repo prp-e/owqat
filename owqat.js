@@ -38,3 +38,4 @@ try {
     const { day: lunarDay, month, year } = date.hijri;
     const persianMonths = ["محرم", "صفر", "ربیع‌الاول", "ربیع‌الثانی", "جمادی‌الاول", "جمادی‌الثانی", "رجب", "شعبان", "رمضان", "شوال", "ذی‌القعده", "ذی‌الحجه"];
     const lunar = card.querySelector('[data-date="hijri"]');
+    lunar.textContent = digits(`${lunarDay} ${fa ? persianMonths[month.number - 1] : month.en} ${year}`);
