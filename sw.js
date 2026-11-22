@@ -37,3 +37,4 @@ async function networkFirst(request, api) {
       } catch {
         // Storage limits should not prevent loading a live response.
       }
+      return response;
