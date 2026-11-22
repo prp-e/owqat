@@ -23,3 +23,4 @@ with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
         row = line.decode("utf-8").rstrip("\n").split("\t")
         city_id, name, latitude, longitude, country, zone = (row[i] for i in (0, 2, 4, 5, 8, 17))
         if zone in zones:
+            region = regions.get(f"{country}.{row[10]}", country)
