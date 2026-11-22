@@ -12,3 +12,4 @@ const shell = [
   "icons/icon-192.png",
   "icons/icon-512.png",
 ].map((path) => new URL(path, scope).href);
+
