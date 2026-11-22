@@ -29,3 +29,4 @@ for language in ("fa", "ar"):
     by_location = {tuple(zones[zone]): name for zone, name in names.items() if zone in zones}
     localized[language] = {
         zone: names.get(zone) or by_location.get(tuple(location)) or additional_names[language].get(zone)
+        for zone, location in zones.items()
