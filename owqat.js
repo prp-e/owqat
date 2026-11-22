@@ -4,7 +4,7 @@ const requestedZone = decodeURIComponent(path).replaceAll(" ", "_") || "Asia/Teh
 const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر"],
   ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق"],
-  ["Dhuhr", "Dhuhr", "اذان ظهر"],
+  ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر"],
   ["Asr", "Asr", "عصر"],
   ["Sunset", "Sunset", "غروب آفتاب"],
   ["Maghrib", "Maghrib", "اذان مغرب"],
