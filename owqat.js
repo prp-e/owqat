@@ -11,3 +11,4 @@ const events = [
 ];
 const cards = [...document.querySelectorAll(".card")];
 const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
+const now = new Date();
