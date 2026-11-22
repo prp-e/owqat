@@ -68,7 +68,7 @@ try {
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   populatePicker(zones, timeZone);
   if (!timeZone) throw new RangeError("Unsupported time zone");
-  const [latitude, longitude, country] = zones[timeZone];
+  const selectedCity = await chooseCity(timeZone);
   const city = timeZone.split("/").at(-1).replaceAll("_", " ");
   document.title = `${city} Prayer Times · Owqat`;
   const now = new Date();
