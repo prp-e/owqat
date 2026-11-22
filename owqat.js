@@ -24,3 +24,4 @@ for (const card of cards) {
     card.querySelector(`[data-date="${field}"]`).textContent = formatter.format(now);
   }
 }
+try {
