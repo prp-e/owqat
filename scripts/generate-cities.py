@@ -32,3 +32,4 @@ for zone in cities:
 index = {}
 for zone, coordinates in zones.items():
     matches = zones_by_location[tuple(coordinates)]
+    if matches:
