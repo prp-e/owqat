@@ -59,5 +59,6 @@ try {
     document.title = "Time zone unavailable · Owqat";
     document.querySelector("[data-zone]").textContent = requestedZone;
     for (const card of cards) {
+      const fa = card.lang === "fa";
   }
 }
