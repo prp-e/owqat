@@ -77,6 +77,7 @@ async function chooseCity(zone) {
       select.append(option);
     }
     select.value = city?.[0] ?? "";
+    document.querySelector("#choose-city").hidden = false;
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
