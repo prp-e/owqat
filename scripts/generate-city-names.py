@@ -15,3 +15,4 @@ def exemplar_cities(tree, prefix=""):
         if "exemplarCity" in entry:
             yield zone, entry["exemplarCity"]
         yield from exemplar_cities(entry, f"{zone}/")
+
