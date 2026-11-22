@@ -33,3 +33,4 @@ for line in (DATABASE / "tzdata.zi").read_text().splitlines():
 for alias, target in aliases.items():
     while target in aliases and target not in zones:
         target = aliases[target]
+    if target in zones:
