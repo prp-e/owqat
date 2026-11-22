@@ -28,3 +28,4 @@ for language in ("fa", "ar"):
     names = dict(exemplar_cities(tree))
     by_location = {tuple(zones[zone]): name for zone, name in names.items() if zone in zones}
     localized[language] = {
+        zone: names.get(zone) or by_location.get(tuple(location)) or additional_names[language].get(zone)
