@@ -60,3 +60,4 @@ dd { overflow-wrap: anywhere; }
   padding: clamp(14px, 4vw, 28px);
 }
 .events:empty { display: none; }
+.tile {
