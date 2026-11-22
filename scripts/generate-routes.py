@@ -43,3 +43,4 @@ for zone in sorted(zones):
         output = Path(route) / "index.html"
         if output == TEMPLATE:
             continue
+        output.parent.mkdir(parents=True, exist_ok=True)
