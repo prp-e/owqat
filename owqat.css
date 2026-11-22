@@ -43,3 +43,4 @@ main { display: grid; gap: 28px; }
 }
 [dir="rtl"] .hero {
   background:
+    radial-gradient(ellipse at top left, #8f642d66, transparent 65%),
