@@ -17,3 +17,4 @@ body {
 .masthead, main { max-width: 940px; margin-inline: auto; }
 .masthead {
   display: flex;
+  align-items: baseline;
