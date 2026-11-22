@@ -24,3 +24,4 @@ self.addEventListener("activate", (event) => {
 });
 
 async function networkFirst(request, api) {
+  const cache = await caches.open(CACHE);
