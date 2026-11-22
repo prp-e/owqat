@@ -15,6 +15,7 @@ const cards = [...document.querySelectorAll(".card")];
 const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
+
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
