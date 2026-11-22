@@ -70,7 +70,7 @@ async function chooseCity(zone) {
   const city = cities.find(([id]) => id === selected);
   const select = document.querySelector("#city");
   if (cities.length) {
-    for (const [id, , , , , label, fa] of cities) {
+    for (const [id, , , , , label, fa, ar] of cities) {
       const option = document.createElement("option");
       option.value = id;
       option.textContent = [...new Set([label, fa, ar].filter(Boolean))].join(" · ");
