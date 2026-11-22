@@ -44,3 +44,4 @@ try {
     for (const [key, enLabel, faLabel] of events) {
       const tile = document.createElement("div");
       tile.className = key === "Sunrise" || key === "Sunset" ? "tile solar" : "tile";
+      const label = document.createElement("dt");
