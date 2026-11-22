@@ -3,7 +3,7 @@ const path = location.pathname.slice(root.pathname.length).replace(/\/index\.htm
 const requestedZone = decodeURIComponent(path).replaceAll(" ", "_") || "Asia/Tehran";
 const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر"],
-  ["Sunrise", "Sunrise", "طلوع آفتاب"],
+  ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق"],
   ["Dhuhr", "Dhuhr", "اذان ظهر"],
   ["Asr", "Asr", "عصر"],
   ["Sunset", "Sunset", "غروب آفتاب"],
