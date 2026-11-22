@@ -17,6 +17,7 @@ const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
 
 async function readData(file) {
+  const response = await fetch(new URL(file, root), { signal: AbortSignal.timeout(10000) });
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
