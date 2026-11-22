@@ -58,3 +58,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
     if name.casefold() == reference.casefold():
         fa = fa or cldr["fa"].get(zone)
         ar = ar or cldr["ar"].get(zone)
+    approximation = transliterate(name) if not (fa or ar) else None
