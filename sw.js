@@ -4,7 +4,7 @@ const shell = [
   "Asia/Tehran/",
   "offline.html",
   "owqat.css?v=5",
-  "owqat.js?v=5",
+  "owqat.js?v=6",
   "zones.json",
   "city-names.json",
   "cities/index.json",
