@@ -13,3 +13,4 @@ def exemplar_cities(tree, prefix=""):
             continue
         zone = f"{prefix}{key}"
         if "exemplarCity" in entry:
+            yield zone, entry["exemplarCity"]
