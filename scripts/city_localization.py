@@ -29,3 +29,4 @@ def local_names(archive, city_ids):
             key = (city_id.decode("ascii"), "ar" if language == b"ar" else "fa")
             if key not in names or score > names[key][0]:
                 names[key] = (score, name)
+    return {key: value[1] for key, value in names.items()}
