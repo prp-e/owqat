@@ -27,3 +27,4 @@ with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
             cities[zone].append((city_id, name, float(latitude), float(longitude), country, region))
 
 zones_by_location = defaultdict(list)
+for zone in cities:
