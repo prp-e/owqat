@@ -52,3 +52,4 @@ try {
       tile.append(label, time);
       tiles.append(tile);
     }
+    card.querySelector("[data-status]").hidden = true;
