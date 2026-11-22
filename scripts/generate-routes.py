@@ -23,3 +23,4 @@ for line in (DATABASE / "zone.tab").read_text().splitlines():
         latitude, longitude = re.findall(r"[+-]\d+", position)
         zones[zone] = [coordinate(latitude, 2), coordinate(longitude, 3), country]
 
+aliases = {}
