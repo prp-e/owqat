@@ -79,7 +79,7 @@ try {
     card.querySelector("[data-status]").hidden = true;
   }
 } catch (error) {
-  if (error instanceof RangeError) {
+  const unsupported = error instanceof RangeError;
     document.title = "Time zone unavailable · Owqat";
     document.querySelector("[data-zone]").textContent = requestedZone;
     for (const card of cards) {
