@@ -45,3 +45,4 @@ async function networkFirst(request, api) {
   }
   return (await cache.match(request))
     ?? (request.mode === "navigate" ? await cache.match(new URL("offline.html", scope)) : undefined)
+    ?? Response.error();
