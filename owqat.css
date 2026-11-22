@@ -63,3 +63,4 @@ dd { overflow-wrap: anywhere; }
 .tile {
   display: grid;
   align-content: space-between;
+  min-height: 96px;
