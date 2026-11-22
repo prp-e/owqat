@@ -57,5 +57,6 @@ try {
 } catch (error) {
   if (error instanceof RangeError) {
     document.title = "Time zone unavailable · Owqat";
+    document.querySelector("[data-zone]").textContent = requestedZone;
   }
 }
