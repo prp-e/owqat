@@ -36,3 +36,4 @@ for alias, target in aliases.items():
     if target in zones:
         zones.setdefault(alias, zones[target])
 
+Path("zones.json").write_text(json.dumps(zones, sort_keys=True, separators=(",", ":")) + "\n")
