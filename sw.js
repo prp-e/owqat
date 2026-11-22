@@ -4,3 +4,4 @@ const shell = [
   "Asia/Tehran/",
   "offline.html",
   "owqat.css?v=4",
+  "owqat.js?v=4",
