@@ -7,3 +7,4 @@ const shell = [
   "owqat.js?v=4",
   "zones.json",
   "city-names.json",
+  "manifest.webmanifest",
