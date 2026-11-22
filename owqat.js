@@ -10,3 +10,4 @@ const events = [
   ["Midnight", "Religious midnight", "نیمه‌شب شرعی"],
 ];
 const cards = [...document.querySelectorAll(".card")];
+const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
