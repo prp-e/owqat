@@ -31,3 +31,4 @@ def local_names(archive, city_ids):
                 names[key] = (score, name)
     return {key: value[1] for key, value in names.items()}
 
+
