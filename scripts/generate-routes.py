@@ -25,3 +25,4 @@ for line in (DATABASE / "zone.tab").read_text().splitlines():
 
 aliases = {}
 for line in (DATABASE / "tzdata.zi").read_text().splitlines():
+    fields = line.split()
