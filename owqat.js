@@ -19,7 +19,6 @@ const query = new URLSearchParams({
 });
 for (const card of cards) {
   for (const calendar of ["gregory", "persian"]) {
-    const formatter = new Intl.DateTimeFormat(card.lang, { timeZone, calendar, dateStyle: "long" });
   }
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   if (!timeZone) throw new RangeError("Unsupported time zone");
