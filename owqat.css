@@ -32,3 +32,4 @@ main { display: grid; gap: 28px; }
   border-radius: 24px;
   background: var(--surface);
   box-shadow: 0 20px 55px #0006;
+}
