@@ -34,3 +34,4 @@ for alias, target in aliases.items():
     while target in aliases and target not in zones:
         target = aliases[target]
     if target in zones:
+        zones.setdefault(alias, zones[target])
