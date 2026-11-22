@@ -10,3 +10,4 @@ After editing the shared HTML in `Asia/Tehran/index.html`, run `python3 scripts/
 Persian and Arabic city names use [Unicode CLDR 48.0.0](https://github.com/unicode-org/cldr-json/tree/48.0.0), under the [Unicode License](CLDR-LICENSE.txt), with local additions. To rebuild the names after regenerating the routes, save CLDR's Persian and Arabic `timeZoneNames.json` files as `fa.json` and `ar.json` in a shared directory and pass it to `python3 scripts/generate-city-names.py`.
 
 ## Install Owqat
+In Safari on iPhone, use **Share → Add to Home Screen**, then enable **Open as Web App**.
