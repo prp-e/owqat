@@ -27,3 +27,4 @@ body {
 .masthead a span, a { color: var(--honey); }
 main { display: grid; gap: 28px; }
 .card {
+  overflow: hidden;
