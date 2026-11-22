@@ -17,7 +17,6 @@ const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const faCities = { Tehran: "تهران", Kabul: "کابل", "New York": "نیویورک" };
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
-  if (!catalog.ok) throw new Error("Time-zone catalog unavailable.");
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       link.href = new URL(localZone + "/", root);
