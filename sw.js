@@ -39,3 +39,4 @@ async function networkFirst(request, api) {
       }
       return response;
     }
+    if (response.status < 500) return response;
