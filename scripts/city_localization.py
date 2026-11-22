@@ -56,3 +56,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
     fa = source_names.get((city_id, "fa"))
     ar = source_names.get((city_id, "ar"))
     if name.casefold() == reference.casefold():
+        fa = fa or cldr["fa"].get(zone)
