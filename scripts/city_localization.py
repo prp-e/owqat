@@ -32,3 +32,4 @@ def local_names(archive, city_ids):
     return {key: value[1] for key, value in names.items()}
 
 
+def transliterate_word(word):
