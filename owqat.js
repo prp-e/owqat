@@ -33,3 +33,4 @@ try {
     throw new Error("Prayer times were incomplete or for a different date.");
   }
   for (const card of cards) {
+    const fa = card.lang === "fa";
