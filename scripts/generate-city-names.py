@@ -7,3 +7,4 @@ source = Path(sys.argv[1])
 zones = json.loads(Path("zones.json").read_text())
 
 
+def exemplar_cities(tree, prefix=""):
