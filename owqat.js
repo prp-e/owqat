@@ -5,3 +5,4 @@ const events = [
   ["Dhuhr", "Dhuhr", "اذان ظهر"],
   ["Asr", "Asr", "عصر"],
   ["Sunset", "Sunset", "غروب آفتاب"],
+  ["Maghrib", "Maghrib", "اذان مغرب"],
