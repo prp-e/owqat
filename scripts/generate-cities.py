@@ -18,3 +18,4 @@ localized = {
     "1138958": ["کابل", "كابول"],
 }
 cities = defaultdict(list)
+with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
