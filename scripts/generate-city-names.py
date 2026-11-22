@@ -23,3 +23,4 @@ additional_names = {
 }
 localized = {}
 for language in ("fa", "ar"):
+    data = json.loads((source / f"{language}.json").read_text())
