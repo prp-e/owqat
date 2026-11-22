@@ -55,3 +55,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
     reference = zone.rsplit("/", 1)[-1].replace("_", " ")
     fa = source_names.get((city_id, "fa"))
     ar = source_names.get((city_id, "ar"))
+    if name.casefold() == reference.casefold():
