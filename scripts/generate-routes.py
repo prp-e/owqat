@@ -24,3 +24,4 @@ for line in (DATABASE / "zone.tab").read_text().splitlines():
         zones[zone] = [coordinate(latitude, 2), coordinate(longitude, 3), country]
 
 aliases = {}
+for line in (DATABASE / "tzdata.zi").read_text().splitlines():
