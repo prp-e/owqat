@@ -23,3 +23,4 @@ self.addEventListener("activate", (event) => {
   )).then(() => self.clients.claim()));
 });
 
+async function networkFirst(request, api) {
