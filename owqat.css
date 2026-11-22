@@ -41,3 +41,4 @@ main { display: grid; gap: 28px; }
     repeating-linear-gradient(132deg, transparent 0 29px, #f5c87512 29px 30px),
     #272623;
 }
+[dir="rtl"] .hero {
