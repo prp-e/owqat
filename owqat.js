@@ -24,6 +24,7 @@ async function readData(file) {
 
 function populatePicker(zones, selected) {
   const groups = new Map();
+  picker.options[0].textContent = "Choose a time zone";
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
