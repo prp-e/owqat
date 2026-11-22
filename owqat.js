@@ -1,4 +1,5 @@
 const root = new URL(".", import.meta.url);
+const path = location.pathname.slice(root.pathname.length).replace(/\/index\.html$/, "").replace(/\/+$/, "");
 const events = [
   ["Fajr", "Fajr", "اذان صبح"],
   ["Sunrise", "Sunrise", "طلوع آفتاب"],
