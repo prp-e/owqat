@@ -26,6 +26,7 @@ function populatePicker(zones, selected) {
   const groups = new Map();
   picker.options[0].textContent = "Choose a time zone";
   for (const zone of Object.keys(zones).sort()) {
+    const region = zone.includes("/") ? zone.split("/")[0] : "Aliases";
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
