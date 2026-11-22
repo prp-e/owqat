@@ -2,7 +2,7 @@ const root = new URL(".", import.meta.url);
 const path = location.pathname.slice(root.pathname.length).replace(/\/index\.html$/, "").replace(/\/+$/, "");
 const requestedZone = decodeURIComponent(path).replaceAll(" ", "_") || "Asia/Tehran";
 const events = [
-  ["Fajr", "Fajr", "اذان صبح"],
+  ["Fajr", "Fajr", "اذان صبح", "الفجر"],
   ["Sunrise", "Sunrise", "طلوع آفتاب"],
   ["Dhuhr", "Dhuhr", "اذان ظهر"],
   ["Asr", "Asr", "عصر"],
