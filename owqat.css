@@ -57,3 +57,4 @@ dt { color: var(--muted); font-size: .875rem; }
 dd { overflow-wrap: anywhere; }
 .events {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 146px), 1fr));
+  padding: clamp(14px, 4vw, 28px);
