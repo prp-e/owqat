@@ -61,3 +61,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
     approximation = transliterate(name) if not (fa or ar) else None
     fa = fa or (ar.translate(TO_PERSIAN) if ar else approximation)
     ar = ar or fa.translate(TO_ARABIC)
+    return [fa, ar]
