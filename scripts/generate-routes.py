@@ -21,3 +21,4 @@ for line in (DATABASE / "zone.tab").read_text().splitlines():
     if line and not line.startswith("#"):
         country, position, zone, *_ = line.split()
         latitude, longitude = re.findall(r"[+-]\d+", position)
+        zones[zone] = [coordinate(latitude, 2), coordinate(longitude, 3), country]
