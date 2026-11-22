@@ -1,4 +1,5 @@
 const root = new URL(".", import.meta.url);
+if ("serviceWorker" in navigator) {
 const path = location.pathname.slice(root.pathname.length).replace(/\/index\.html$/, "").replace(/\/+$/, "");
 const requestedZone = decodeURIComponent(path).replaceAll(" ", "_") || "Asia/Tehran";
 const events = [
