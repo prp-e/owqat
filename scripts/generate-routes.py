@@ -7,3 +7,4 @@ import re
 DATABASE = Path("/usr/share/zoneinfo")
 TEMPLATE = Path("Asia/Tehran/index.html")
 
+
