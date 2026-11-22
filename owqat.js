@@ -8,7 +8,7 @@ const events = [
   ["Asr", "Asr", "عصر", "العصر"],
   ["Sunset", "Sunset", "غروب آفتاب", "الغروب"],
   ["Maghrib", "Maghrib", "اذان مغرب", "المغرب"],
-  ["Isha", "Isha", "عشاء"],
+  ["Isha", "Isha", "عشاء", "العشاء"],
   ["Midnight", "Religious midnight", "نیمه‌شب شرعی"],
 ];
 const cards = [...document.querySelectorAll(".card")];
