@@ -70,3 +70,4 @@ dd { overflow-wrap: anywhere; }
   border-radius: 13px;
   background: #2a2a2a;
 }
+.tile dd { justify-self: start; font-size: 1.85rem; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; }
