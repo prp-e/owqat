@@ -27,6 +27,7 @@ for (const card of cards) {
   if (!timeZone) throw new RangeError("Unsupported time zone");
   const [latitude, longitude, country] = zones[timeZone];
   const city = timeZone.split("/").at(-1).replaceAll("_", " ");
+  document.title = `${city} Prayer Times · Owqat`;
   const response = await fetch(`https://api.aladhan.com/v1/timings/${day}?${query}`, { signal: AbortSignal.timeout(10000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const { data } = await response.json();
