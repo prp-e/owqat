@@ -56,7 +56,7 @@ try {
   }
   for (const card of cards) {
     const language = card.lang;
-    const method = card.querySelector("[data-method]");
+    const localizedMethod = data.meta.method.id === 7 ? tehranMethod[language] : undefined;
     method.textContent = data.meta.method.id === 7 && fa ? "روش دانشگاه تهران ·" : `${data.meta.method.name} ·`;
     const digits = (text) => fa ? String(text).replace(/[0-9]/g, (digit) => persianDigits[digit]) : text;
     const { day: lunarDay, month, year } = date.hijri;
