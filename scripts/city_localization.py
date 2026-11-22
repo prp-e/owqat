@@ -52,3 +52,4 @@ def transliterate(name):
 def city_names(zone, city_id, name, overrides, source_names, cldr):
     if city_id in overrides:
         return overrides[city_id]
+    reference = zone.rsplit("/", 1)[-1].replace("_", " ")
