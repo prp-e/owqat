@@ -41,3 +41,4 @@ async function networkFirst(request, api) {
     }
     if (response.status < 500) return response;
   } catch {
+    // Fall back to the exact cached URL, including the prayer date and zone.
