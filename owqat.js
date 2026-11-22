@@ -37,3 +37,4 @@ try {
     const digits = (text) => fa ? String(text).replace(/[0-9]/g, (digit) => persianDigits[digit]) : text;
     const { day: lunarDay, month, year } = date.hijri;
     const persianMonths = ["محرم", "صفر", "ربیع‌الاول", "ربیع‌الثانی", "جمادی‌الاول", "جمادی‌الثانی", "رجب", "شعبان", "رمضان", "شوال", "ذی‌القعده", "ذی‌الحجه"];
+    const lunar = card.querySelector('[data-date="hijri"]');
