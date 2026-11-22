@@ -16,6 +16,7 @@ const faCities = { Tehran: "تهران", Kabul: "کابل", "New York": "نیو�
 try {
   const catalog = await fetch(new URL("zones.json", root), { signal: AbortSignal.timeout(10000) });
   if (!catalog.ok) throw new Error("Time-zone catalog unavailable.");
+  const zones = await catalog.json();
   }
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   if (!timeZone) throw new RangeError("Unsupported time zone");
