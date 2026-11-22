@@ -40,3 +40,4 @@ Path("zones.json").write_text(json.dumps(zones, sort_keys=True, separators=(",",
 template = TEMPLATE.read_text().replace("../../", "/owqat/")
 for zone in sorted(zones):
     for route in {zone, zone.replace("_", " ")}:
+        output = Path(route) / "index.html"
