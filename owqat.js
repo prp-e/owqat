@@ -21,6 +21,7 @@ async function readData(file) {
   if (!response.ok) throw new Error(`Could not load ${file}.`);
   return response.json();
 }
+
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
