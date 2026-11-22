@@ -24,3 +24,4 @@ body {
   color: var(--muted);
 }
 .masthead a { color: #fff5e5; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+.masthead a span, a { color: var(--honey); }
