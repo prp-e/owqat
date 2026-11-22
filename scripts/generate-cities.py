@@ -25,3 +25,4 @@ with ZipFile(archive) as source, source.open("cities15000.txt") as rows:
         if zone in zones:
             region = regions.get(f"{country}.{row[10]}", country)
             cities[zone].append((city_id, name, float(latitude), float(longitude), country, region))
+
