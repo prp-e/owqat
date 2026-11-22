@@ -63,7 +63,7 @@ try {
     const persianMonths = ["محرم", "صفر", "ربیع‌الاول", "ربیع‌الثانی", "جمادی‌الاول", "جمادی‌الثانی", "رجب", "شعبان", "رمضان", "شوال", "ذی‌القعده", "ذی‌الحجه"];
     const lunar = card.querySelector('[data-date="hijri"]');
     lunar.textContent = digits(`${lunarDay} ${months[language]?.[month.number - 1] ?? month.en} ${year}`);
-    lunar.title = fa ? "تاریخ قمری طبق علاءالاذان" : "Lunar date from AlAdhan";
+    lunar.title = labels[language][3];
     const tiles = card.querySelector("[data-events]");
     for (const [key, enLabel, faLabel, arLabel] of events) {
       const tile = document.createElement("div");
