@@ -38,3 +38,4 @@ def transliterate_word(word):
         if segment in SOUNDS:
             result.append(SOUNDS[segment])
         elif segment in VOWELS:
+            result.append("ا" + VOWELS[segment] if offset == 0 and segment != "a" else VOWELS[segment])
