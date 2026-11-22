@@ -16,7 +16,7 @@ const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const faCities = { Tehran: "تهران", Kabul: "کابل", "New York": "نیویورک" };
 try {
-  const catalog = await fetch(new URL("zones.json", root), { signal: AbortSignal.timeout(10000) });
+  const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (!catalog.ok) throw new Error("Time-zone catalog unavailable.");
   const zones = await catalog.json();
   if (Object.hasOwn(zones, localZone)) {
