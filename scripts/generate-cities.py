@@ -7,6 +7,7 @@ from zipfile import ZipFile
 
 from city_localization import city_names, local_names
 
+archive, admin_path, alternates_path = sys.argv[1:]
 zones = json.loads(Path("zones.json").read_text())
 cldr_names = json.loads(Path("city-names.json").read_text())
 regions = dict(line.split("\t")[:2] for line in Path(admin_path).read_text().splitlines() if line)
