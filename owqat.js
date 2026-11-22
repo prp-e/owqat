@@ -45,3 +45,4 @@ try {
       const tile = document.createElement("div");
       tile.className = key === "Sunrise" || key === "Sunset" ? "tile solar" : "tile";
       const label = document.createElement("dt");
+      label.textContent = fa ? faLabel : enLabel;
