@@ -34,3 +34,4 @@ def local_names(archive, city_ids):
 
 def transliterate_word(word):
     result = []
+    for offset, segment in enumerate(GRAPHEME.findall(word)):
