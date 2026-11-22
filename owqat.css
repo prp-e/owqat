@@ -20,3 +20,4 @@ body {
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
+  padding-block: 20px;
