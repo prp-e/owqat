@@ -89,6 +89,5 @@ try {
     }
   } else {
     for (const card of cards) {
-      card.querySelector("[data-status]").textContent = card.lang === "fa"
   }
 }
