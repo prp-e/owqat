@@ -41,3 +41,4 @@ def write_json(path, data):
 
 for zone, rows in cities.items():
     counts = Counter(row[1].casefold() for row in rows)
+    catalog = []
