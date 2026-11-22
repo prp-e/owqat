@@ -15,3 +15,4 @@ Owqat can open previously cached time-zone pages offline. It only reuses prayer 
 
 Choose a city in the selected time zone to use its coordinates. City links preserve the zone and selected GeoNames ID. Cities are sourced from [GeoNames](https://www.geonames.org/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Rebuild with `python3 scripts/generate-cities.py cities15000.zip admin1CodesASCII.txt alternateNamesV2.zip` using the [GeoNames exports](https://download.geonames.org/export/dump/).
 
+Persian and Arabic city labels prefer localized GeoNames names, with CLDR reference names and transliteration as fallbacks. Transliterated spellings are approximate.
