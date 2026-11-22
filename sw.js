@@ -13,3 +13,4 @@ const shell = [
   "icons/icon-512.png",
 ].map((path) => new URL(path, scope).href);
 
+self.addEventListener("install", (event) => {
