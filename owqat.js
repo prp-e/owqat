@@ -71,6 +71,7 @@ try {
   const selectedCity = await chooseCity(timeZone);
   if (selectedCity === null) throw new Error("Unknown city", { cause: "city-selection" });
   const [latitude, longitude, country] = selectedCity?.slice(2, 5) ?? zones[timeZone];
+  const city = selectedCity?.[1] ?? timeZone.split("/").at(-1).replaceAll("_", " ");
   document.title = `${city} Prayer Times · Owqat`;
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
