@@ -7,3 +7,4 @@ Append a geographic IANA time zone to the site URL. The site uses the zone’s l
 
 After editing the shared HTML in `Asia/Tehran/index.html`, run `python3 scripts/generate-routes.py` from the repository root on a system with `zone.tab` and `tzdata.zi` under `/usr/share/zoneinfo`. The script generates one-line static pages and the zone catalog for GitHub Pages.
 
+Persian and Arabic city names use [Unicode CLDR 48.0.0](https://github.com/unicode-org/cldr-json/tree/48.0.0), under the [Unicode License](CLDR-LICENSE.txt), with local additions. To rebuild the names after regenerating the routes, save CLDR's Persian and Arabic `timeZoneNames.json` files as `fa.json` and `ar.json` in a shared directory and pass it to `python3 scripts/generate-city-names.py`.
