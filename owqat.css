@@ -65,3 +65,4 @@ dd { overflow-wrap: anywhere; }
   align-content: space-between;
   min-height: 96px;
   gap: 8px;
+  padding: 12px;
