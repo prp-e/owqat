@@ -48,3 +48,4 @@ async function networkFirst(request, api) {
     ?? Response.error();
 }
 
+self.addEventListener("fetch", (event) => {
