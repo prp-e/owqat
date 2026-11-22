@@ -45,3 +45,4 @@ for zone in sorted(zones):
             continue
         output.parent.mkdir(parents=True, exist_ok=True)
         title = escape(zone.rsplit("/", 1)[-1].replace("_", " "))
+        page = template.replace("<title>Tehran Prayer Times", f"<title>{title} Prayer Times")
