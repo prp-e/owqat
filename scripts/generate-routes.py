@@ -27,3 +27,4 @@ aliases = {}
 for line in (DATABASE / "tzdata.zi").read_text().splitlines():
     fields = line.split()
     if fields and fields[0] in {"L", "Link"}:
+        _, target, alias = fields
