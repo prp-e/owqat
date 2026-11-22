@@ -50,3 +50,4 @@ async function networkFirst(request, api) {
 
 self.addEventListener("fetch", (event) => {
   const request = event.request;
+  if (request.method !== "GET") return;
