@@ -12,3 +12,4 @@ Persian and Arabic city names use [Unicode CLDR 48.0.0](https://github.com/unico
 ## Install Owqat
 In Safari on iPhone, use **Share → Add to Home Screen**, then enable **Open as Web App**.
 Owqat can open previously cached time-zone pages offline. It only reuses prayer times for the same date and time zone when those exact results are cached.
+
