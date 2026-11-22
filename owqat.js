@@ -30,7 +30,6 @@ try {
   const [latitude, longitude, country] = zones[timeZone];
   const city = timeZone.split("/").at(-1).replaceAll("_", " ");
   document.title = `${city} Prayer Times · Owqat`;
-  document.querySelector("[data-zone]").textContent = timeZone;
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
   const day = new Intl.DateTimeFormat("en-GB", options).format(now).replaceAll("/", "-");
