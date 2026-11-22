@@ -25,3 +25,4 @@ localized = {}
 for language in ("fa", "ar"):
     data = json.loads((source / f"{language}.json").read_text())
     tree = data["main"][language]["dates"]["timeZoneNames"]["zone"]
+    names = dict(exemplar_cities(tree))
