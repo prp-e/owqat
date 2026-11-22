@@ -81,6 +81,7 @@ try {
   }
   for (const card of cards) {
     const localizedCity = selectedCity
+      ? { fa: selectedCity[6], ar: selectedCity[7] }[card.lang]
     for (const calendar of ["gregory", "persian"]) {
       const formatter = new Intl.DateTimeFormat(card.lang, { timeZone, calendar, dateStyle: "long" });
       const field = calendar === "gregory" ? "gregorian" : calendar;
