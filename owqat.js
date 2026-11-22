@@ -62,7 +62,7 @@ async function chooseCity(zone) {
   let cities;
   try {
     const index = await readData("cities/index.json");
-    cities = Object.hasOwn(index, zone) ? await readData(`cities/${index[zone]}.json`) : [];
+    cities = Object.hasOwn(index, zone) ? await readData(`cities/${index[zone]}.json?v=2`) : [];
   } catch {
     if (selected) throw new Error("The selected city catalog is unavailable.");
     return undefined;
