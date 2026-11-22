@@ -58,7 +58,7 @@ try {
     const language = card.lang;
     const localizedMethod = data.meta.method.id === 7 ? tehranMethod[language] : undefined;
     card.querySelector("[data-method]").textContent = `${localizedMethod ?? data.meta.method.name} ·`;
-    const digits = (text) => fa ? String(text).replace(/[0-9]/g, (digit) => persianDigits[digit]) : text;
+    const digits = (text) => String(text).replace(/[0-9]/g, (digit) => numerals[language]?.[digit] ?? digit);
     const { day: lunarDay, month, year } = date.hijri;
     const lunar = card.querySelector('[data-date="hijri"]');
     lunar.textContent = digits(`${lunarDay} ${months[language]?.[month.number - 1] ?? month.en} ${year}`);
