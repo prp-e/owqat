@@ -47,3 +47,4 @@ async function networkFirst(request, api) {
     ?? (request.mode === "navigate" ? await cache.match(new URL("offline.html", scope)) : undefined)
     ?? Response.error();
 }
+
