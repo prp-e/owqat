@@ -20,6 +20,7 @@ try {
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       link.href = new URL(localZone + "/", root);
+      link.hidden = false;
   }
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   if (!timeZone) throw new RangeError("Unsupported time zone");
