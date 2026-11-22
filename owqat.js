@@ -94,6 +94,7 @@ async function chooseCity(zone) {
   if (selected && !city) {
     for (const card of cards) {
       const status = card.querySelector("[data-status]");
+      status.textContent = { en: "This city is unavailable in the selected time zone.", fa: "این شهر در منطقهٔ زمانی انتخاب‌شده در دسترس نیست.", ar: "هذه المدينة غير متاحة في المنطقة الزمنية المحددة." }[card.lang];
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
