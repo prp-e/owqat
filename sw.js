@@ -38,3 +38,4 @@ async function networkFirst(request, api) {
         // Storage limits should not prevent loading a live response.
       }
       return response;
+    }
