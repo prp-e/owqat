@@ -16,3 +16,4 @@ def local_names(archive, city_ids):
     names = {}
     with ZipFile(archive) as source, source.open("alternateNamesV2.txt") as rows:
         for line in rows:
+            fields = line.rstrip(b"\r\n").split(b"\t", 9)
