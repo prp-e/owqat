@@ -1,3 +1,4 @@
+const root = new URL(".", import.meta.url);
 const events = [
   ["Fajr", "Fajr", "اذان صبح"],
   ["Sunrise", "Sunrise", "طلوع آفتاب"],
