@@ -21,3 +21,4 @@ def local_names(archive, city_ids):
             if city_id not in city_ids or language not in {b"fa", b"ar", b"prs"}:
                 continue
             if fields[7:8] == [b"1"]:
+                continue
