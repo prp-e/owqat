@@ -83,6 +83,7 @@ try {
     const localizedCity = selectedCity
       ? { fa: selectedCity[6], ar: selectedCity[7] }[card.lang]
       : cityNames[card.lang]?.[timeZone];
+    card.querySelector("[data-city]").textContent = localizedCity ?? city;
     for (const calendar of ["gregory", "persian"]) {
       const formatter = new Intl.DateTimeFormat(card.lang, { timeZone, calendar, dateStyle: "long" });
       const field = calendar === "gregory" ? "gregorian" : calendar;
