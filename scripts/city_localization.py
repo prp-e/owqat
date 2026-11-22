@@ -44,3 +44,4 @@ def transliterate_word(word):
     return "".join(result)
 
 
+def transliterate(name):
