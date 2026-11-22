@@ -70,6 +70,7 @@ try {
   if (!timeZone) throw new RangeError("Unsupported time zone");
   const selectedCity = await chooseCity(timeZone);
   if (selectedCity === null) throw new Error("Unknown city", { cause: "city-selection" });
+  const [latitude, longitude, country] = selectedCity?.slice(2, 5) ?? zones[timeZone];
   document.title = `${city} Prayer Times · Owqat`;
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
