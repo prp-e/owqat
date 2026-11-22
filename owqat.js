@@ -67,5 +67,6 @@ try {
     for (const card of cards) {
       card.querySelector("[data-status]").textContent = card.lang === "fa"
         ? "دریافت اوقات شرعی ممکن نشد. صفحه را دوباره بارگذاری کنید."
+        : "Prayer times are unavailable. Reload the page to try again.";
   }
 }
