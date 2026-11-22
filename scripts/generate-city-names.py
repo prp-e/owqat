@@ -18,3 +18,4 @@ def exemplar_cities(tree, prefix=""):
 
 
 additional_names = {
+    "fa": {"Africa/Asmara": "اسمره", "America/Atikokan": "اتیکوکان", "Pacific/Chuuk": "چوک", "Pacific/Pohnpei": "پونپی"},
