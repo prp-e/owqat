@@ -30,3 +30,4 @@ zones_by_location = defaultdict(list)
 for zone in cities:
     zones_by_location[tuple(zones[zone])].append(zone)
 index = {}
+for zone, coordinates in zones.items():
