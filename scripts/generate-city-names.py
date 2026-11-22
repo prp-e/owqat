@@ -11,3 +11,4 @@ def exemplar_cities(tree, prefix=""):
     for key, entry in tree.items():
         if not isinstance(entry, dict):
             continue
+        zone = f"{prefix}{key}"
