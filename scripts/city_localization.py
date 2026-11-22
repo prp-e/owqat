@@ -59,3 +59,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
         fa = fa or cldr["fa"].get(zone)
         ar = ar or cldr["ar"].get(zone)
     approximation = transliterate(name) if not (fa or ar) else None
+    fa = fa or (ar.translate(TO_PERSIAN) if ar else approximation)
