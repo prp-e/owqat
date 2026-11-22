@@ -93,6 +93,7 @@ async function chooseCity(zone) {
   }
   if (selected && !city) {
     for (const card of cards) {
+      const status = card.querySelector("[data-status]");
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
