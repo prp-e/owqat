@@ -4,3 +4,4 @@ from pathlib import Path
 import sys
 
 source = Path(sys.argv[1])
+zones = json.loads(Path("zones.json").read_text())
