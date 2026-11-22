@@ -37,3 +37,4 @@ def transliterate_word(word):
     for offset, segment in enumerate(GRAPHEME.findall(word)):
         if segment in SOUNDS:
             result.append(SOUNDS[segment])
+        elif segment in VOWELS:
