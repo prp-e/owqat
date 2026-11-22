@@ -35,3 +35,4 @@ for alias, target in aliases.items():
         target = aliases[target]
     if target in zones:
         zones.setdefault(alias, zones[target])
+
