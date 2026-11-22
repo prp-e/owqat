@@ -11,7 +11,6 @@ const events = [
 ];
 const cards = [...document.querySelectorAll(".card")];
 const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
-const now = new Date();
   }
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   if (!timeZone) throw new RangeError("Unsupported time zone");
