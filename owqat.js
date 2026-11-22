@@ -41,3 +41,4 @@ try {
     lunar.textContent = digits(`${lunarDay} ${fa ? persianMonths[month.number - 1] : month.en} ${year}`);
     lunar.title = fa ? "تاریخ قمری طبق علاءالاذان" : "Lunar date from AlAdhan";
     const tiles = card.querySelector("[data-events]");
+    for (const [key, enLabel, faLabel] of events) {
