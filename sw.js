@@ -43,3 +43,4 @@ async function networkFirst(request, api) {
   } catch {
     // Fall back to the exact cached URL, including the prayer date and zone.
   }
+  return (await cache.match(request))
