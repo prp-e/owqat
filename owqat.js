@@ -50,3 +50,4 @@ try {
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
       tile.append(label, time);
+      tiles.append(tile);
