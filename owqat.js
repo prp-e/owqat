@@ -37,6 +37,7 @@ for (const card of cards) {
     query.set("method", "7");
     query.set("midnightMode", "1");
   }
+  for (const card of cards) {
   const response = await fetch(`https://api.aladhan.com/v1/timings/${day}?${query}`, { signal: AbortSignal.timeout(10000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const { data } = await response.json();
