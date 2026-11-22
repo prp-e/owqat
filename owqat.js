@@ -23,6 +23,7 @@ async function readData(file) {
 }
 
 function populatePicker(zones, selected) {
+  const groups = new Map();
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
