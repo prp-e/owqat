@@ -22,3 +22,4 @@ self.addEventListener("activate", (event) => {
     keys.filter((key) => key.startsWith("owqat-pwa-") && key !== CACHE).map((key) => caches.delete(key)),
   )).then(() => self.clients.claim()));
 });
+
