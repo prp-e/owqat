@@ -36,3 +36,4 @@ main { display: grid; gap: 28px; }
 .hero {
   padding: clamp(20px, 5vw, 42px);
   border-block-end: 1px solid #f5c87555;
+  background:
