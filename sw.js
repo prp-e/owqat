@@ -3,7 +3,7 @@ const scope = new URL(self.registration.scope);
 const shell = [
   "Asia/Tehran/",
   "offline.html",
-  "owqat.css?v=4",
+  "owqat.css?v=5",
   "owqat.js?v=4",
   "zones.json",
   "city-names.json",
