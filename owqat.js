@@ -82,7 +82,7 @@ try {
   const unsupported = error instanceof RangeError;
   if (unsupported) document.title = "Time zone unavailable · Owqat";
   for (const card of cards) {
-    for (const card of cards) {
+    const [unavailable, chooseZone, retry] = labels[card.lang];
       const fa = card.lang === "fa";
       card.querySelector("[data-city]").textContent = fa ? "منطقهٔ زمانی پیدا نشد" : "Time zone unavailable";
       card.querySelector("[data-status]").textContent = fa ? "یک منطقهٔ دارای موقعیت جغرافیایی را از راهنمای پایین انتخاب کنید." : "Choose a geographic time zone using the guide below.";
