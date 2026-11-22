@@ -26,3 +26,4 @@ def local_names(archive, city_ids):
             if not ARABIC_LETTER.search(name) or re.search(r"[A-Za-z]", name):
                 continue
             score = (language != b"prs", fields[4:5] == [b"1"], fields[6:7] != [b"1"], fields[5:6] != [b"1"])
+            key = (city_id.decode("ascii"), "ar" if language == b"ar" else "fa")
