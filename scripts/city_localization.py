@@ -22,3 +22,4 @@ def local_names(archive, city_ids):
                 continue
             if fields[7:8] == [b"1"]:
                 continue
+            name = fields[3].decode("utf-8")
