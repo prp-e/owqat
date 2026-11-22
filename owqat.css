@@ -71,3 +71,4 @@ dd { overflow-wrap: anywhere; }
   background: #2a2a2a;
 }
 .tile dd { justify-self: start; font-size: 1.85rem; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.tile.solar { color: var(--honey); background: #392e20; border-color: #f5c87565; }
