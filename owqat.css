@@ -50,3 +50,4 @@ main { display: grid; gap: 28px; }
 .hero p { margin: 0; color: var(--honey); font-weight: 500; }
 h1, h2 { margin: .16em 0 .45em; font-size: clamp(2.3rem, 7vw, 4rem); line-height: 1.15; }
 dl, dd { margin: 0; }
+.dates, .events { display: grid; gap: 10px; }
