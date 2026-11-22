@@ -84,6 +84,7 @@ async function chooseCity(zone) {
       else url.searchParams.delete("city");
       url.hash = "";
       location.assign(url);
+    });
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
