@@ -48,3 +48,4 @@ for zone in sorted(zones):
         page = template.replace("<title>Tehran Prayer Times", f"<title>{title} Prayer Times")
         output.write_text(" ".join(line.strip() for line in page.splitlines()) + "\n")
 
+Path("404.html").write_text(" ".join(line.strip() for line in template.splitlines()) + "\n")
