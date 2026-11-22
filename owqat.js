@@ -32,6 +32,7 @@ for (const card of cards) {
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
   const day = new Intl.DateTimeFormat("en-GB", options).format(now).replaceAll("/", "-");
+  const query = new URLSearchParams({ latitude, longitude, timezonestring: timeZone });
   const response = await fetch(`https://api.aladhan.com/v1/timings/${day}?${query}`, { signal: AbortSignal.timeout(10000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const { data } = await response.json();
