@@ -3,3 +3,4 @@ const scope = new URL(self.registration.scope);
 const shell = [
   "Asia/Tehran/",
   "offline.html",
+  "owqat.css?v=4",
