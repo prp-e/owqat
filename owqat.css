@@ -75,3 +75,4 @@ dd { overflow-wrap: anywhere; }
 .status, footer { margin: 0; padding: 12px clamp(14px, 4vw, 28px); }
 footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid var(--edge); }
 .guide { padding: clamp(18px, 4vw, 32px); border: 1px solid var(--edge); border-radius: 18px; background: var(--surface); }
+.guide h2 { font-size: 1.25rem; margin: 0; }
