@@ -32,3 +32,4 @@ for language in ("fa", "ar"):
         for zone, location in zones.items()
     }
 
+Path("city-names.json").write_text(json.dumps(localized, ensure_ascii=False, separators=(",", ":")) + "\n")
