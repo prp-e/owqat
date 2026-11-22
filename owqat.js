@@ -41,6 +41,7 @@ for (const card of cards) {
     card.querySelector("[data-city]").textContent = card.lang === "fa" ? (faCities[city] ?? city) : city;
     for (const calendar of ["gregory", "persian"]) {
       const formatter = new Intl.DateTimeFormat(card.lang, { timeZone, calendar, dateStyle: "long" });
+      const field = calendar === "gregory" ? "gregorian" : calendar;
   const response = await fetch(`https://api.aladhan.com/v1/timings/${day}?${query}`, { signal: AbortSignal.timeout(10000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const { data } = await response.json();
