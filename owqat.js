@@ -47,3 +47,4 @@ try {
       const label = document.createElement("dt");
       label.textContent = fa ? faLabel : enLabel;
       const time = document.createElement("dd");
+      time.dir = "ltr";
