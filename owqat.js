@@ -67,6 +67,7 @@ async function chooseCity(zone) {
     if (selected) throw new Error("The selected city catalog is unavailable.");
     return undefined;
   }
+  const city = cities.find(([id]) => id === selected);
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
