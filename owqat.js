@@ -17,7 +17,6 @@ const day = new Intl.DateTimeFormat("en-GB", options).format(now).replaceAll("/"
 const query = new URLSearchParams({
   latitude: "35.694", longitude: "51.422", method: "7", midnightMode: "1", timezonestring: timeZone,
 });
-for (const card of cards) {
   }
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   if (!timeZone) throw new RangeError("Unsupported time zone");
