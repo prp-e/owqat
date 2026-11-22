@@ -49,3 +49,4 @@ try {
       const time = document.createElement("dd");
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
+      tile.append(label, time);
