@@ -6,3 +6,4 @@ from zipfile import ZipFile
 ARABIC_LETTER = re.compile(r"[\u0620-\u064a\u066e-\u06d3]")
 TO_PERSIAN = str.maketrans("كيىة", "کییه")
 TO_ARABIC = str.maketrans({"ک": "ك", "ی": "ي", "پ": "ب", "چ": "تش", "ژ": "ج", "گ": "غ", "ڤ": "ف"})
+CONSONANTS = {"b": "ب", "c": "ک", "d": "د", "f": "ف", "g": "گ", "h": "ه", "j": "ج", "k": "ک", "l": "ل", "m": "م", "n": "ن", "p": "پ", "q": "ق", "r": "ر", "s": "س", "t": "ت", "v": "و", "w": "و", "x": "کس", "y": "ی", "z": "ز"}
