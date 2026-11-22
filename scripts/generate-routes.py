@@ -18,3 +18,4 @@ def coordinate(text, degree_digits):
 
 zones = {}
 for line in (DATABASE / "zone.tab").read_text().splitlines():
+    if line and not line.startswith("#"):
