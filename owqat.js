@@ -121,6 +121,7 @@ try {
   if (error.cause !== "city-selection") showError(error);
 }
 
+function showError(error) {
   const unsupported = error instanceof RangeError;
   if (unsupported) document.title = "Time zone unavailable · Owqat";
   for (const card of cards) {
