@@ -9,3 +9,4 @@ TEMPLATE = Path("Asia/Tehran/index.html")
 
 
 def coordinate(text, degree_digits):
+    magnitude = text[1:]
