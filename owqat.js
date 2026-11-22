@@ -55,7 +55,7 @@ try {
     throw new Error("Prayer times were incomplete or for a different date.");
   }
   for (const card of cards) {
-    const fa = card.lang === "fa";
+    const language = card.lang;
     const method = card.querySelector("[data-method]");
     method.textContent = data.meta.method.id === 7 && fa ? "روش دانشگاه تهران ·" : `${data.meta.method.name} ·`;
     const digits = (text) => fa ? String(text).replace(/[0-9]/g, (digit) => persianDigits[digit]) : text;
