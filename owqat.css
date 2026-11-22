@@ -54,3 +54,4 @@ dl, dd { margin: 0; }
 .dates { grid-template-columns: repeat(auto-fit, minmax(min(100%, 176px), 1fr)); }
 .dates > div { padding: 10px 13px; border-radius: 10px; background: #141414ad; }
 dt { color: var(--muted); font-size: .875rem; }
+dd { overflow-wrap: anywhere; }
