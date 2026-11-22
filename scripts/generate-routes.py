@@ -37,3 +37,4 @@ for alias, target in aliases.items():
         zones.setdefault(alias, zones[target])
 
 Path("zones.json").write_text(json.dumps(zones, sort_keys=True, separators=(",", ":")) + "\n")
+template = TEMPLATE.read_text().replace("../../", "/owqat/")
