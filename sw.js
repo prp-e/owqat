@@ -30,3 +30,4 @@ async function networkFirst(request, api) {
     if (response.ok) {
       try {
         await cache.put(request, response.clone());
+        if (api) {
