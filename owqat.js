@@ -18,3 +18,4 @@ const query = new URLSearchParams({
   latitude: "35.694", longitude: "51.422", method: "7", midnightMode: "1", timezonestring: timeZone,
 });
 for (const card of cards) {
+  for (const calendar of ["gregory", "persian"]) {
