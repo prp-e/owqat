@@ -55,6 +55,5 @@ try {
     card.querySelector("[data-status]").hidden = true;
   }
 } catch {
-  for (const card of cards) {
   }
 }
