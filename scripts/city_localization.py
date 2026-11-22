@@ -49,3 +49,4 @@ def transliterate(name):
     return re.sub(r"[a-z]+", lambda match: transliterate_word(match[0]), latin).translate(TO_PERSIAN)
 
 
+def city_names(zone, city_id, name, overrides, source_names, cldr):
