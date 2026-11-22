@@ -40,3 +40,4 @@ def write_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 
 for zone, rows in cities.items():
+    counts = Counter(row[1].casefold() for row in rows)
