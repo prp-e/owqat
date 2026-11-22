@@ -48,3 +48,4 @@ def transliterate(name):
     latin = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[a-z]+", lambda match: transliterate_word(match[0]), latin).translate(TO_PERSIAN)
 
+
