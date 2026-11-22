@@ -118,6 +118,7 @@ try {
     card.querySelector("[data-status]").hidden = true;
   }
 } catch (error) {
+  if (error.cause !== "city-selection") showError(error);
   const unsupported = error instanceof RangeError;
   if (unsupported) document.title = "Time zone unavailable · Owqat";
   for (const card of cards) {
