@@ -12,3 +12,4 @@ SOUNDS = {"sch": "ش", "sh": "ش", "ch": "چ", "zh": "ژ", "kh": "خ", "gh": "غ
 GRAPHEME = re.compile("|".join(SOUNDS) + "|[a-z]|[^a-z]+")
 
 
+def local_names(archive, city_ids):
