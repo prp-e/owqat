@@ -6,3 +6,4 @@ import sys
 from zipfile import ZipFile
 
 archive, admin_path = sys.argv[1:]
+zones = json.loads(Path("zones.json").read_text())
