@@ -28,3 +28,4 @@ async function networkFirst(request, api) {
   try {
     const response = await fetch(request);
     if (response.ok) {
+      try {
