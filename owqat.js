@@ -37,6 +37,7 @@ function populatePicker(zones, selected) {
     option.value = zone;
     option.textContent = zone.replaceAll("_", " ");
     groups.get(region).append(option);
+  }
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
