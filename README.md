@@ -13,3 +13,4 @@ Persian and Arabic city names use [Unicode CLDR 48.0.0](https://github.com/unico
 In Safari on iPhone, use **Share → Add to Home Screen**, then enable **Open as Web App**.
 Owqat can open previously cached time-zone pages offline. It only reuses prayer times for the same date and time zone when those exact results are cached.
 
+Choose a city in the selected time zone to use its coordinates. City links preserve the zone and selected GeoNames ID. Cities are sourced from [GeoNames](https://www.geonames.org/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Rebuild with `python3 scripts/generate-cities.py cities15000.zip admin1CodesASCII.txt` using the [GeoNames exports](https://download.geonames.org/export/dump/).
