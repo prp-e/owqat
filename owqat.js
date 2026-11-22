@@ -9,3 +9,4 @@ const events = [
   ["Isha", "Isha", "عشاء"],
   ["Midnight", "Religious midnight", "نیمه‌شب شرعی"],
 ];
+const cards = [...document.querySelectorAll(".card")];
