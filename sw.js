@@ -14,3 +14,4 @@ const shell = [
 ].map((path) => new URL(path, scope).href);
 
 self.addEventListener("install", (event) => {
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(shell)).then(() => self.skipWaiting()));
