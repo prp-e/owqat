@@ -54,5 +54,6 @@ try {
     }
     card.querySelector("[data-status]").hidden = true;
   }
+} catch (error) {
   }
 }
