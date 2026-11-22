@@ -45,3 +45,4 @@ def transliterate_word(word):
 
 
 def transliterate(name):
+    latin = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
