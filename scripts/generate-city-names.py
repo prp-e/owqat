@@ -22,3 +22,4 @@ additional_names = {
     "ar": {"Africa/Asmara": "أسمرة", "America/Atikokan": "أتيكوكان", "Pacific/Chuuk": "تشوك", "Pacific/Pohnpei": "بوهنبي"},
 }
 localized = {}
+for language in ("fa", "ar"):
