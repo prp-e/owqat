@@ -69,7 +69,7 @@ try {
   populatePicker(zones, timeZone);
   if (!timeZone) throw new RangeError("Unsupported time zone");
   const selectedCity = await chooseCity(timeZone);
-  const city = timeZone.split("/").at(-1).replaceAll("_", " ");
+  if (selectedCity === null) throw new Error("Unknown city", { cause: "city-selection" });
   document.title = `${city} Prayer Times · Owqat`;
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
