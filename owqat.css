@@ -78,3 +78,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .guide h2 { font-size: 1.25rem; margin: 0; }
 .guide code { overflow-wrap: anywhere; }
 .guide [dir="rtl"] { padding-block-start: 16px; border-block-start: 1px solid var(--edge); }
+.zone-picker { display: grid; gap: 4px; width: min(100%, 22rem); }
