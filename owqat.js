@@ -90,6 +90,7 @@ async function chooseCity(zone) {
     };
     focusCity();
     window.addEventListener("hashchange", focusCity);
+  }
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
