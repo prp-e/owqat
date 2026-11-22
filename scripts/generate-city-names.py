@@ -30,3 +30,4 @@ for language in ("fa", "ar"):
     localized[language] = {
         zone: names.get(zone) or by_location.get(tuple(location)) or additional_names[language].get(zone)
         for zone, location in zones.items()
+    }
