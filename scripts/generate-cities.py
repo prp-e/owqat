@@ -36,3 +36,4 @@ for zone, coordinates in zones.items():
         index[zone] = zone if zone in cities else max(matches, key=lambda match: len(cities[match]))
 
 def write_json(path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
