@@ -55,3 +55,4 @@ dl, dd { margin: 0; }
 .dates > div { padding: 10px 13px; border-radius: 10px; background: #141414ad; }
 dt { color: var(--muted); font-size: .875rem; }
 dd { overflow-wrap: anywhere; }
+.events {
