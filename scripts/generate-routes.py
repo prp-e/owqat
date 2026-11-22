@@ -41,3 +41,4 @@ template = TEMPLATE.read_text().replace("../../", "/owqat/")
 for zone in sorted(zones):
     for route in {zone, zone.replace("_", " ")}:
         output = Path(route) / "index.html"
+        if output == TEMPLATE:
