@@ -85,3 +85,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .my-zone { align-content: center; min-height: 42px; border: 1px solid var(--honey); border-radius: 8px; padding: 6px 13px; color: #161616; background: var(--honey); font-weight: 700; text-decoration: none; }
 .my-zone:hover { background: #ffda96; }
 .my-zone:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
+@media (max-width: 620px) { .masthead { flex-wrap: wrap; } }
