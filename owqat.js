@@ -48,3 +48,4 @@ try {
       label.textContent = fa ? faLabel : enLabel;
       const time = document.createElement("dd");
       time.dir = "ltr";
+      time.textContent = digits(timings[key]);
