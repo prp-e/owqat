@@ -5,3 +5,4 @@ from pathlib import Path
 import sys
 from zipfile import ZipFile
 
+archive, admin_path = sys.argv[1:]
