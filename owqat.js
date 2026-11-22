@@ -18,6 +18,7 @@ const months = {
   ar: ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"],
 };
 const labels = {
+  en: ["Time zone unavailable", "Choose a geographic time zone above.", "Prayer times are unavailable. Reload the page to try again.", "Lunar date from AlAdhan"],
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
 
