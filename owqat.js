@@ -9,7 +9,7 @@ const events = [
   ["Sunset", "Sunset", "غروب آفتاب", "الغروب"],
   ["Maghrib", "Maghrib", "اذان مغرب", "المغرب"],
   ["Isha", "Isha", "عشاء", "العشاء"],
-  ["Midnight", "Religious midnight", "نیمه‌شب شرعی"],
+  ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي"],
 ];
 const cards = [...document.querySelectorAll(".card")];
 const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
