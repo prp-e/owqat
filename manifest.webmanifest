@@ -4,3 +4,4 @@
   "short_name": "Owqat",
   "description": "Local prayer times in English, Persian, and Arabic.",
   "start_url": "./Asia/Tehran/",
+  "scope": "./",
