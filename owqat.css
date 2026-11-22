@@ -28,3 +28,4 @@ body {
 main { display: grid; gap: 28px; }
 .card {
   overflow: hidden;
+  border: 1px solid var(--edge);
