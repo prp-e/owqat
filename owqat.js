@@ -15,3 +15,4 @@ const now = new Date();
 const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
 const day = new Intl.DateTimeFormat("en-GB", options).format(now).replaceAll("/", "-");
 const query = new URLSearchParams({
+  latitude: "35.694", longitude: "51.422", method: "7", midnightMode: "1", timezonestring: timeZone,
