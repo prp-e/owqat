@@ -98,6 +98,7 @@ async function chooseCity(zone) {
     }
     return null;
   }
+  return city;
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   if (Object.hasOwn(zones, localZone)) {
