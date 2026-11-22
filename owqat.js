@@ -23,3 +23,4 @@ for (const card of cards) {
     const field = calendar === "gregory" ? "gregorian" : calendar;
     card.querySelector(`[data-date="${field}"]`).textContent = formatter.format(now);
   }
+}
