@@ -38,3 +38,4 @@ for alias, target in aliases.items():
 
 Path("zones.json").write_text(json.dumps(zones, sort_keys=True, separators=(",", ":")) + "\n")
 template = TEMPLATE.read_text().replace("../../", "/owqat/")
+for zone in sorted(zones):
