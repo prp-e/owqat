@@ -11,3 +11,4 @@ regions = dict(line.split("\t")[:2] for line in Path(admin_path).read_text().spl
 localized = {
     "1133616": ["مزار شریف", "مزار شريف"],
     "1147242": ["بامیان", "باميان"],
+    "119208": ["قم", "قم"],
