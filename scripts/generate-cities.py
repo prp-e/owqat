@@ -46,3 +46,4 @@ for zone, rows in cities.items():
         label = f"{name} · {region}, {country}" if counts[name.casefold()] > 1 else name
         catalog.append([city_id, name, lat, lon, country, label, *localized.get(city_id, [])])
     write_json(Path("cities", f"{zone}.json"), catalog)
+write_json(Path("cities", "index.json"), index)
