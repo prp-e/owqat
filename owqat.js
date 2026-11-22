@@ -12,7 +12,7 @@ const events = [
   ["Midnight", "Religious midnight", "نیمه‌شب شرعی"],
 ];
 const cards = [...document.querySelectorAll(".card")];
-const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
+const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
 
