@@ -21,3 +21,4 @@ for (const card of cards) {
   for (const calendar of ["gregory", "persian"]) {
     const formatter = new Intl.DateTimeFormat(card.lang, { timeZone, calendar, dateStyle: "long" });
     const field = calendar === "gregory" ? "gregorian" : calendar;
+    card.querySelector(`[data-date="${field}"]`).textContent = formatter.format(now);
