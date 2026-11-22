@@ -14,3 +14,4 @@ GRAPHEME = re.compile("|".join(SOUNDS) + "|[a-z]|[^a-z]+")
 
 def local_names(archive, city_ids):
     names = {}
+    with ZipFile(archive) as source, source.open("alternateNamesV2.txt") as rows:
