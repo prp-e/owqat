@@ -53,3 +53,4 @@ try {
       tiles.append(tile);
     }
     card.querySelector("[data-status]").hidden = true;
+  }
