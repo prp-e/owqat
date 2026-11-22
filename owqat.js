@@ -18,6 +18,7 @@ try {
   if (!catalog.ok) throw new Error("Time-zone catalog unavailable.");
   const zones = await catalog.json();
   if (Object.hasOwn(zones, localZone)) {
+    for (const link of document.querySelectorAll("[data-my-zone]")) {
   }
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
   if (!timeZone) throw new RangeError("Unsupported time zone");
