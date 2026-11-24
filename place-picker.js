@@ -71,3 +71,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       select.hidden = false;
       if (map && details.open) {
         if (centerMap) map.setView([place.lat, place.lon], Math.max(map.getZoom(), 8));
+        marker?.remove();
