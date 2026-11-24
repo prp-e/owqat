@@ -4,7 +4,9 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(new URL("sw.js", root)).catch((error) => console.warn("Owqat offline setup failed:", error));
 }
 const path = location.pathname.slice(root.pathname.length).replace(/(?:^|\/)index\.html$/, "").replace(/\/+$/, "");
-const requestedZone = decodeURIComponent(path).replaceAll(" ", "_");
+let requestedZone = path;
+try { requestedZone = decodeURIComponent(path).replaceAll(" ", "_"); }
+catch { /* An invalid URL can still use the time-zone picker. */ }
 const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah"],
   ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş"],
