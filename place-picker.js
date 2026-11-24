@@ -102,3 +102,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       if (status.textContent === copy.mapError) status.textContent = "";
     } catch {
       status.textContent = copy.mapError;
+    } finally {
