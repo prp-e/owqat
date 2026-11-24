@@ -54,7 +54,7 @@ main { display: grid; gap: 28px; }
 }
 .hero {
   padding: clamp(20px, 5vw, 42px);
-  border-block-end: 1px solid #f5c87555;
+  border-block-end: 1px solid var(--control-edge);
   background:
     radial-gradient(ellipse at top right, #8f642d66, transparent 65%),
     repeating-linear-gradient(132deg, transparent 0 29px, #f5c87512 29px 30px),
