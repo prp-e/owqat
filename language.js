@@ -62,7 +62,14 @@ function addThemeSwitch(menu) {
   button.type = "button";
   button.className = "theme-switch";
   button.setAttribute("role", "switch");
-  button.innerHTML = '<span class="theme-track" aria-hidden="true"></span><span aria-hidden="true"></span>';
+  button.innerHTML = `
+    <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"></path>
+    </svg>
+    <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.9 13.3A9 9 0 0 1 10.7 3.1a9 9 0 1 0 10.2 10.2Z"></path>
+    </svg>`;
   menu.append(button);
   let saved;
   try { saved = localStorage.getItem(key); } catch { /* Use the system preference. */ }
@@ -71,7 +78,6 @@ function addThemeSwitch(menu) {
   function sync() {
     const dark = root.dataset.theme ? root.dataset.theme === "dark" : system.matches;
     button.setAttribute("aria-checked", dark);
-    button.lastElementChild.textContent = dark ? "🌙" : "☀️";
     document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).backgroundColor;
   }
 
@@ -126,7 +132,7 @@ export function setupLanguage(root) {
     options.append(button);
     return button;
   });
-  header.prepend(menu);
+  header.append(menu);
   const guide = document.querySelector('[aria-labelledby="guide-en"]');
   guide.classList.add("language-guide");
   addLocalizedContent(guide);

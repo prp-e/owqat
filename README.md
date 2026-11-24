@@ -7,7 +7,7 @@ Open [Owqat](https://prp-e.github.io/owqat/) or go directly to [Tehran](https://
 
 Use the location dropdown to choose how Owqat finds your prayer times.
 
-- **Use my location** is selected by default. Press the button to request browser permission and get a nearby city suggestion.
+- **Device location** is selected by default. Press **Use my location** to request browser permission and get a nearby city suggestion.
 - **Time zone (IANA)** opens the list of geographic time zones.
 - **Open my time zone** uses the time zone reported by your device, without requesting its coordinates.
 - **Choose on map** lets you tap an [OpenStreetMap](https://www.openstreetmap.org/copyright) map to find the nearest listed city.
