@@ -59,3 +59,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     select.hidden = true;
     status.textContent = copy.finding;
     try {
+      cityIndex ??= readData("cities/points.json").catch((error) => { cityIndex = undefined; throw error; });
