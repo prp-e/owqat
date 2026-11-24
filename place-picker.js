@@ -100,3 +100,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       map.on("click", ({ latlng }) => suggest(latlng.lat, latlng.lng));
       center.disabled = false;
       if (status.textContent === copy.mapError) status.textContent = "";
+    } catch {
