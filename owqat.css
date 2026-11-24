@@ -42,7 +42,7 @@ body {
   padding-block: 20px;
   color: var(--muted);
 }
-.masthead > a { color: #fff5e5; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+.masthead > a { color: var(--text); font-size: 1.5rem; font-weight: 700; text-decoration: none; }
 .masthead > a span, a { color: var(--honey); }
 main { display: grid; gap: 28px; }
 .card {
