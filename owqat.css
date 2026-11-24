@@ -20,6 +20,7 @@
   --action-hover: light-dark(#633a11, #ffda96);
   --action-text: light-dark(#fff9ee, #161616);
   --map: light-dark(#e7dece, #303030);
+  --shadow: light-dark(#6c472421, #0006);
 }
 body {
   margin: 0;
