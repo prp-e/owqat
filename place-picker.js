@@ -55,6 +55,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
   panel.querySelector('[data-method-panel="device"]').append(device);
   panel.querySelector('[data-method-panel="zone"]').append(zone);
   zoneTools.remove();
+  const method = panel.querySelector("#location-method");
   const status = panel.querySelector("[data-place-status]");
   const select = panel.querySelector("[data-place-select]");
   const locate = panel.querySelector("[data-locate]");
