@@ -80,6 +80,7 @@ function addThemeSwitch(menu) {
     sync();
   });
   system.addEventListener("change", sync);
+  sync();
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
