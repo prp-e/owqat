@@ -76,3 +76,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       }
     } catch {
       if (current === request) status.textContent = copy.cityError;
+    }
