@@ -136,6 +136,7 @@ export function setupLanguage(root) {
     document.documentElement.lang = language;
     document.documentElement.dir = ["fa", "ar"].includes(language) ? "rtl" : "ltr";
     const copy = currentLanguage();
+    themeLabel.textContent = copy.theme;
     options.setAttribute("aria-label", copy.menu);
     summary.lang = language;
     summary.setAttribute("aria-label", `${copy.menu}: ${copy.name}`);
