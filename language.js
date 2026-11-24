@@ -62,6 +62,7 @@ function addThemeSwitch(menu) {
   button.type = "button";
   button.className = "theme-switch";
   button.setAttribute("role", "switch");
+  button.innerHTML = '<span class="theme-track" aria-hidden="true"></span><span></span>';
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
