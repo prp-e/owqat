@@ -32,6 +32,7 @@ function nearestCity(groups, latitude, longitude) {
 }
 
 export function mountPlacePicker(root, readData, latitude, longitude) {
+  let language = document.documentElement.lang;
   const panel = document.createElement("section");
   panel.className = "guide place-picker";
   panel.lang = messages[language] ? language : "en";
