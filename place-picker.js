@@ -80,7 +80,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
-    status.textContent = copy.finding;
+    showStatus("finding");
     try {
       cityIndex ??= readData("cities/points.json").catch((error) => { cityIndex = undefined; throw error; });
       const place = nearestCity(await cityIndex, lat, lon);
