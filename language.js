@@ -18,3 +18,4 @@ export function updatePageTitle() {
 
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
+  const menu = document.createElement("div");
