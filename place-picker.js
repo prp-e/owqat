@@ -66,6 +66,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
 
   document.addEventListener("owqat-language-change", () => {
     language = document.documentElement.lang;
+    copy = messages[language];
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
