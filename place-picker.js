@@ -64,6 +64,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     if (key === "nearest") select.textContent = `${copy.select} · ${label}`;
   }
 
+  document.addEventListener("owqat-language-change", () => {
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
