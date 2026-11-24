@@ -60,3 +60,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     status.textContent = copy.finding;
     try {
       cityIndex ??= readData("cities/points.json").catch((error) => { cityIndex = undefined; throw error; });
+      const place = nearestCity(await cityIndex, lat, lon);
