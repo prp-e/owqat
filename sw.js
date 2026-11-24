@@ -6,6 +6,7 @@ const shell = [
   "offline.html",
   "owqat.css?v=5",
   "owqat.js?v=6",
+  "place-picker.js",
   "zones.json",
   "city-names.json",
   "cities/index.json",
