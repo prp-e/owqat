@@ -53,6 +53,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
   const mapElement = panel.querySelector("[data-map]");
   let statusKey;
   let suggestedCity;
+  let suggestedZone;
   let cityIndex;
   let request = 0;
   let map;
