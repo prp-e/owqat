@@ -108,3 +108,4 @@ html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not(
 [aria-labelledby="guide-en"] > [lang="fa"], [aria-labelledby="guide-en"] > [lang="ar"], .zone-picker label > span, .city-picker label > span { display: none; }
 .language-guide > [dir="rtl"] { padding: 0; border: 0; }
 .masthead:has(.language-picker) { flex-wrap: wrap; }
+.language-picker { display: flex; flex: 0 0 100%; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
