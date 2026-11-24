@@ -76,6 +76,7 @@ async function chooseCity(zone) {
       const option = document.createElement("option");
       option.value = id;
       option.dataset.en = label;
+      option.dataset.fa = fa ?? "";
       select.append(option);
     }
     select.value = city?.[0] ?? "";
