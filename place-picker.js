@@ -5,3 +5,4 @@ const messages = {
 };
 const language = navigator.language.split("-")[0];
 const copy = messages[language] ?? messages.en;
+
