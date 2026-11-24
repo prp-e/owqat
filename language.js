@@ -36,6 +36,7 @@ function addRussianContent(guide) {
   card.querySelector("footer").firstChild.textContent = "Местное время · ";
   guide.before(card);
   guide.querySelector(".city-source").insertAdjacentHTML("beforebegin", `<div lang="ru"><h2>О часовых поясах IANA</h2>
+    <p><a href="https://www.iana.org/time-zones">База данных IANA</a> хранит правила местного времени для таких зон, как <bdi><code>Europe/Dublin</code></bdi>. Выберите город, чтобы узнать время намаза в нём. По умолчанию используется опорная точка часового пояса.</p></div>`);
 }
 
 export function setupLanguage(root) {
