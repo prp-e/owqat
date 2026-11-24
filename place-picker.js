@@ -111,3 +111,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     const point = map.getCenter();
     suggest(point.lat, point.lng);
   });
+  locate.addEventListener("click", () => {
