@@ -121,3 +121,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       locate.disabled = false;
       if (current === request) suggest(coords.latitude, coords.longitude, true);
     }, (error) => {
+      locate.disabled = false;
