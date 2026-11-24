@@ -31,6 +31,7 @@ const additionalContent = {
   },
   tr: {
     city: "Tahran", dates: ["Miladi takvim", "Hicrî şemsî takvim", "Hicrî kamerî takvim"],
+    loading: "Bugünün namaz vakitleri yükleniyor…", local: "Yerel saat", guide: "IANA saat dilimleri hakkında",
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
