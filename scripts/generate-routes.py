@@ -37,6 +37,7 @@ for alias, target in aliases.items():
         zones.setdefault(alias, zones[target])
 
 Path("zones.json").write_text(json.dumps(zones, sort_keys=True, separators=(",", ":")) + "\n")
+Path("index.html").write_text(" ".join(line.strip() for line in TEMPLATE.read_text().replace("../../", "./").replace("<title>Tehran Prayer Times", "<title>Prayer Times").splitlines()) + "\n")
 template = TEMPLATE.read_text().replace("../../", "/owqat/")
 for zone in sorted(zones):
     for route in {zone, zone.replace("_", " ")}:
