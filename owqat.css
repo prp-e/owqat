@@ -102,3 +102,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .place-picker .leaflet-control-attribution a { color: #005580; }
 .place-picker [role="status"] { margin: 0; color: var(--muted); }
 .place-picker [role="status"]:empty { margin-block: -6px; }
+
