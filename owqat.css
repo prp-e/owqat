@@ -143,3 +143,4 @@ html[dir="rtl"] .language-picker summary::after { transform: rotate(-45deg); }
 .language-options button { white-space: nowrap; }
 .language-options button:hover { background: var(--control-hover); }
 
+.theme-switch { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 5px 10px; border: 1px solid var(--edge); border-radius: 8px; background: var(--surface); color: var(--text); font: inherit; cursor: pointer; }
