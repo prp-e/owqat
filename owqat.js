@@ -182,7 +182,7 @@ try {
       const tile = document.createElement("div");
       tile.className = key === "Sunrise" || key === "Sunset" ? "tile solar" : "tile";
       const label = document.createElement("dt");
-      label.textContent = { en: enLabel, fa: faLabel, ar: arLabel, ru: ruLabel }[language];
+      label.textContent = { en: enLabel, fa: faLabel, ar: arLabel, ru: ruLabel, tr: trLabel }[language];
       const time = document.createElement("dd");
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
