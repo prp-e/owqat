@@ -38,19 +38,7 @@ const additionalContent = {
 
 function addLocalizedContent(guide) {
   const english = document.querySelector('.card[lang="en"]');
-  const card = english.cloneNode(true);
-  card.lang = "ru";
-  card.setAttribute("aria-labelledby", "prayer-city-ru");
-  card.querySelector(".hero > p").textContent = "Время намаза";
-  card.querySelector("[data-city]").id = "prayer-city-ru";
-  card.querySelector("[data-city]").textContent = "Тегеран";
-  const dateLabels = ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"];
-  card.querySelectorAll(".dates dt").forEach((label, index) => { label.textContent = dateLabels[index]; });
-  card.querySelector("[data-status]").textContent = "Загружаем время намаза на сегодня…";
-  card.querySelector("footer").firstChild.textContent = "Местное время · ";
-  guide.before(card);
-  guide.querySelector(".city-source").insertAdjacentHTML("beforebegin", `<div lang="ru"><h2>О часовых поясах IANA</h2>
-    <p><a href="https://www.iana.org/time-zones">База данных IANA</a> хранит правила местного времени для таких зон, как <bdi><code>Europe/Dublin</code></bdi>. Выберите город, чтобы узнать время намаза в нём. По умолчанию используется опорная точка часового пояса.</p></div>`);
+  for (const [language, content] of Object.entries(additionalContent)) {
 }
 
 export function setupLanguage(root) {
