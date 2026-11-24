@@ -25,3 +25,4 @@ function nearestCity(groups, latitude, longitude) {
     for (const [id, lat, lon] of cities) {
       const distance = Math.sin((lat - latitude) * radians / 2) ** 2
         + cosLatitude * Math.cos(lat * radians) * Math.sin((lon - longitude) * radians / 2) ** 2;
+      if (distance >= shortest) continue;
