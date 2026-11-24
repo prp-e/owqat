@@ -58,3 +58,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     const current = ++request;
     select.hidden = true;
     status.textContent = copy.finding;
+    try {
