@@ -14,3 +14,4 @@ function loadLeafletAsset(element, integrity) {
     element.onerror = () => { element.remove(); reject(new Error("Leaflet asset unavailable")); };
     document.head.append(element);
   });
+}
