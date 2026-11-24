@@ -7,6 +7,7 @@ const path = location.pathname.slice(root.pathname.length).replace(/(?:^|\/)inde
 const requestedZone = decodeURIComponent(path).replaceAll(" ", "_");
 const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah"],
+  ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
