@@ -27,11 +27,11 @@ const months = {
   ar: ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"],
 };
 const labels = {
-  tr: ["Saat dilimi kullanılamıyor", "Yukarıdan bir coğrafi saat dilimi seçin.", "Namaz vakitleri yüklenemedi. Yeniden denemek için sayfayı yenileyin.", "AlAdhan kaynaklı hicrî tarih"],
-  ru: ["Часовой пояс недоступен", "Выберите географический часовой пояс выше.", "Не удалось загрузить время намаза. Обновите страницу, чтобы повторить попытку.", "Дата по лунному календарю от AlAdhan"],
-  en: ["Time zone unavailable", "Choose a geographic time zone above.", "Prayer times are unavailable. Reload the page to try again.", "Lunar date from AlAdhan"],
-  fa: ["منطقهٔ زمانی پیدا نشد", "یک منطقهٔ زمانی جغرافیایی از فهرست بالا انتخاب کنید.", "دریافت اوقات شرعی ممکن نشد. صفحه را دوباره بارگذاری کنید.", "تاریخ قمری طبق علاءالاذان"],
-  ar: ["المنطقة الزمنية غير متاحة", "اختر منطقة زمنية جغرافية من القائمة أعلاه.", "تعذّر تحميل مواقيت الصلاة. أعد تحميل الصفحة للمحاولة مجددًا.", "التاريخ الهجري من الأذان"],
+  tr: ["Saat dilimi kullanılamıyor", "Yukarıdan bir coğrafi saat dilimi seçin.", "Namaz vakitleri yüklenemedi.", "AlAdhan kaynaklı hicrî tarih", "Tekrar dene"],
+  ru: ["Часовой пояс недоступен", "Выберите географический часовой пояс выше.", "Не удалось загрузить время намаза.", "Дата по лунному календарю от AlAdhan", "Повторить"],
+  en: ["Time zone unavailable", "Choose a geographic time zone above.", "Prayer times are unavailable.", "Lunar date from AlAdhan", "Try again"],
+  fa: ["منطقهٔ زمانی پیدا نشد", "یک منطقهٔ زمانی جغرافیایی از فهرست بالا انتخاب کنید.", "دریافت اوقات شرعی ممکن نشد.", "تاریخ قمری طبق علاءالاذان", "تلاش دوباره"],
+  ar: ["المنطقة الزمنية غير متاحة", "اختر منطقة زمنية جغرافية من القائمة أعلاه.", "تعذّر تحميل مواقيت الصلاة.", "التاريخ الهجري من الأذان", "إعادة المحاولة"],
 };
 const tehranMethod = { fa: "روش دانشگاه تهران", ar: "طريقة جامعة طهران", ru: "Метод Тегеранского университета", tr: "Tahran Üniversitesi yöntemi" };
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -200,9 +200,17 @@ try {
 function showError(error) {
   const unsupported = error instanceof RangeError;
   for (const card of cards) {
-    const [unavailable, chooseZone, retry] = labels[card.lang];
+    const [unavailable, chooseZone, fetchError, , retryLabel] = labels[card.lang];
+    const status = card.querySelector("[data-status]");
     if (unsupported) card.querySelector("[data-city]").textContent = unavailable;
-    card.querySelector("[data-status]").textContent = unsupported ? chooseZone : retry;
+    status.textContent = unsupported ? chooseZone : fetchError;
+    if (unsupported) continue;
+    const retry = document.createElement("button");
+    retry.type = "button";
+    retry.className = "retry";
+    retry.textContent = retryLabel;
+    retry.addEventListener("click", () => location.reload());
+    status.after(retry);
   }
   if (unsupported) updatePageTitle();
 }
