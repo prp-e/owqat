@@ -65,3 +65,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       const city = cities.find(([id]) => id === place.id);
       if (current !== request) return;
       const label = { fa: city[6], ar: city[7] }[language] || city[5];
+      status.textContent = `${copy.nearest} · ${label}`;
