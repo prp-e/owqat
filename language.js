@@ -46,6 +46,7 @@ function addLocalizedContent(guide) {
     card.querySelector(".hero > p").textContent = languages[language].title;
     card.querySelector("[data-city]").id = cityId;
     card.querySelector("[data-city]").textContent = content.city;
+    card.querySelectorAll(".dates dt").forEach((label, index) => { label.textContent = content.dates[index]; });
 }
 
 export function setupLanguage(root) {
