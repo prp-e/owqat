@@ -118,3 +118,4 @@ html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not(
 .language-picker summary { display: flex; }
 .language-picker summary::-webkit-details-marker { display: none; }
 .language-picker summary::after { content: ""; width: .4em; height: .4em; border-inline-end: 1px solid; border-block-end: 1px solid; transform: rotate(45deg); margin-inline: .25em; }
+html[dir="rtl"] .language-picker summary::after { transform: rotate(-45deg); }
