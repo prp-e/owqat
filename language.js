@@ -40,3 +40,4 @@ export function setupLanguage(root) {
     return button;
   });
   header.prepend(menu);
+  const guide = document.querySelector('[aria-labelledby="guide-en"]');
