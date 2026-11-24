@@ -114,3 +114,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   locate.addEventListener("click", () => {
     if (!navigator.geolocation) { status.textContent = copy.unavailable; return; }
     const current = ++request;
+    select.hidden = true;
