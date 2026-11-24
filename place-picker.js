@@ -96,6 +96,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     showStatus(statusKey);
   }
   localize();
+  document.addEventListener("owqat-language-change", localize);
 
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
