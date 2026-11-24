@@ -61,6 +61,7 @@ function addThemeSwitch(menu) {
   const button = document.createElement("button");
   button.type = "button";
   button.className = "theme-switch";
+  button.setAttribute("role", "switch");
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
