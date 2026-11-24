@@ -63,3 +63,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       const place = nearestCity(await cityIndex, lat, lon);
       const cities = await readData(`cities/${place.zone}.json?v=2`);
       const city = cities.find(([id]) => id === place.id);
+      if (current !== request) return;
