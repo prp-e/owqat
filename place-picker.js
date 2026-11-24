@@ -162,6 +162,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
   function focusCityLink() {
     if (location.hash !== "#choose-city" || city.hidden) return;
     method.value = "city";
+    showMethod();
 
   center.addEventListener("click", () => {
     const point = map.getCenter();
