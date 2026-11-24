@@ -67,6 +67,7 @@ function addThemeSwitch(menu) {
   let saved;
   try { saved = localStorage.getItem(key); } catch { /* Use the system preference. */ }
   if (saved === "light" || saved === "dark") root.dataset.theme = saved;
+
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
