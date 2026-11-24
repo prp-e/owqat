@@ -24,6 +24,7 @@ export function updatePageTitle() {
 
 function addRussianContent(guide) {
   const english = document.querySelector('.card[lang="en"]');
+  const card = english.cloneNode(true);
 }
 
 export function setupLanguage(root) {
