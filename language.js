@@ -59,3 +59,4 @@ export function setupLanguage(root) {
     for (const option of cityPicker.querySelectorAll("[data-en]")) option.textContent = option.dataset[language] || option.dataset.en;
     const heading = language === "en" ? guide.querySelector("#guide-en") : guide.querySelector(`[lang="${language}"] h2`);
     heading.id ||= `guide-${language}`;
+    guide.setAttribute("aria-labelledby", heading.id);
