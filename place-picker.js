@@ -40,12 +40,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
   panel.className = "guide place-picker";
   panel.lang = language;
   panel.dir = document.documentElement.dir;
-  panel.innerHTML = `<button type="button" data-locate>${copy.locate}</button>
-    <details><summary>${copy.map}</summary><p>${copy.hint}</p><div data-map aria-label="${copy.map}" dir="ltr"></div>
-    <button type="button" data-center disabled>${copy.center}</button></details>
-    <p role="status" data-place-status></p><a class="my-zone" data-place-select hidden>${copy.select}</a>`;
-  document.querySelector("#choose-city").before(panel);
-  const details = panel.querySelector("details");
+  panel.innerHTML = `<div class="location-method"><label for="location-method"></label>
   const status = panel.querySelector("[data-place-status]");
   const select = panel.querySelector("[data-place-select]");
   const locate = panel.querySelector("[data-locate]");
