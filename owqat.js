@@ -113,6 +113,7 @@ try {
       try { localStorage.setItem(consentKey, consent); } catch { /* The current choice still applies. */ }
     }
     useDeviceZone = consent === "yes";
+  }
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       const search = localZone === requestedZone ? location.search : "";
