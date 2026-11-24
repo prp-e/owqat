@@ -63,6 +63,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     status.textContent = key === "nearest" ? `${copy.nearest} · ${label}` : copy[key] ?? "";
     if (key === "nearest") select.textContent = `${copy.select} · ${label}`;
   }
+
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
