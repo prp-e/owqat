@@ -79,6 +79,7 @@ function addThemeSwitch(menu) {
     try { localStorage.setItem(key, root.dataset.theme); } catch { /* Keep the theme for this page. */ }
     sync();
   });
+  system.addEventListener("change", sync);
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
