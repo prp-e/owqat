@@ -56,3 +56,4 @@ for zone, rows in cities.items():
     points[zone] = [[city_id, lat, lon] for city_id, _, lat, lon, *_ in catalog]
     write_json(Path("cities", f"{zone}.json"), catalog)
 write_json(Path("cities", "index.json"), index)
+write_json(Path("cities", "points.json"), sorted(points.items()))
