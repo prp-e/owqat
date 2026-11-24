@@ -120,3 +120,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     navigator.geolocation.getCurrentPosition(({ coords }) => {
       locate.disabled = false;
       if (current === request) suggest(coords.latitude, coords.longitude, true);
+    }, (error) => {
