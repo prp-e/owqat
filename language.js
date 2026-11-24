@@ -15,6 +15,7 @@ export function russianCityName(city, zone, names) {
   const reference = zone.split("/").at(-1).replaceAll("_", " ");
   if ([city, city.replace(/ City$/, "")].some((name) => name.toLowerCase() === reference.toLowerCase())) return names[zone];
 }
+
 export function updatePageTitle() {
   const language = document.documentElement.lang;
   const city = document.querySelector(`.card[lang="${language}"] [data-city]`).textContent;
