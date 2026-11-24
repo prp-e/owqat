@@ -58,6 +58,7 @@ main { display: grid; gap: 28px; }
   background:
     radial-gradient(ellipse at top right, var(--hero-glow), transparent 65%),
     repeating-linear-gradient(132deg, transparent 0 29px, var(--hero-line) 29px 30px),
+    var(--hero);
 }
 [dir="rtl"] .hero {
   background:
