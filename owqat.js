@@ -148,7 +148,7 @@ try {
   }
   for (const card of cards) {
     const localizedCity = selectedCity
-      ? { fa: selectedCity[6], ar: selectedCity[7] }[card.lang]
+      ? { fa: selectedCity[6], ar: selectedCity[7], ru: russianCityName(city, timeZone, cityNames.ru ?? {}) }[card.lang]
       : cityNames[card.lang]?.[timeZone];
     card.querySelector("[data-city]").textContent = localizedCity ?? city;
     for (const calendar of ["gregory", "persian"]) {
