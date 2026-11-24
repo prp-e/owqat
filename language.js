@@ -53,3 +53,4 @@ export function setupLanguage(root) {
     for (const button of buttons) button.setAttribute("aria-pressed", button.lang === language);
     header.querySelector('[for="time-zone"]').textContent = copy.zone;
     header.querySelector("[data-my-zone]").textContent = copy.myZone;
+    if (!zonePicker.disabled) zonePicker.options[0].textContent = copy.zonePrompt;
