@@ -41,3 +41,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   panel.innerHTML = `<button type="button" data-locate>${copy.locate}</button>
     <details><summary>${copy.map}</summary><p>${copy.hint}</p><div data-map aria-label="${copy.map}" dir="ltr"></div>
     <button type="button" data-center disabled>${copy.center}</button></details>
+    <p role="status" data-place-status></p><a class="my-zone" data-place-select hidden>${copy.select}</a>`;
