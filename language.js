@@ -51,6 +51,7 @@ export function setupLanguage(root) {
       try { localStorage.setItem(preference, language); } catch { /* Switch for the current page. */ }
       applyLanguage(language);
       dropdown.open = false;
+      summary.focus();
     });
     menu.append(button);
     return button;
