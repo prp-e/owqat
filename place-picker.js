@@ -51,3 +51,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   let cityIndex;
   let request = 0;
   let map;
+  let loadingMap = false;
