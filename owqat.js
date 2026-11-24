@@ -74,7 +74,7 @@ async function chooseCity(zone, russianNames) {
   const city = cities.find(([id]) => id === selected);
   const select = document.querySelector("#city");
   if (cities.length) {
-    for (const [id, , , , , label, fa, ar] of cities) {
+    for (const [id, name, , , , label, fa, ar] of cities) {
       const option = document.createElement("option");
       option.value = id;
       option.dataset.en = label;
