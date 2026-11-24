@@ -25,3 +25,4 @@ export function setupLanguage(root) {
     const button = document.createElement("button");
     button.type = "button";
     button.lang = language;
+    if (flag) {
