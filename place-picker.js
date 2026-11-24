@@ -40,3 +40,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   panel.dir = panel.lang === "en" ? "ltr" : "rtl";
   panel.innerHTML = `<button type="button" data-locate>${copy.locate}</button>
     <details><summary>${copy.map}</summary><p>${copy.hint}</p><div data-map aria-label="${copy.map}" dir="ltr"></div>
+    <button type="button" data-center disabled>${copy.center}</button></details>
