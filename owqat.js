@@ -133,7 +133,7 @@ try {
   let selectedCity;
   try {
     if (!timeZone) throw new RangeError("Unsupported time zone");
-    selectedCity = await chooseCity(timeZone, cityNames.ru ?? {});
+    selectedCity = await chooseCity(timeZone, cityNames);
   } finally {
     const [lat, lon] = selectedCity?.slice(2, 4) ?? zones[timeZone ?? "Asia/Tehran"];
     import("./place-picker.js").then(({ mountPlacePicker }) => mountPlacePicker(root, readData, lat, lon, cityNames.ru ?? {})).catch((error) => console.warn("Owqat place picker unavailable:", error));
