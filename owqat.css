@@ -100,3 +100,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .place-picker :is(button, summary):focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
 .place-picker [data-map] { height: clamp(18rem, 55vh, 30rem); margin-block: 12px; border: 1px solid var(--edge); border-radius: 12px; padding: 0; background: #303030; isolation: isolate; }
 .place-picker .leaflet-control-attribution a { color: #005580; }
+.place-picker [role="status"] { margin: 0; color: var(--muted); }
