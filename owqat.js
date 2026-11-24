@@ -191,7 +191,6 @@ try {
 
 function showError(error) {
   const unsupported = error instanceof RangeError;
-  if (unsupported) document.title = "Time zone unavailable · Owqat";
   for (const card of cards) {
     const [unavailable, chooseZone, retry] = labels[card.lang];
     if (unsupported) card.querySelector("[data-city]").textContent = unavailable;
