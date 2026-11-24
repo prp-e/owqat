@@ -97,6 +97,7 @@ export function setupLanguage(root) {
     summary.replaceChildren(...Array.from(selected.childNodes, (node) => node.cloneNode(true)));
     for (const button of buttons) button.setAttribute("aria-pressed", button.lang === language);
     zonePicker.labels[0].textContent = copy.zone;
+    document.querySelector("[data-my-zone]").textContent = copy.myZone;
     if (!zonePicker.disabled) zonePicker.options[0].textContent = copy.zonePrompt;
     document.querySelector("#city-label").textContent = copy.city;
     cityPicker.dir = document.documentElement.dir;
