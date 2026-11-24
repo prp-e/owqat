@@ -7,3 +7,4 @@ const language = navigator.language.split("-")[0];
 const copy = messages[language] ?? messages.en;
 
 function loadLeafletAsset(element, integrity) {
+  return new Promise((resolve, reject) => {
