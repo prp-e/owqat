@@ -44,6 +44,7 @@ function addLocalizedContent(guide) {
     card.lang = language;
     card.setAttribute("aria-labelledby", cityId);
     card.querySelector(".hero > p").textContent = languages[language].title;
+    card.querySelector("[data-city]").id = cityId;
 }
 
 export function setupLanguage(root) {
