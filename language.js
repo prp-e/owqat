@@ -64,3 +64,4 @@ export function setupLanguage(root) {
     updatePageTitle();
     document.dispatchEvent(new Event("owqat-language-change"));
   }
+
