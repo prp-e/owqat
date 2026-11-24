@@ -42,6 +42,7 @@ function addLocalizedContent(guide) {
     const card = english.cloneNode(true);
     const cityId = `prayer-city-${language}`;
     card.lang = language;
+    card.setAttribute("aria-labelledby", cityId);
 }
 
 export function setupLanguage(root) {
