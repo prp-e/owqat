@@ -6,3 +6,4 @@ const languages = {
 
 const preference = "owqat-language";
 
+export function currentLanguage() {
