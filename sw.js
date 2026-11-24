@@ -9,6 +9,7 @@ const shell = [
   "place-picker.js",
   "language.js",
   "flags/iran.svg",
+  "flags/usa.svg",
   "flags/saudi-arabia.svg",
   "zones.json",
   "city-names.json",
