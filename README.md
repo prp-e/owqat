@@ -7,7 +7,7 @@ Select a time zone at the top of the page or append a geographic IANA time zone 
 
 After editing the shared HTML in `Asia/Tehran/index.html`, run `python3 scripts/generate-routes.py` from the repository root on a system with `zone.tab` and `tzdata.zi` under `/usr/share/zoneinfo`. The script generates one-line static pages and the zone catalog for GitHub Pages.
 
-Persian, Arabic, and Russian reference city names use [Unicode CLDR 48.0.0](https://github.com/unicode-org/cldr-json/tree/48.0.0), under the [Unicode License](CLDR-LICENSE.txt), with local additions. To rebuild the names after regenerating the routes, save CLDR's Persian, Arabic, and Russian `timeZoneNames.json` files as `fa.json`, `ar.json`, and `ru.json` in a shared directory and pass it to `python3 scripts/generate-city-names.py`.
+Persian, Arabic, Russian, and Turkish reference city names use [Unicode CLDR 48.0.0](https://github.com/unicode-org/cldr-json/tree/48.0.0), under the [Unicode License](CLDR-LICENSE.txt), with local additions. To rebuild the names after regenerating the routes, save CLDR's Persian, Arabic, Russian, and Turkish `timeZoneNames.json` files as `fa.json`, `ar.json`, `ru.json`, and `tr.json` in a shared directory and pass it to `python3 scripts/generate-city-names.py`.
 
 ## Install Owqat
 In Safari on iPhone, use **Share → Add to Home Screen**, then enable **Open as Web App**.
