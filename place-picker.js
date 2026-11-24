@@ -34,7 +34,7 @@ function nearestCity(groups, latitude, longitude) {
   return nearest;
 }
 
-export function mountPlacePicker(root, readData, latitude, longitude, russianNames) {
+export function mountPlacePicker(root, readData, latitude, longitude, cityNames) {
   let language = document.documentElement.lang;
   let copy = messages[language];
   const panel = document.createElement("section");
