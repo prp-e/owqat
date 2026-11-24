@@ -89,3 +89,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     try {
       await Promise.all([
         loadLeafletAsset(style, "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="),
+        loadLeafletAsset(script, "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="),
