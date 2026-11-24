@@ -60,6 +60,7 @@ function addThemeSwitch(menu) {
   const system = window.matchMedia("(prefers-color-scheme: dark)");
   const button = document.createElement("button");
   button.type = "button";
+  button.className = "theme-switch";
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
