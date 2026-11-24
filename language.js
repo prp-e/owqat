@@ -60,3 +60,4 @@ export function setupLanguage(root) {
     const heading = language === "en" ? guide.querySelector("#guide-en") : guide.querySelector(`[lang="${language}"] h2`);
     heading.id ||= `guide-${language}`;
     guide.setAttribute("aria-labelledby", heading.id);
+    citySource.firstChild.textContent = copy.source + " · ";
