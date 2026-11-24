@@ -121,7 +121,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       }).on("tileerror", () => { if (!statusKey) showStatus("mapError"); }).addTo(map);
       map.on("click", ({ latlng }) => suggest(latlng.lat, latlng.lng));
       center.disabled = false;
-      if (status.textContent === copy.mapError) status.textContent = "";
+      if (statusKey === "mapError") showStatus();
     } catch {
       status.textContent = copy.mapError;
     } finally {
