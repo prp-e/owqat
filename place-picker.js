@@ -148,7 +148,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     } finally {
       loadingMap = false;
     }
-  });
+  }
 
   center.addEventListener("click", () => {
     const point = map.getCenter();
