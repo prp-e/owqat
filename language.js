@@ -56,3 +56,4 @@ export function setupLanguage(root) {
     if (!zonePicker.disabled) zonePicker.options[0].textContent = copy.zonePrompt;
     document.querySelector("#city-label").textContent = copy.city;
     cityPicker.options[0].textContent = copy.reference;
+    for (const option of cityPicker.querySelectorAll("[data-en]")) option.textContent = option.dataset[language] || option.dataset.en;
