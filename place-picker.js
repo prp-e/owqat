@@ -166,6 +166,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     city.querySelector("select").focus();
   }
 
+  method.addEventListener("change", showMethod);
 
   center.addEventListener("click", () => {
     const point = map.getCenter();
