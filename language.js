@@ -68,6 +68,7 @@ export function setupLanguage(root) {
     const copy = currentLanguage();
     options.setAttribute("aria-label", copy.menu);
     summary.lang = language;
+    summary.setAttribute("aria-label", `${copy.menu}: ${copy.name}`);
     for (const button of buttons) button.setAttribute("aria-pressed", button.lang === language);
     header.querySelector('[for="time-zone"]').textContent = copy.zone;
     header.querySelector("[data-my-zone]").textContent = copy.myZone;
