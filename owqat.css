@@ -1,6 +1,7 @@
 * { box-sizing: border-box; }
 :root {
   color-scheme: light dark;
+  --page: light-dark(#f4eee4, #161616);
 }
 body {
   margin: 0;
