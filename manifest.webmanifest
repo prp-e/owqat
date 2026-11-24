@@ -3,7 +3,7 @@
   "name": "Owqat Prayer Times",
   "short_name": "Owqat",
   "description": "Local prayer times in English, Persian, and Arabic.",
-  "start_url": "./Asia/Tehran/",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#161616",
