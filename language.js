@@ -12,7 +12,7 @@ export function currentLanguage() {
   return languages[document.documentElement.lang];
 }
 
-export function russianCityName(city, zone, names) {
+export function referenceCityName(city, zone, names) {
   const reference = zone.split("/").at(-1).replaceAll("_", " ");
   if ([city, city.replace(/ City$/, "")].some((name) => name.toLowerCase() === reference.toLowerCase())) return names[zone];
 }
