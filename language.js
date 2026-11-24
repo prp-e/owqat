@@ -39,6 +39,7 @@ const additionalContent = {
 function addLocalizedContent(guide) {
   const english = document.querySelector('.card[lang="en"]');
   for (const [language, content] of Object.entries(additionalContent)) {
+    const card = english.cloneNode(true);
 }
 
 export function setupLanguage(root) {
