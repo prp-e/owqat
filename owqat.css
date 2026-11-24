@@ -94,3 +94,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 
 .place-picker { display: grid; gap: 12px; justify-items: start; }
 .place-picker details { width: 100%; }
+.place-picker summary { cursor: pointer; width: fit-content; color: var(--honey); font-weight: 700; }
