@@ -41,3 +41,4 @@ export function setupLanguage(root) {
   });
   header.prepend(menu);
   const guide = document.querySelector('[aria-labelledby="guide-en"]');
+  guide.classList.add("language-guide");
