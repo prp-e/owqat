@@ -114,3 +114,4 @@ html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not(
 .language-picker :is(button, summary):focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
 .language-picker img { width: 26px; height: 17px; object-fit: contain; }
 .masthead > a { direction: ltr; }
+.language-picker details { position: relative; z-index: 2; }
