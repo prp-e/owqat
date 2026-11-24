@@ -63,3 +63,4 @@ export function setupLanguage(root) {
     citySource.firstChild.textContent = copy.source + " · ";
     updatePageTitle();
     document.dispatchEvent(new Event("owqat-language-change"));
+  }
