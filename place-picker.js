@@ -152,6 +152,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
 
   function showMethod() {
     request++;
+    select.hidden = true;
 
   center.addEventListener("click", () => {
     const point = map.getCenter();
