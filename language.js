@@ -47,3 +47,4 @@ export function setupLanguage(root) {
   const cityPicker = document.querySelector("#city");
   function applyLanguage(language) {
     document.documentElement.lang = language;
+    document.documentElement.dir = language === "en" ? "ltr" : "rtl";
