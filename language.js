@@ -59,6 +59,7 @@ function addThemeSwitch(menu) {
   const root = document.documentElement;
   const system = window.matchMedia("(prefers-color-scheme: dark)");
   const button = document.createElement("button");
+  button.type = "button";
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
