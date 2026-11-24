@@ -50,6 +50,7 @@ function addLocalizedContent(guide) {
     card.querySelector("[data-status]").textContent = content.loading;
     card.querySelector("footer").firstChild.textContent = content.local + " · ";
     guide.before(card);
+    guide.querySelector(".city-source").insertAdjacentHTML("beforebegin", `<div lang="${language}"><h2>${content.guide}</h2><p>${content.description}</p></div>`);
 }
 
 export function setupLanguage(root) {
