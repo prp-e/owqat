@@ -30,3 +30,4 @@ export function setupLanguage(root) {
       icon.src = new URL(`flags/${flag}`, root);
       icon.alt = "";
       button.append(icon);
+    }
