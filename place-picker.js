@@ -79,3 +79,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     }
   }
 
+  details.addEventListener("toggle", async () => {
