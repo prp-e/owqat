@@ -112,3 +112,4 @@ html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not(
 .language-picker button { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 5px 10px; border: 1px solid var(--edge); border-radius: 8px; background: var(--surface); color: inherit; font: inherit; cursor: pointer; }
 .language-picker button[aria-pressed="true"] { border-color: var(--honey); color: var(--honey); }
 .language-picker button:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
+.language-picker img { width: 26px; height: 17px; object-fit: contain; }
