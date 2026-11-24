@@ -21,3 +21,4 @@ function nearestCity(groups, latitude, longitude) {
   const cosLatitude = Math.cos(latitude * radians);
   let nearest;
   let shortest = Infinity;
+  for (const [zone, cities] of groups) {
