@@ -69,6 +69,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     copy = messages[language];
     panel.lang = language;
     panel.dir = language === "en" ? "ltr" : "rtl";
+    locate.textContent = copy.locate;
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
