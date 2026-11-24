@@ -48,6 +48,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   const select = panel.querySelector("[data-place-select]");
   const locate = panel.querySelector("[data-locate]");
   const center = panel.querySelector("[data-center]");
+  const mapElement = panel.querySelector("[data-map]");
   let cityIndex;
   let request = 0;
   let map;
