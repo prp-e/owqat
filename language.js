@@ -68,3 +68,4 @@ export function setupLanguage(root) {
   let saved;
   try { saved = localStorage.getItem(preference); } catch { /* Default to English. */ }
   applyLanguage(Object.hasOwn(languages, saved) ? saved : "en");
+}
