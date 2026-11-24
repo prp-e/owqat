@@ -93,11 +93,6 @@ async function chooseCity(zone, russianNames) {
       url.hash = "";
       location.assign(url);
     });
-    const focusCity = () => {
-      if (location.hash === "#choose-city") select.focus();
-    };
-    focusCity();
-    window.addEventListener("hashchange", focusCity);
   }
   if (selected && !city) {
     for (const card of cards) {
