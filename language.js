@@ -27,6 +27,7 @@ function addRussianContent(guide) {
   const card = english.cloneNode(true);
   card.lang = "ru";
   card.setAttribute("aria-labelledby", "prayer-city-ru");
+  card.querySelector(".hero > p").textContent = "Время намаза";
 }
 
 export function setupLanguage(root) {
