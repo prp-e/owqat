@@ -43,3 +43,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     <button type="button" data-center disabled>${copy.center}</button></details>
     <p role="status" data-place-status></p><a class="my-zone" data-place-select hidden>${copy.select}</a>`;
   document.querySelector("#choose-city").before(panel);
+  const details = panel.querySelector("details");
