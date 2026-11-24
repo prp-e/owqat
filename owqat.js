@@ -12,6 +12,7 @@ const events = [
   ["Asr", "Asr", "عصر", "العصر", "Аср", "İkindi"],
   ["Sunset", "Sunset", "غروب آفتاب", "الغروب", "Закат", "Gün batımı"],
   ["Maghrib", "Maghrib", "اذان مغرب", "المغرب", "Магриб", "Akşam"],
+  ["Isha", "Isha", "عشاء", "العشاء", "Иша", "Yatsı"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
