@@ -20,3 +20,4 @@ export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
   menu.className = "language-picker";
+  menu.setAttribute("role", "group");
