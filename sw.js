@@ -11,6 +11,7 @@ const shell = [
   "flags/iran.svg",
   "flags/usa.svg",
   "flags/russia.svg",
+  "flags/turkey.svg",
   "flags/saudi-arabia.svg",
   "zones.json",
   "city-names.json",
