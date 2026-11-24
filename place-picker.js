@@ -8,3 +8,4 @@ const copy = messages[language] ?? messages.en;
 
 function loadLeafletAsset(element, integrity) {
   return new Promise((resolve, reject) => {
+    element.integrity = integrity;
