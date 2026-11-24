@@ -15,6 +15,7 @@
   --solar: light-dark(#f5e5ca, #392e20);
   --control: light-dark(#fff9ef, #242220);
   --control-hover: light-dark(#f5e8d4, #302b23);
+  --control-edge: light-dark(#ad9376, #f5c87565);
 }
 body {
   margin: 0;
