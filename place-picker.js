@@ -28,3 +28,4 @@ function nearestCity(groups, latitude, longitude) {
       if (distance >= shortest) continue;
       shortest = distance;
       nearest = { id, zone, lat, lon };
+    }
