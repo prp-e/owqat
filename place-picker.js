@@ -74,6 +74,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     details.querySelector("p").textContent = copy.hint;
     mapElement.setAttribute("aria-label", copy.map);
     center.textContent = copy.center;
+    showStatus(statusKey);
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
