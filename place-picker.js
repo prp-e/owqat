@@ -27,3 +27,4 @@ function nearestCity(groups, latitude, longitude) {
         + cosLatitude * Math.cos(lat * radians) * Math.sin((lon - longitude) * radians / 2) ** 2;
       if (distance >= shortest) continue;
       shortest = distance;
+      nearest = { id, zone, lat, lon };
