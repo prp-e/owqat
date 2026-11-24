@@ -66,3 +66,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       if (current !== request) return;
       const label = { fa: city[6], ar: city[7] }[language] || city[5];
       status.textContent = `${copy.nearest} · ${label}`;
+      select.href = new URL(`${place.zone}/?city=${encodeURIComponent(place.id)}`, root);
