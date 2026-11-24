@@ -196,4 +196,5 @@ function showError(error) {
     if (unsupported) card.querySelector("[data-city]").textContent = unavailable;
     card.querySelector("[data-status]").textContent = unsupported ? chooseZone : retry;
   }
+  if (unsupported) updatePageTitle();
 }
