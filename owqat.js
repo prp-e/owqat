@@ -39,7 +39,7 @@ async function readData(file) {
 
 function populatePicker(zones, selected) {
   const groups = new Map();
-  picker.options[0].textContent = "Choose a time zone";
+  picker.options[0].textContent = currentLanguage().zonePrompt;
   for (const zone of Object.keys(zones).sort()) {
     const region = zone.includes("/") ? zone.split("/")[0] : "Aliases";
     if (!groups.has(region)) {
