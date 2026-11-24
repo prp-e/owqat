@@ -30,6 +30,7 @@ const additionalContent = {
     description: '<a href="https://www.iana.org/time-zones">База данных IANA</a> хранит правила местного времени для таких зон, как <bdi><code>Europe/Dublin</code></bdi>. Выберите город, чтобы узнать время намаза в нём. По умолчанию используется опорная точка часового пояса.',
   },
   tr: {
+    city: "Tahran", dates: ["Miladi takvim", "Hicrî şemsî takvim", "Hicrî kamerî takvim"],
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
