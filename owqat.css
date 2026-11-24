@@ -109,3 +109,4 @@ html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not(
 .language-guide > [dir="rtl"] { padding: 0; border: 0; }
 .masthead:has(.language-picker) { flex-wrap: wrap; }
 .language-picker { display: flex; flex: 0 0 100%; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.language-picker button { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 5px 10px; border: 1px solid var(--edge); border-radius: 8px; background: var(--surface); color: inherit; font: inherit; cursor: pointer; }
