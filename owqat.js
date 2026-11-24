@@ -136,7 +136,7 @@ try {
   const selectedCity = await chooseCity(timeZone, cityNames.ru ?? {});
   if (selectedCity === null) throw new Error("Unknown city", { cause: "city-selection" });
   const [latitude, longitude, country] = selectedCity?.slice(2, 5) ?? zones[timeZone];
-  import("./place-picker.js").then(({ mountPlacePicker }) => mountPlacePicker(root, readData, latitude, longitude)).catch((error) => console.warn("Owqat place picker unavailable:", error));
+  import("./place-picker.js").then(({ mountPlacePicker }) => mountPlacePicker(root, readData, latitude, longitude, cityNames.ru ?? {})).catch((error) => console.warn("Owqat place picker unavailable:", error));
   const city = selectedCity?.[1] ?? timeZone.split("/").at(-1).replaceAll("_", " ");
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
