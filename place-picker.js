@@ -47,6 +47,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     <div data-method-panel="zone" hidden></div><div data-method-panel="device" hidden></div><div data-method-panel="city" hidden></div>
     <p role="status" data-place-status></p><a class="my-zone" data-place-select hidden></a>`;
   const city = document.querySelector("#choose-city");
+  const device = document.querySelector("[data-my-zone]");
   const status = panel.querySelector("[data-place-status]");
   const select = panel.querySelector("[data-place-select]");
   const locate = panel.querySelector("[data-locate]");
