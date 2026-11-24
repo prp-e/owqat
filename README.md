@@ -30,3 +30,12 @@ Persian, Arabic, Russian, and Turkish reference city names use [Unicode CLDR 48.
 Cities are sourced from [GeoNames](https://www.geonames.org/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Rebuild with `python3 scripts/generate-cities.py cities15000.zip admin1CodesASCII.txt alternateNamesV2.zip` using the [GeoNames exports](https://download.geonames.org/export/dump/).
 
 Persian and Arabic city labels prefer localized GeoNames names, with CLDR reference names and transliteration as fallbacks. Transliterated spellings are approximate.
+
+## Changelog
+
+### November 25, 2026
+
+- The website and installed app open directly to prayer times.
+- One location dropdown brings together device location, IANA time zones, the device time zone, the OpenStreetMap picker, and the city list. **Use my location** is selected by default and asks for permission when pressed.
+- The language dropdown shows a flag for each language and remembers the selection. English is the default. Russian and Turkish join Persian and Arabic.
+- The service worker checks for updated app files online and serves cached files when offline.
