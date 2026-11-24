@@ -29,6 +29,7 @@ body {
   margin: 0;
   padding: 0 clamp(16px, 5vw, 64px) clamp(28px, 6vw, 76px);
   background: var(--page);
+  color: var(--text);
   font: 1rem/1.55 Ubuntu, system-ui, sans-serif;
 }
 [lang="fa"], [lang="ar"] { font-family: Vazirmatn, Tahoma, sans-serif; }
