@@ -97,7 +97,7 @@ export function setupLanguage(root) {
   header.prepend(menu);
   const guide = document.querySelector('[aria-labelledby="guide-en"]');
   guide.classList.add("language-guide");
-  addRussianContent(guide);
+  addLocalizedContent(guide);
   const citySource = guide.querySelector(".city-source");
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
