@@ -34,6 +34,7 @@ const additionalContent = {
     loading: "Bugünün namaz vakitleri yükleniyor…", local: "Yerel saat", guide: "IANA saat dilimleri hakkında",
     description: '<a href="https://www.iana.org/time-zones">IANA veritabanı</a>, <bdi><code>Europe/Dublin</code></bdi> gibi saat dilimlerinin yerel saat kurallarını tutar. Bir şehrin namaz vakitlerini görmek için o şehri seçin. Varsayılan olarak saat diliminin referans konumu kullanılır.',
   },
+};
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
