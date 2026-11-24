@@ -38,3 +38,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   panel.className = "guide place-picker";
   panel.lang = messages[language] ? language : "en";
   panel.dir = panel.lang === "en" ? "ltr" : "rtl";
+  panel.innerHTML = `<button type="button" data-locate>${copy.locate}</button>
