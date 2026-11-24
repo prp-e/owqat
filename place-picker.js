@@ -33,3 +33,4 @@ function nearestCity(groups, latitude, longitude) {
   return nearest;
 }
 
+export function mountPlacePicker(root, readData, latitude, longitude) {
