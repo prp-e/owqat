@@ -84,3 +84,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     if (map) { map.invalidateSize(); return; }
     if (loadingMap) return;
     loadingMap = true;
+    const style = Object.assign(document.createElement("link"), { rel: "stylesheet", href: new URL("vendor/leaflet/leaflet.css", root) });
