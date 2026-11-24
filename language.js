@@ -10,3 +10,4 @@ export function currentLanguage() {
   return languages[document.documentElement.lang];
 }
 
+export function updatePageTitle() {
