@@ -37,3 +37,4 @@ export function setupLanguage(root) {
       applyLanguage(language);
     });
     menu.append(button);
+    return button;
