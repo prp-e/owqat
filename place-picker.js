@@ -39,7 +39,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
   const panel = document.createElement("section");
   panel.className = "guide place-picker";
   panel.lang = language;
-  panel.dir = panel.lang === "en" ? "ltr" : "rtl";
+  panel.dir = document.documentElement.dir;
   panel.innerHTML = `<button type="button" data-locate>${copy.locate}</button>
     <details><summary>${copy.map}</summary><p>${copy.hint}</p><div data-map aria-label="${copy.map}" dir="ltr"></div>
     <button type="button" data-center disabled>${copy.center}</button></details>
