@@ -106,3 +106,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       loadingMap = false;
     }
   });
+
