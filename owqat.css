@@ -104,3 +104,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .place-picker [role="status"]:empty { margin-block: -6px; }
 
 html:not([lang="en"]) .card[lang="en"], html:not([lang="fa"]) .card[lang="fa"], html:not([lang="ar"]) .card[lang="ar"] { display: none; }
+html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not([lang="fa"]) .language-guide > [lang="fa"], html:not([lang="ar"]) .language-guide > [lang="ar"] { display: none; }
