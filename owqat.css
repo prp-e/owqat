@@ -4,6 +4,7 @@
   --page: light-dark(#f4eee4, #161616);
   --text: light-dark(#302419, #fff5e5);
   --honey: light-dark(#794b17, #f5c875);
+  --muted: light-dark(#645443, #c2b7a6);
 }
 body {
   margin: 0;
