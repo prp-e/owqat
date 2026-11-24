@@ -15,3 +15,4 @@ function loadLeafletAsset(element, integrity) {
     document.head.append(element);
   });
 }
+
