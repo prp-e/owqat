@@ -57,6 +57,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   let loadingMap = false;
   let marker;
 
+  function showStatus(key) {
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
     select.hidden = true;
