@@ -5,6 +5,7 @@
   --text: light-dark(#302419, #fff5e5);
   --honey: light-dark(#794b17, #f5c875);
   --muted: light-dark(#645443, #c2b7a6);
+  --edge: light-dark(#d9c9b5, #ffffff18);
 }
 body {
   margin: 0;
