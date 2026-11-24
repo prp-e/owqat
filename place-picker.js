@@ -144,7 +144,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
       center.disabled = false;
       if (statusKey === "mapError") showStatus();
     } catch {
-      showStatus("mapError");
+      if (!mapPanel.hidden) showStatus("mapError");
     } finally {
       loadingMap = false;
     }
