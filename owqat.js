@@ -133,7 +133,7 @@ try {
   const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === preferredZone.toLowerCase());
   populatePicker(zones, timeZone);
   if (!timeZone) throw new RangeError("Unsupported time zone");
-  const selectedCity = await chooseCity(timeZone);
+  const selectedCity = await chooseCity(timeZone, cityNames.ru ?? {});
   if (selectedCity === null) throw new Error("Unknown city", { cause: "city-selection" });
   const [latitude, longitude, country] = selectedCity?.slice(2, 5) ?? zones[timeZone];
   import("./place-picker.js").then(({ mountPlacePicker }) => mountPlacePicker(root, readData, latitude, longitude)).catch((error) => console.warn("Owqat place picker unavailable:", error));
