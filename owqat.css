@@ -97,3 +97,4 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .place-picker summary { cursor: pointer; width: fit-content; color: var(--honey); font-weight: 700; }
 .place-picker button { min-height: 42px; padding: 6px 13px; border: 1px solid #f5c87565; border-radius: 8px; background: #242220; color: inherit; font: inherit; cursor: pointer; }
 .place-picker button:disabled { opacity: .6; cursor: default; }
+.place-picker :is(button, summary):focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
