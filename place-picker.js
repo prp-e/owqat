@@ -154,6 +154,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     request++;
     select.hidden = true;
     marker?.remove();
+    showStatus();
 
   center.addEventListener("click", () => {
     const point = map.getCenter();
