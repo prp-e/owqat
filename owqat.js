@@ -77,6 +77,7 @@ async function chooseCity(zone) {
       option.value = id;
       option.dataset.en = label;
       option.dataset.fa = fa ?? "";
+      option.dataset.ar = ar ?? "";
       select.append(option);
     }
     select.value = city?.[0] ?? "";
