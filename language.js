@@ -75,6 +75,7 @@ function addThemeSwitch(menu) {
   }
 
   button.addEventListener("click", () => {
+    root.dataset.theme = button.getAttribute("aria-checked") === "true" ? "light" : "dark";
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
