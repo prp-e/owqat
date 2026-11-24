@@ -32,3 +32,4 @@ export function setupLanguage(root) {
       button.append(icon);
     }
     button.append(name);
+    button.addEventListener("click", () => {
