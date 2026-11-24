@@ -21,6 +21,7 @@ export function updatePageTitle() {
   const city = document.querySelector(`.card[lang="${language}"] [data-city]`).textContent;
   document.title = language === "en" ? `${city} ${currentLanguage().title} · Owqat` : `${currentLanguage().title} ${city} · Owqat`;
 }
+
 }
 
 export function setupLanguage(root) {
