@@ -91,6 +91,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
       const city = cities.find(([id]) => id === place.id);
       if (current !== request) return;
       suggestedCity = city;
+      suggestedZone = place.zone;
       showStatus("nearest");
       select.href = new URL(`${place.zone}/?city=${encodeURIComponent(place.id)}`, root);
       select.hidden = false;
