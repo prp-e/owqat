@@ -71,6 +71,7 @@ function addThemeSwitch(menu) {
   function sync() {
     const dark = root.dataset.theme ? root.dataset.theme === "dark" : system.matches;
     button.setAttribute("aria-checked", dark);
+    button.lastElementChild.textContent = dark ? "🌙" : "☀️";
     document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).backgroundColor;
   }
 
