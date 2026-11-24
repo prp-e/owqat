@@ -26,6 +26,7 @@ export function setupLanguage(root) {
   options.className = "language-options";
   options.setAttribute("role", "group");
   dropdown.append(summary, options);
+  menu.append(dropdown);
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
