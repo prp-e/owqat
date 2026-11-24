@@ -90,7 +90,6 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       suggestedCity = city;
       showStatus("nearest");
       select.href = new URL(`${place.zone}/?city=${encodeURIComponent(place.id)}`, root);
-      select.textContent = `${copy.select} · ${label}`;
       select.hidden = false;
       if (map && details.open) {
         if (centerMap) map.setView([place.lat, place.lon], Math.max(map.getZoom(), 8));
