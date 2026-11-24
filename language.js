@@ -61,3 +61,4 @@ export function setupLanguage(root) {
     heading.id ||= `guide-${language}`;
     guide.setAttribute("aria-labelledby", heading.id);
     citySource.firstChild.textContent = copy.source + " · ";
+    updatePageTitle();
