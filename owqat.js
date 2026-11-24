@@ -122,7 +122,7 @@ try {
       link.hidden = false;
     }
   }
-  const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === requestedZone.toLowerCase());
+  const timeZone = Object.keys(zones).find((zone) => zone.toLowerCase() === preferredZone.toLowerCase());
   populatePicker(zones, timeZone);
   if (!timeZone) throw new RangeError("Unsupported time zone");
   const selectedCity = await chooseCity(timeZone);
