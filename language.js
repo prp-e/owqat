@@ -43,6 +43,7 @@ function addLocalizedContent(guide) {
     const cityId = `prayer-city-${language}`;
     card.lang = language;
     card.setAttribute("aria-labelledby", cityId);
+    card.querySelector(".hero > p").textContent = languages[language].title;
 }
 
 export function setupLanguage(root) {
