@@ -155,6 +155,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     select.hidden = true;
     marker?.remove();
     showStatus();
+    for (const group of panel.querySelectorAll("[data-method-panel]")) group.hidden = group.dataset.methodPanel !== method.value;
 
   center.addEventListener("click", () => {
     const point = map.getCenter();
