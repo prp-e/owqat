@@ -83,6 +83,7 @@ function addThemeSwitch(menu) {
   sync();
   return button.lastElementChild;
 }
+
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
