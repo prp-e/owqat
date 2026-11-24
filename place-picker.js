@@ -64,3 +64,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       const cities = await readData(`cities/${place.zone}.json?v=2`);
       const city = cities.find(([id]) => id === place.id);
       if (current !== request) return;
+      const label = { fa: city[6], ar: city[7] }[language] || city[5];
