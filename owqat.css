@@ -82,6 +82,7 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .zone-picker { display: grid; gap: 4px; width: min(100%, 22rem); }
 .zone-picker label { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: .875rem; }
 .zone-picker select, .city-picker select, .location-method select { width: 100%; min-height: 42px; border: 1px solid #f5c87565; border-radius: 8px; padding: 6px 12px; color: #fff5e5; background: #242220; font: inherit; }
+.zone-picker select:focus-visible, .city-picker select:focus-visible, .location-method select:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
 .my-zone { align-content: center; min-height: 42px; border: 1px solid var(--honey); border-radius: 8px; padding: 6px 13px; color: #161616; background: var(--honey); font-weight: 700; text-decoration: none; }
 .my-zone:hover { background: #ffda96; }
 .my-zone:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
