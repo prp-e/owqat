@@ -117,3 +117,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     select.hidden = true;
     locate.disabled = true;
     status.textContent = copy.locating;
+    navigator.geolocation.getCurrentPosition(({ coords }) => {
