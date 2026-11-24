@@ -36,6 +36,7 @@ const additionalContent = {
   },
 };
 
+function addLocalizedContent(guide) {
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
