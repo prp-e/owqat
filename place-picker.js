@@ -45,3 +45,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
   document.querySelector("#choose-city").before(panel);
   const details = panel.querySelector("details");
   const status = panel.querySelector("[data-place-status]");
+  const select = panel.querySelector("[data-place-select]");
