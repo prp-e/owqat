@@ -26,6 +26,7 @@ export function updatePageTitle() {
 const additionalContent = {
   ru: {
     city: "Тегеран", dates: ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"],
+    loading: "Загружаем время намаза на сегодня…", local: "Местное время", guide: "О часовых поясах IANA",
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
