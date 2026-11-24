@@ -116,3 +116,4 @@ html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not(
 .masthead > a { direction: ltr; }
 .language-picker details { position: relative; z-index: 2; }
 .language-picker summary { display: flex; }
+.language-picker summary::-webkit-details-marker { display: none; }
