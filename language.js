@@ -34,6 +34,7 @@ export function setupLanguage(root) {
     summary.focus();
   });
   document.addEventListener("click", (event) => {
+    if (!dropdown.contains(event.target)) dropdown.open = false;
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
