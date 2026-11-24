@@ -16,3 +16,4 @@ function loadLeafletAsset(element, integrity) {
   });
 }
 
+function nearestCity(groups, latitude, longitude) {
