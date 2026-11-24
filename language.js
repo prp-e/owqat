@@ -62,7 +62,7 @@ function addThemeSwitch(menu) {
   button.type = "button";
   button.className = "theme-switch";
   button.setAttribute("role", "switch");
-  button.innerHTML = '<span class="theme-track" aria-hidden="true"></span><span></span>';
+  button.innerHTML = '<span class="theme-track" aria-hidden="true"></span><span aria-hidden="true"></span>';
   menu.append(button);
   let saved;
   try { saved = localStorage.getItem(key); } catch { /* Use the system preference. */ }
