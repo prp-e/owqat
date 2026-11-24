@@ -74,6 +74,7 @@ function addThemeSwitch(menu) {
     document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).backgroundColor;
   }
 
+  button.addEventListener("click", () => {
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
