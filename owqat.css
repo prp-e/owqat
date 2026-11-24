@@ -63,6 +63,7 @@ main { display: grid; gap: 28px; }
 [dir="rtl"] .hero {
   background:
     radial-gradient(ellipse at top left, var(--hero-glow), transparent 65%),
+    repeating-linear-gradient(48deg, transparent 0 29px, var(--hero-line) 29px 30px),
 }
 .hero p { margin: 0; color: var(--honey); font-weight: 500; }
 h1, h2 { margin: .16em 0 .45em; font-size: clamp(2.3rem, 7vw, 4rem); line-height: 1.15; }
