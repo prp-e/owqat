@@ -36,3 +36,4 @@ export function setupLanguage(root) {
       try { localStorage.setItem(preference, language); } catch { /* Switch for the current page. */ }
       applyLanguage(language);
     });
+    menu.append(button);
