@@ -31,3 +31,4 @@ function nearestCity(groups, latitude, longitude) {
     }
   }
   return nearest;
+}
