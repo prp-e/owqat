@@ -62,3 +62,4 @@ export function setupLanguage(root) {
     guide.setAttribute("aria-labelledby", heading.id);
     citySource.firstChild.textContent = copy.source + " · ";
     updatePageTitle();
+    document.dispatchEvent(new Event("owqat-language-change"));
