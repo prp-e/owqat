@@ -6,14 +6,7 @@ if ("serviceWorker" in navigator) {
 const path = location.pathname.slice(root.pathname.length).replace(/(?:^|\/)index\.html$/, "").replace(/\/+$/, "");
 const requestedZone = decodeURIComponent(path).replaceAll(" ", "_");
 const events = [
-  ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр"],
-  ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход"],
-  ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр"],
-  ["Asr", "Asr", "عصر", "العصر", "Аср"],
-  ["Sunset", "Sunset", "غروب آفتاب", "الغروب", "Закат"],
-  ["Maghrib", "Maghrib", "اذان مغرب", "المغرب", "Магриб"],
-  ["Isha", "Isha", "عشاء", "العشاء", "Иша"],
-  ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي", "Религиозная полночь"],
+  ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
