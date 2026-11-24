@@ -123,8 +123,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     }
   }
 
-  details.addEventListener("toggle", async () => {
-    if (!details.open) return;
+  async function openMap() {
     if (map) { map.invalidateSize(); return; }
     if (loadingMap) return;
     loadingMap = true;
