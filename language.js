@@ -23,6 +23,7 @@ export function setupLanguage(root) {
   const dropdown = document.createElement("details");
   const summary = document.createElement("summary");
   const options = document.createElement("div");
+  options.className = "language-options";
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
