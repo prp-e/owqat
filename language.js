@@ -33,6 +33,7 @@ function addRussianContent(guide) {
   const dateLabels = ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"];
   card.querySelectorAll(".dates dt").forEach((label, index) => { label.textContent = dateLabels[index]; });
   card.querySelector("[data-status]").textContent = "Загружаем время намаза на сегодня…";
+  card.querySelector("footer").firstChild.textContent = "Местное время · ";
 }
 
 export function setupLanguage(root) {
