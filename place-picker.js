@@ -138,7 +138,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     const current = ++request;
     select.hidden = true;
     locate.disabled = true;
-    status.textContent = copy.locating;
+    showStatus("locating");
     navigator.geolocation.getCurrentPosition(({ coords }) => {
       locate.disabled = false;
       if (current === request) suggest(coords.latitude, coords.longitude, true);
