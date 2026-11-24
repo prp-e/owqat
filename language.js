@@ -53,7 +53,7 @@ export function setupLanguage(root) {
       dropdown.open = false;
       summary.focus();
     });
-    menu.append(button);
+    options.append(button);
     return button;
   });
   header.prepend(menu);
