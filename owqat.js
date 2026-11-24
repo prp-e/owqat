@@ -25,6 +25,7 @@ const months = {
   ar: ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"],
 };
 const labels = {
+  tr: ["Saat dilimi kullanılamıyor", "Yukarıdan bir coğrafi saat dilimi seçin.", "Namaz vakitleri yüklenemedi. Yeniden denemek için sayfayı yenileyin.", "AlAdhan kaynaklı hicrî tarih"],
   ru: ["Часовой пояс недоступен", "Выберите географический часовой пояс выше.", "Не удалось загрузить время намаза. Обновите страницу, чтобы повторить попытку.", "Дата по лунному календарю от AlAdhan"],
   en: ["Time zone unavailable", "Choose a geographic time zone above.", "Prayer times are unavailable. Reload the page to try again.", "Lunar date from AlAdhan"],
   fa: ["منطقهٔ زمانی پیدا نشد", "یک منطقهٔ زمانی جغرافیایی از فهرست بالا انتخاب کنید.", "دریافت اوقات شرعی ممکن نشد. صفحه را دوباره بارگذاری کنید.", "تاریخ قمری طبق علاءالاذان"],
