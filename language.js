@@ -49,3 +49,4 @@ export function setupLanguage(root) {
     document.documentElement.lang = language;
     document.documentElement.dir = language === "en" ? "ltr" : "rtl";
     const copy = currentLanguage();
+    menu.setAttribute("aria-label", copy.menu);
