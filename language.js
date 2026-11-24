@@ -88,6 +88,7 @@ export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
   menu.className = "language-picker";
+  const themeLabel = addThemeSwitch(menu);
   const dropdown = document.createElement("details");
   const summary = document.createElement("summary");
   const options = document.createElement("div");
