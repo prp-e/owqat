@@ -88,7 +88,7 @@ export function setupLanguage(root) {
   const cityPicker = document.querySelector("#city");
   function applyLanguage(language) {
     document.documentElement.lang = language;
-    document.documentElement.dir = language === "en" ? "ltr" : "rtl";
+    document.documentElement.dir = ["fa", "ar"].includes(language) ? "rtl" : "ltr";
     const copy = currentLanguage();
     options.setAttribute("aria-label", copy.menu);
     summary.lang = language;
