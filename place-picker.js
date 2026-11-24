@@ -87,6 +87,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     panel.dir = document.documentElement.dir;
     locate.textContent = copy.locate;
     panel.querySelector('label[for="location-method"]').textContent = copy.method;
+    const { zone, myZone, city } = currentLanguage();
     mapElement.setAttribute("aria-label", copy.map);
     center.textContent = copy.center;
     showStatus(statusKey);
