@@ -26,6 +26,7 @@ function addRussianContent(guide) {
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
+  card.setAttribute("aria-labelledby", "prayer-city-ru");
 }
 
 export function setupLanguage(root) {
