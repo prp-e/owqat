@@ -1,10 +1,6 @@
 * { box-sizing: border-box; }
 :root {
-  color-scheme: dark;
-  --honey: #f5c875;
-  --muted: #c2b7a6;
-  --edge: #ffffff18;
-  --surface: #202020;
+  color-scheme: light dark;
 }
 body {
   margin: 0;
