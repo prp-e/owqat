@@ -123,7 +123,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       center.disabled = false;
       if (statusKey === "mapError") showStatus();
     } catch {
-      status.textContent = copy.mapError;
+      showStatus("mapError");
     } finally {
       loadingMap = false;
     }
