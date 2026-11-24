@@ -39,3 +39,4 @@ export function setupLanguage(root) {
     menu.append(button);
     return button;
   });
+  header.prepend(menu);
