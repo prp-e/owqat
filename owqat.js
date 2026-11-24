@@ -104,6 +104,7 @@ async function chooseCity(zone) {
 try {
   const [zones, cityNames] = await Promise.all([readData("zones.json"), readData("city-names.json")]);
   let useDeviceZone = false;
+  if (!requestedZone && Object.hasOwn(zones, localZone)) {
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       const search = localZone === requestedZone ? location.search : "";
