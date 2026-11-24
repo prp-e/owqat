@@ -46,3 +46,4 @@ export function setupLanguage(root) {
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
   function applyLanguage(language) {
+    document.documentElement.lang = language;
