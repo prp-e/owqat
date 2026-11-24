@@ -71,7 +71,7 @@ h1, h2 { margin: .16em 0 .45em; font-size: clamp(2.3rem, 7vw, 4rem); line-height
 dl, dd { margin: 0; }
 .dates, .events { display: grid; gap: 10px; }
 .dates { grid-template-columns: repeat(auto-fit, minmax(min(100%, 176px), 1fr)); }
-.dates > div { padding: 10px 13px; border-radius: 10px; background: #141414ad; }
+.dates > div { padding: 10px 13px; border-radius: 10px; background: var(--date); }
 dt { color: var(--muted); font-size: .875rem; }
 dd { overflow-wrap: anywhere; }
 .events {
