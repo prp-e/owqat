@@ -29,6 +29,7 @@ const labels = {
 const tehranMethod = { fa: "روش دانشگاه تهران", ar: "طريقة جامعة طهران" };
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
+setupLanguage(root);
 
 async function readData(file) {
   const response = await fetch(new URL(file, root), { signal: AbortSignal.timeout(10000) });
