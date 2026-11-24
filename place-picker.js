@@ -85,3 +85,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     if (loadingMap) return;
     loadingMap = true;
     const style = Object.assign(document.createElement("link"), { rel: "stylesheet", href: new URL("vendor/leaflet/leaflet.css", root) });
+    const script = Object.assign(document.createElement("script"), { src: new URL("vendor/leaflet/leaflet.js", root) });
