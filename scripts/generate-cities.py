@@ -45,6 +45,7 @@ def write_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 
+points = {}
 for zone, rows in cities.items():
     counts = Counter(row[1].casefold() for row in rows)
     catalog = []
