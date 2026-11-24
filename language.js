@@ -21,6 +21,7 @@ export function setupLanguage(root) {
   const menu = document.createElement("div");
   menu.className = "language-picker";
   const dropdown = document.createElement("details");
+  const summary = document.createElement("summary");
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
