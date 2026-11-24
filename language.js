@@ -35,6 +35,7 @@ function addRussianContent(guide) {
   card.querySelector("[data-status]").textContent = "Загружаем время намаза на сегодня…";
   card.querySelector("footer").firstChild.textContent = "Местное время · ";
   guide.before(card);
+  guide.querySelector(".city-source").insertAdjacentHTML("beforebegin", `<div lang="ru"><h2>О часовых поясах IANA</h2>
 }
 
 export function setupLanguage(root) {
