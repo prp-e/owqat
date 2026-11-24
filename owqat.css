@@ -11,6 +11,7 @@
   --hero-glow: light-dark(#fffaf0, #8f642d66);
   --hero-line: light-dark(#ad7b4030, #f5c87512);
   --date: light-dark(#fffaf1ce, #141414ad);
+  --tile: light-dark(#f9f3ea, #2a2a2a);
 }
 body {
   margin: 0;
