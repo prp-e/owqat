@@ -12,6 +12,7 @@
   --hero-line: light-dark(#ad7b4030, #f5c87512);
   --date: light-dark(#fffaf1ce, #141414ad);
   --tile: light-dark(#f9f3ea, #2a2a2a);
+  --solar: light-dark(#f5e5ca, #392e20);
 }
 body {
   margin: 0;
