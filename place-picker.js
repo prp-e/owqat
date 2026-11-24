@@ -98,3 +98,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).on("tileerror", () => { if (!status.textContent) status.textContent = copy.mapError; }).addTo(map);
       map.on("click", ({ latlng }) => suggest(latlng.lat, latlng.lng));
+      center.disabled = false;
