@@ -18,3 +18,4 @@ function loadLeafletAsset(element, integrity) {
 
 function nearestCity(groups, latitude, longitude) {
   const radians = Math.PI / 180;
+  const cosLatitude = Math.cos(latitude * radians);
