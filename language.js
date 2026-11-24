@@ -31,3 +31,4 @@ export function setupLanguage(root) {
       icon.alt = "";
       button.append(icon);
     }
+    button.append(name);
