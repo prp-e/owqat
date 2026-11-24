@@ -111,6 +111,7 @@ try {
     if (consent == null) {
       consent = window.confirm("Owqat needs your time zone to show local prayer times. Use this device’s time zone?") ? "yes" : "no";
       try { localStorage.setItem(consentKey, consent); } catch { /* The current choice still applies. */ }
+    }
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       const search = localZone === requestedZone ? location.search : "";
