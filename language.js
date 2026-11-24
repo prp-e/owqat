@@ -23,6 +23,7 @@ export function updatePageTitle() {
 }
 
 function addRussianContent(guide) {
+  const english = document.querySelector('.card[lang="en"]');
 }
 
 export function setupLanguage(root) {
