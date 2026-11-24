@@ -92,3 +92,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
         loadLeafletAsset(script, "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="),
       ]);
       const L = window.L;
+      map = L.map(panel.querySelector("[data-map]")).setView([latitude, longitude], 6);
