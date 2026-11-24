@@ -21,3 +21,4 @@ export function setupLanguage(root) {
   const menu = document.createElement("div");
   menu.className = "language-picker";
   menu.setAttribute("role", "group");
+  const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
