@@ -34,6 +34,7 @@ function addRussianContent(guide) {
   card.querySelectorAll(".dates dt").forEach((label, index) => { label.textContent = dateLabels[index]; });
   card.querySelector("[data-status]").textContent = "Загружаем время намаза на сегодня…";
   card.querySelector("footer").firstChild.textContent = "Местное время · ";
+  guide.before(card);
 }
 
 export function setupLanguage(root) {
