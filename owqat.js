@@ -10,6 +10,7 @@ const events = [
   ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş"],
   ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр", "Öğle"],
   ["Asr", "Asr", "عصر", "العصر", "Аср", "İkindi"],
+  ["Sunset", "Sunset", "غروب آفتاب", "الغروب", "Закат", "Gün batımı"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
