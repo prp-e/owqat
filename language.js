@@ -31,6 +31,7 @@ function addRussianContent(guide) {
   card.querySelector("[data-city]").id = "prayer-city-ru";
   card.querySelector("[data-city]").textContent = "Тегеран";
   const dateLabels = ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"];
+  card.querySelectorAll(".dates dt").forEach((label, index) => { label.textContent = dateLabels[index]; });
 }
 
 export function setupLanguage(root) {
