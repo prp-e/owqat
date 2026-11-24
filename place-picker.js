@@ -10,3 +10,4 @@ function loadLeafletAsset(element, integrity) {
   return new Promise((resolve, reject) => {
     element.integrity = integrity;
     element.crossOrigin = "anonymous";
+    element.onload = resolve;
