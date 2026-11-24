@@ -22,3 +22,4 @@ function nearestCity(groups, latitude, longitude) {
   let nearest;
   let shortest = Infinity;
   for (const [zone, cities] of groups) {
+    for (const [id, lat, lon] of cities) {
