@@ -71,7 +71,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     language = document.documentElement.lang;
     copy = messages[language];
     panel.lang = language;
-    panel.dir = language === "en" ? "ltr" : "rtl";
+    panel.dir = document.documentElement.dir;
     locate.textContent = copy.locate;
     details.querySelector("summary").textContent = copy.map;
     details.querySelector("p").textContent = copy.hint;
