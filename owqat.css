@@ -57,6 +57,7 @@ main { display: grid; gap: 28px; }
   border-block-end: 1px solid var(--control-edge);
   background:
     radial-gradient(ellipse at top right, var(--hero-glow), transparent 65%),
+    repeating-linear-gradient(132deg, transparent 0 29px, var(--hero-line) 29px 30px),
 }
 [dir="rtl"] .hero {
   background:
