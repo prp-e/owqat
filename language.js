@@ -20,7 +20,7 @@ export function referenceCityName(city, zone, names) {
 export function updatePageTitle() {
   const language = document.documentElement.lang;
   const city = document.querySelector(`.card[lang="${language}"] [data-city]`).textContent;
-  document.title = language === "en" ? `${city} ${currentLanguage().title} · Owqat` : `${currentLanguage().title} ${city} · Owqat`;
+  document.title = ["en", "tr"].includes(language) ? `${city} ${currentLanguage().title} · Owqat` : `${currentLanguage().title} ${city} · Owqat`;
 }
 
 function addRussianContent(guide) {
