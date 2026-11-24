@@ -12,6 +12,7 @@ export function currentLanguage() {
 }
 
 export function russianCityName(city, zone, names) {
+  const reference = zone.split("/").at(-1).replaceAll("_", " ");
 export function updatePageTitle() {
   const language = document.documentElement.lang;
   const city = document.querySelector(`.card[lang="${language}"] [data-city]`).textContent;
