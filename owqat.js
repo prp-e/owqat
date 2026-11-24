@@ -114,6 +114,7 @@ try {
     }
     useDeviceZone = consent === "yes";
   }
+  const preferredZone = requestedZone || (useDeviceZone ? localZone : "Asia/Tehran");
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       const search = localZone === requestedZone ? location.search : "";
