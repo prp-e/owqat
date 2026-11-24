@@ -36,6 +36,9 @@ Persian and Arabic city labels prefer localized GeoNames names, with CLDR refere
 ### November 25, 2026
 
 - The website and installed app open directly to prayer times.
-- One location dropdown brings together device location, IANA time zones, the device time zone, the OpenStreetMap picker, and the city list. **Use my location** is selected by default and asks for permission when pressed.
+- One location dropdown brings together device location, IANA time zones, the device time zone, the OpenStreetMap picker, and the city list. **Device location** is selected by default. Pressing **Use my location** asks for browser permission.
 - The language dropdown shows a flag for each language and remembers the selection. English is the default. Russian and Turkish join Persian and Arabic.
 - The service worker checks for updated app files online and serves cached files when offline.
+- The prayer timetable and three calendar dates take up less space on phones. Language and theme controls share the top bar.
+- Persian and Arabic help text about IANA time zones is visible again.
+- A localized **Try again** button appears if prayer times fail to load. The location picker remains available if a time-zone link is malformed.
