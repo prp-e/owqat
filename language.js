@@ -45,3 +45,4 @@ export function setupLanguage(root) {
   const citySource = guide.querySelector(".city-source");
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
+  function applyLanguage(language) {
