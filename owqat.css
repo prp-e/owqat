@@ -118,7 +118,7 @@ footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid 
 .place-picker button { min-height: 42px; padding: 6px 13px; border: 1px solid var(--control-edge); border-radius: 8px; background: var(--control); color: inherit; font: inherit; cursor: pointer; }
 .place-picker button:disabled { opacity: .6; cursor: default; }
 .place-picker button:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
-.place-picker [data-map] { height: clamp(18rem, 55vh, 30rem); margin-block: 12px; border: 1px solid var(--edge); border-radius: 12px; padding: 0; background: #303030; isolation: isolate; }
+.place-picker [data-map] { height: clamp(18rem, 55vh, 30rem); margin-block: 12px; border: 1px solid var(--edge); border-radius: 12px; padding: 0; background: var(--map); isolation: isolate; }
 .place-picker .leaflet-control-attribution a { color: #005580; }
 .place-picker [role="status"] { margin: 0; color: var(--muted); }
 .place-picker [role="status"]:empty { margin-block: -6px; }
