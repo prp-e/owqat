@@ -8,6 +8,7 @@ const requestedZone = decodeURIComponent(path).replaceAll(" ", "_");
 const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah"],
   ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş"],
+  ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр", "Öğle"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
