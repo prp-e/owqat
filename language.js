@@ -58,6 +58,7 @@ function addThemeSwitch(menu) {
   const key = "owqat-theme";
   const root = document.documentElement;
   const system = window.matchMedia("(prefers-color-scheme: dark)");
+  const button = document.createElement("button");
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
