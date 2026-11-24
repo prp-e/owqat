@@ -28,3 +28,4 @@ export function setupLanguage(root) {
     if (flag) {
       const icon = document.createElement("img");
       icon.src = new URL(`flags/${flag}`, root);
+      icon.alt = "";
