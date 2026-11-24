@@ -8,6 +8,7 @@ const shell = [
   "owqat.js?v=6",
   "place-picker.js",
   "language.js",
+  "flags/iran.svg",
   "zones.json",
   "city-names.json",
   "cities/index.json",
