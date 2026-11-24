@@ -11,6 +11,7 @@ export function currentLanguage() {
   return languages[document.documentElement.lang];
 }
 
+export function russianCityName(city, zone, names) {
 export function updatePageTitle() {
   const language = document.documentElement.lang;
   const city = document.querySelector(`.card[lang="${language}"] [data-city]`).textContent;
