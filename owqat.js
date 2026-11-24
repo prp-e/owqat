@@ -15,6 +15,7 @@ const events = [
   ["Isha", "Isha", "عشاء", "العشاء", "Иша"],
   ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي", "Религиозная полночь"],
 ];
+setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
 const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
 const months = {
