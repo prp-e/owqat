@@ -82,7 +82,7 @@ function addThemeSwitch(menu) {
   });
   system.addEventListener("change", sync);
   sync();
-  return button.lastElementChild;
+  return button;
 }
 
 export function setupLanguage(root) {
