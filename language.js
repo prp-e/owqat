@@ -50,3 +50,4 @@ export function setupLanguage(root) {
     document.documentElement.dir = language === "en" ? "ltr" : "rtl";
     const copy = currentLanguage();
     menu.setAttribute("aria-label", copy.menu);
+    for (const button of buttons) button.setAttribute("aria-pressed", button.lang === language);
