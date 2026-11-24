@@ -74,3 +74,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
         marker?.remove();
         marker = window.L.circleMarker([place.lat, place.lon], { radius: 9, color: "#352719", fillColor: "#f5c875", fillOpacity: 1 }).addTo(map);
       }
+    } catch {
