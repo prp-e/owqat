@@ -24,6 +24,7 @@ export function updatePageTitle() {
 }
 
 const additionalContent = {
+  ru: {
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
