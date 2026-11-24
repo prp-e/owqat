@@ -23,3 +23,4 @@ function nearestCity(groups, latitude, longitude) {
   let shortest = Infinity;
   for (const [zone, cities] of groups) {
     for (const [id, lat, lon] of cities) {
+      const distance = Math.sin((lat - latitude) * radians / 2) ** 2
