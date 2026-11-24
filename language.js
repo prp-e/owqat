@@ -28,6 +28,7 @@ export function setupLanguage(root) {
   dropdown.append(summary, options);
   menu.append(dropdown);
   dropdown.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !dropdown.open) return;
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
