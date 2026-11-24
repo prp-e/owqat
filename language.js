@@ -27,3 +27,4 @@ export function setupLanguage(root) {
     button.lang = language;
     if (flag) {
       const icon = document.createElement("img");
+      icon.src = new URL(`flags/${flag}`, root);
