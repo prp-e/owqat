@@ -6,6 +6,7 @@
   --honey: light-dark(#794b17, #f5c875);
   --muted: light-dark(#645443, #c2b7a6);
   --edge: light-dark(#d9c9b5, #ffffff18);
+  --surface: light-dark(#fffcf6, #202020);
 }
 body {
   margin: 0;
