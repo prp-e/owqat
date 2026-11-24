@@ -63,7 +63,7 @@ function populatePicker(zones, selected) {
     if (picker.value) location.assign(new URL(picker.value + "/", root));
   });
 }
-async function chooseCity(zone, russianNames) {
+async function chooseCity(zone, cityNames) {
   const selected = new URLSearchParams(location.search).get("city");
   let cities;
   try {
