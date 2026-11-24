@@ -80,7 +80,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     if (key === "nearest") select.textContent = `${copy.select} · ${label}`;
   }
 
-  document.addEventListener("owqat-language-change", () => {
+  function localize() {
     language = document.documentElement.lang;
     copy = messages[language];
     panel.lang = language;
