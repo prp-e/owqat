@@ -90,7 +90,7 @@ dd { overflow-wrap: anywhere; }
   background: var(--tile);
 }
 .tile dd { justify-self: start; font-size: 1.85rem; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; }
-.tile.solar { color: var(--honey); background: #392e20; border-color: #f5c87565; }
+.tile.solar { color: var(--honey); background: var(--solar); border-color: var(--control-edge); }
 .status, footer { margin: 0; padding: 12px clamp(14px, 4vw, 28px); }
 footer { color: var(--muted); font-size: .875rem; border-block-start: 1px solid var(--edge); }
 .guide { padding: clamp(18px, 4vw, 32px); border: 1px solid var(--edge); border-radius: 18px; background: var(--surface); }
