@@ -19,6 +19,7 @@
   --action: light-dark(#794b17, #f5c875);
   --action-hover: light-dark(#633a11, #ffda96);
   --action-text: light-dark(#fff9ee, #161616);
+  --map: light-dark(#e7dece, #303030);
 }
 body {
   margin: 0;
