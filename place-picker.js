@@ -113,7 +113,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
       showStatus("nearest");
       select.href = new URL(`${place.zone}/?city=${encodeURIComponent(place.id)}`, root);
       select.hidden = false;
-      if (map && details.open) {
+      if (map && !mapPanel.hidden) {
         if (centerMap) map.setView([place.lat, place.lon], Math.max(map.getZoom(), 8));
         marker?.remove();
         marker = window.L.circleMarker([place.lat, place.lon], { radius: 9, color: "#352719", fillColor: "#f5c875", fillOpacity: 1 }).addTo(map);
