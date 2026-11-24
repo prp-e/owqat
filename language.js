@@ -54,3 +54,4 @@ export function setupLanguage(root) {
     header.querySelector('[for="time-zone"]').textContent = copy.zone;
     header.querySelector("[data-my-zone]").textContent = copy.myZone;
     if (!zonePicker.disabled) zonePicker.options[0].textContent = copy.zonePrompt;
+    document.querySelector("#city-label").textContent = copy.city;
