@@ -104,3 +104,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       status.textContent = copy.mapError;
     } finally {
       loadingMap = false;
+    }
