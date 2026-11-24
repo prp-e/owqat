@@ -43,3 +43,4 @@ export function setupLanguage(root) {
   const guide = document.querySelector('[aria-labelledby="guide-en"]');
   guide.classList.add("language-guide");
   const citySource = guide.querySelector(".city-source");
+  const zonePicker = header.querySelector("#time-zone");
