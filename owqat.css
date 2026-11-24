@@ -8,6 +8,7 @@
   --edge: light-dark(#d9c9b5, #ffffff18);
   --surface: light-dark(#fffcf6, #202020);
   --hero: light-dark(#f3e5ce, #272623);
+  --hero-glow: light-dark(#fffaf0, #8f642d66);
 }
 body {
   margin: 0;
