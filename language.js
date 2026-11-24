@@ -35,3 +35,4 @@ export function setupLanguage(root) {
     button.addEventListener("click", () => {
       try { localStorage.setItem(preference, language); } catch { /* Switch for the current page. */ }
       applyLanguage(language);
+    });
