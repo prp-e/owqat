@@ -70,6 +70,7 @@ function addThemeSwitch(menu) {
 
   function sync() {
     const dark = root.dataset.theme ? root.dataset.theme === "dark" : system.matches;
+    button.setAttribute("aria-checked", dark);
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
