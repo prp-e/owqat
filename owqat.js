@@ -106,6 +106,7 @@ try {
   let useDeviceZone = false;
   if (!requestedZone && Object.hasOwn(zones, localZone)) {
     const consentKey = "owqat-device-time-zone";
+    let consent;
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
       const search = localZone === requestedZone ? location.search : "";
