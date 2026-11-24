@@ -82,7 +82,7 @@ async function chooseCity(zone, cityNames) {
       option.dataset.en = label;
       option.dataset.fa = fa ?? "";
       option.dataset.ar = ar ?? "";
-      option.dataset.ru = russianCityName(name, zone, russianNames) ?? "";
+      option.dataset.ru = referenceCityName(name, zone, cityNames.ru) ?? "";
       option.textContent = option.dataset[document.documentElement.lang] || label;
       select.append(option);
     }
