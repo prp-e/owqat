@@ -134,7 +134,7 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     suggest(point.lat, point.lng);
   });
   locate.addEventListener("click", () => {
-    if (!navigator.geolocation) { status.textContent = copy.unavailable; return; }
+    if (!navigator.geolocation) { showStatus("unavailable"); return; }
     const current = ++request;
     select.hidden = true;
     locate.disabled = true;
