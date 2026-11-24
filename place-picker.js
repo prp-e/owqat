@@ -83,3 +83,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     if (!details.open) return;
     if (map) { map.invalidateSize(); return; }
     if (loadingMap) return;
+    loadingMap = true;
