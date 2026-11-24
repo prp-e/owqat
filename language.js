@@ -49,6 +49,7 @@ function addLocalizedContent(guide) {
     card.querySelectorAll(".dates dt").forEach((label, index) => { label.textContent = content.dates[index]; });
     card.querySelector("[data-status]").textContent = content.loading;
     card.querySelector("footer").firstChild.textContent = content.local + " · ";
+    guide.before(card);
 }
 
 export function setupLanguage(root) {
