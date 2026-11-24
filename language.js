@@ -16,3 +16,4 @@ export function updatePageTitle() {
   document.title = language === "en" ? `${city} ${currentLanguage().title} · Owqat` : `${currentLanguage().title} ${city} · Owqat`;
 }
 
+export function setupLanguage(root) {
