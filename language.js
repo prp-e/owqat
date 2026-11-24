@@ -55,6 +55,7 @@ export function setupLanguage(root) {
     header.querySelector("[data-my-zone]").textContent = copy.myZone;
     if (!zonePicker.disabled) zonePicker.options[0].textContent = copy.zonePrompt;
     document.querySelector("#city-label").textContent = copy.city;
+    cityPicker.dir = document.documentElement.dir;
     cityPicker.options[0].textContent = copy.reference;
     for (const option of cityPicker.querySelectorAll("[data-en]")) option.textContent = option.dataset[language] || option.dataset.en;
     const heading = language === "en" ? guide.querySelector("#guide-en") : guide.querySelector(`[lang="${language}"] h2`);
