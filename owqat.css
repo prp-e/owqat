@@ -107,3 +107,4 @@ html:not([lang="en"]) .card[lang="en"], html:not([lang="fa"]) .card[lang="fa"], 
 html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not([lang="fa"]) .language-guide > [lang="fa"], html:not([lang="ar"]) .language-guide > [lang="ar"] { display: none; }
 [aria-labelledby="guide-en"] > [lang="fa"], [aria-labelledby="guide-en"] > [lang="ar"], .zone-picker label > span, .city-picker label > span { display: none; }
 .language-guide > [dir="rtl"] { padding: 0; border: 0; }
+.masthead:has(.language-picker) { flex-wrap: wrap; }
