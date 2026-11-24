@@ -135,7 +135,6 @@ try {
   const [latitude, longitude, country] = selectedCity?.slice(2, 5) ?? zones[timeZone];
   import("./place-picker.js").then(({ mountPlacePicker }) => mountPlacePicker(root, readData, latitude, longitude)).catch((error) => console.warn("Owqat place picker unavailable:", error));
   const city = selectedCity?.[1] ?? timeZone.split("/").at(-1).replaceAll("_", " ");
-  document.title = `${city} Prayer Times · Owqat`;
   const now = new Date();
   const options = { timeZone, year: "numeric", month: "2-digit", day: "2-digit" };
   const day = new Intl.DateTimeFormat("en-GB", options).format(now).replaceAll("/", "-");
