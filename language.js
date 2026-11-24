@@ -25,6 +25,7 @@ export function updatePageTitle() {
 
 const additionalContent = {
   ru: {
+    city: "Тегеран", dates: ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"],
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
