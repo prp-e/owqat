@@ -9,6 +9,7 @@ const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр"],
   ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход"],
   ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр"],
+  ["Asr", "Asr", "عصر", "العصر", "Аср"],
 ];
 const cards = [...document.querySelectorAll(".card")];
 const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
