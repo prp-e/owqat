@@ -20,7 +20,7 @@ export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
   menu.className = "language-picker";
-  menu.setAttribute("role", "group");
+  const dropdown = document.createElement("details");
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
