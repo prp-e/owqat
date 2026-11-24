@@ -107,3 +107,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     }
   });
 
+  center.addEventListener("click", () => {
