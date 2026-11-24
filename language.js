@@ -11,3 +11,4 @@ export function currentLanguage() {
 }
 
 export function updatePageTitle() {
+  const language = document.documentElement.lang;
