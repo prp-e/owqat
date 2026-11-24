@@ -57,6 +57,7 @@ function addLocalizedContent(guide) {
 function addThemeSwitch(menu) {
   const key = "owqat-theme";
   const root = document.documentElement;
+  const system = window.matchMedia("(prefers-color-scheme: dark)");
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
