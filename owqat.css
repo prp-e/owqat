@@ -50,7 +50,7 @@ main { display: grid; gap: 28px; }
   border: 1px solid var(--edge);
   border-radius: 24px;
   background: var(--surface);
-  box-shadow: 0 20px 55px #0006;
+  box-shadow: 0 20px 55px var(--shadow);
 }
 .hero {
   padding: clamp(20px, 5vw, 42px);
