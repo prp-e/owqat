@@ -68,3 +68,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       status.textContent = `${copy.nearest} · ${label}`;
       select.href = new URL(`${place.zone}/?city=${encodeURIComponent(place.id)}`, root);
       select.textContent = `${copy.select} · ${label}`;
+      select.hidden = false;
