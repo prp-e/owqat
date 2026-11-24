@@ -65,6 +65,7 @@ function addThemeSwitch(menu) {
   button.innerHTML = '<span class="theme-track" aria-hidden="true"></span><span></span>';
   menu.append(button);
   let saved;
+  try { saved = localStorage.getItem(key); } catch { /* Use the system preference. */ }
 export function setupLanguage(root) {
   const header = document.querySelector(".masthead");
   const menu = document.createElement("div");
