@@ -2,7 +2,7 @@ const root = new URL(".", import.meta.url);
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(new URL("sw.js", root)).catch((error) => console.warn("Owqat offline setup failed:", error));
 }
-const path = location.pathname.slice(root.pathname.length).replace(/\/index\.html$/, "").replace(/\/+$/, "");
+const path = location.pathname.slice(root.pathname.length).replace(/(?:^|\/)index\.html$/, "").replace(/\/+$/, "");
 const requestedZone = decodeURIComponent(path).replaceAll(" ", "_") || "Asia/Tehran";
 const events = [
   ["Fajr", "Fajr", "اذان صبح", "الفجر"],
