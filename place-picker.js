@@ -95,6 +95,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
     center.textContent = copy.center;
     showStatus(statusKey);
   }
+  localize();
 
   async function suggest(lat, lon, centerMap = false) {
     const current = ++request;
