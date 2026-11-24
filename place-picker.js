@@ -11,3 +11,4 @@ function loadLeafletAsset(element, integrity) {
     element.integrity = integrity;
     element.crossOrigin = "anonymous";
     element.onload = resolve;
+    element.onerror = () => { element.remove(); reject(new Error("Leaflet asset unavailable")); };
