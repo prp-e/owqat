@@ -20,3 +20,4 @@ function nearestCity(groups, latitude, longitude) {
   const radians = Math.PI / 180;
   const cosLatitude = Math.cos(latitude * radians);
   let nearest;
+  let shortest = Infinity;
