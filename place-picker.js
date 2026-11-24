@@ -88,3 +88,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
     const script = Object.assign(document.createElement("script"), { src: new URL("vendor/leaflet/leaflet.js", root) });
     try {
       await Promise.all([
+        loadLeafletAsset(style, "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="),
