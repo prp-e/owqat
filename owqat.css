@@ -13,6 +13,7 @@
   --date: light-dark(#fffaf1ce, #141414ad);
   --tile: light-dark(#f9f3ea, #2a2a2a);
   --solar: light-dark(#f5e5ca, #392e20);
+  --control: light-dark(#fff9ef, #242220);
 }
 body {
   margin: 0;
