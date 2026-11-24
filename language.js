@@ -48,3 +48,4 @@ export function setupLanguage(root) {
   function applyLanguage(language) {
     document.documentElement.lang = language;
     document.documentElement.dir = language === "en" ? "ltr" : "rtl";
+    const copy = currentLanguage();
