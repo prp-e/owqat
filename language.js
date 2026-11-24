@@ -32,6 +32,7 @@ export function setupLanguage(root) {
     event.preventDefault();
     dropdown.open = false;
     summary.focus();
+  });
   const buttons = Object.entries(languages).map(([language, { name, flag }]) => {
     const button = document.createElement("button");
     button.type = "button";
