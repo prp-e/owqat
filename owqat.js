@@ -117,7 +117,7 @@ try {
   const preferredZone = requestedZone || (useDeviceZone ? localZone : "Asia/Tehran");
   if (Object.hasOwn(zones, localZone)) {
     for (const link of document.querySelectorAll("[data-my-zone]")) {
-      const search = localZone === requestedZone ? location.search : "";
+      const search = localZone === preferredZone ? location.search : "";
       link.href = new URL(localZone + "/" + search + "#choose-city", root);
       link.hidden = false;
     }
