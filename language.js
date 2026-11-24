@@ -23,7 +23,7 @@ export function updatePageTitle() {
   document.title = ["en", "tr"].includes(language) ? `${city} ${currentLanguage().title} · Owqat` : `${currentLanguage().title} ${city} · Owqat`;
 }
 
-function addRussianContent(guide) {
+const additionalContent = {
   const english = document.querySelector('.card[lang="en"]');
   const card = english.cloneNode(true);
   card.lang = "ru";
