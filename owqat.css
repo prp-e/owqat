@@ -24,6 +24,7 @@
   --popover-shadow: light-dark(#6c472434, #0008);
 }
 :root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 body {
   margin: 0;
   padding: 0 clamp(16px, 5vw, 64px) clamp(28px, 6vw, 76px);
