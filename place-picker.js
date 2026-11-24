@@ -93,3 +93,4 @@ export function mountPlacePicker(root, readData, latitude, longitude) {
       ]);
       const L = window.L;
       map = L.map(panel.querySelector("[data-map]")).setView([latitude, longitude], 6);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
