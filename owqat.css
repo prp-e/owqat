@@ -147,3 +147,4 @@ html[dir="rtl"] .language-picker summary::after { transform: rotate(-45deg); }
 .theme-switch:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
 .theme-track { display: flex; align-items: center; width: 32px; height: 18px; padding: 2px; border: 1px solid var(--control-edge); border-radius: 99px; background: var(--control); }
 .theme-track::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--honey); }
+.theme-switch[aria-checked="true"] .theme-track { justify-content: flex-end; background: var(--solar); }
