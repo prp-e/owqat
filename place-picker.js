@@ -62,7 +62,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, russianNam
 
   function showStatus(key) {
     statusKey = key;
-    const label = suggestedCity && ({ fa: suggestedCity[6], ar: suggestedCity[7] }[language] || suggestedCity[5]);
+    const label = suggestedCity && ({ fa: suggestedCity[6], ar: suggestedCity[7], ru: russianCityName(suggestedCity[1], suggestedZone, russianNames) }[language] || suggestedCity[5]);
     status.textContent = key === "nearest" ? `${copy.nearest} · ${label}` : copy[key] ?? "";
     if (key === "nearest") select.textContent = `${copy.select} · ${label}`;
   }
