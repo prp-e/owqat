@@ -9,3 +9,4 @@ const preference = "owqat-language";
 export function currentLanguage() {
   return languages[document.documentElement.lang];
 }
+
