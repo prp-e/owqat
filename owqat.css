@@ -25,7 +25,7 @@ body {
   color: var(--text);
   font: 1rem/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-[lang="fa"], [lang="ar"] { font-family: Vazirmatn, Tahoma, sans-serif; }
+[lang="fa"], [lang="ar"], [lang="ps"] { font-family: Vazirmatn, Tahoma, sans-serif; }
 ::selection { background: var(--accent); color: var(--action-text); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 a { color: var(--accent); text-underline-offset: .2em; }
@@ -215,8 +215,8 @@ dl, dd { margin: 0; }
 .place-picker [role="status"]:empty { position: absolute; }
 .retry { justify-self: start; margin: 0 var(--card-gutter) 16px; }
 
-html:not([lang="en"]) .card[lang="en"], html:not([lang="fa"]) .card[lang="fa"], html:not([lang="ar"]) .card[lang="ar"], html:not([lang="ru"]) .card[lang="ru"], html:not([lang="tr"]) .card[lang="tr"] { display: none; }
-html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not([lang="fa"]) .language-guide > [lang="fa"], html:not([lang="ar"]) .language-guide > [lang="ar"], html:not([lang="ru"]) .language-guide > [lang="ru"], html:not([lang="tr"]) .language-guide > [lang="tr"] { display: none; }
+html:not([lang="en"]) .card[lang="en"], html:not([lang="fa"]) .card[lang="fa"], html:not([lang="ar"]) .card[lang="ar"], html:not([lang="ru"]) .card[lang="ru"], html:not([lang="tr"]) .card[lang="tr"], html:not([lang="ps"]) .card[lang="ps"] { display: none; }
+html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not([lang="fa"]) .language-guide > [lang="fa"], html:not([lang="ar"]) .language-guide > [lang="ar"], html:not([lang="ru"]) .language-guide > [lang="ru"], html:not([lang="tr"]) .language-guide > [lang="tr"], html:not([lang="ps"]) .language-guide > [lang="ps"] { display: none; }
 .guide:not(.language-guide) > [lang], .zone-picker label > span, .city-picker label > span { display: none; }
 .language-picker { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
 .language-picker :is(button, summary) { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 4px 12px; border: 1px solid var(--edge); border-radius: 999px; background: var(--surface); color: inherit; font: inherit; cursor: pointer; }

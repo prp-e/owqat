@@ -8,32 +8,34 @@ let requestedZone = path;
 try { requestedZone = decodeURIComponent(path).replaceAll(" ", "_"); }
 catch { /* An invalid URL can still use the time-zone picker. */ }
 const events = [
-  ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah"],
-  ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş"],
-  ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр", "Öğle"],
-  ["Asr", "Asr", "عصر", "العصر", "Аср", "İkindi"],
-  ["Sunset", "Sunset", "غروب آفتاب", "الغروب", "Закат", "Gün batımı"],
-  ["Maghrib", "Maghrib", "اذان مغرب", "المغرب", "Магриб", "Akşam"],
-  ["Isha", "Isha", "عشاء", "العشاء", "Иша", "Yatsı"],
-  ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي", "Религиозная полночь", "Dinî gece yarısı"],
+  ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah", "سهار"],
+  ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş", "لمر خاته"],
+  ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр", "Öğle", "غرمه"],
+  ["Asr", "Asr", "عصر", "العصر", "Аср", "İkindi", "مازیګر"],
+  ["Sunset", "Sunset", "غروب آفتاب", "الغروب", "Закат", "Gün batımı", "لمر لوېدل"],
+  ["Maghrib", "Maghrib", "اذان مغرب", "المغرب", "Магриб", "Akşam", "ماښام"],
+  ["Isha", "Isha", "عشاء", "العشاء", "Иша", "Yatsı", "ماخوستن"],
+  ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي", "Религиозная полночь", "Dinî gece yarısı", "شرعي نیمه شپه"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
-const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
+const numerals = { fa: "۰۱۲۳۴۵۶۷۸۹", ps: "۰۱۲۳۴۵۶۷۸۹", ar: "٠١٢٣٤٥٦٧٨٩" };
 const months = {
+  ps: ["محرم", "صفر", "ربیع الاول", "ربیع الثاني", "جمادي الاول", "جمادي الثاني", "رجب", "شعبان", "رمضان", "شوال", "ذوالقعده", "ذوالحجه"],
   tr: ["Muharrem", "Safer", "Rebîülevvel", "Rebîülâhir", "Cemâziyelevvel", "Cemâziyelâhir", "Recep", "Şaban", "Ramazan", "Şevval", "Zilkade", "Zilhicce"],
   ru: ["мухаррама", "сафара", "раби аль-авваля", "раби ас-сани", "джумада аль-уля", "джумада ас-сания", "раджаба", "шаабана", "рамадана", "шавваля", "зуль-када", "зуль-хиджа"],
   fa: ["محرم", "صفر", "ربیع‌الاول", "ربیع‌الثانی", "جمادی‌الاول", "جمادی‌الثانی", "رجب", "شعبان", "رمضان", "شوال", "ذی‌القعده", "ذی‌الحجه"],
   ar: ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"],
 };
 const labels = {
+  ps: ["وخت‌سیمه نشته", "له پورته لېست څخه یوه جغرافیایي وخت‌سیمه وټاکئ.", "د لمانځه وختونه ترلاسه نه شول.", "د AlAdhan له مخې قمري نېټه", "بیا هڅه وکړئ"],
   tr: ["Saat dilimi kullanılamıyor", "Yukarıdan bir coğrafi saat dilimi seçin.", "Namaz vakitleri yüklenemedi.", "AlAdhan kaynaklı hicrî tarih", "Tekrar dene"],
   ru: ["Часовой пояс недоступен", "Выберите географический часовой пояс выше.", "Не удалось загрузить время намаза.", "Дата по лунному календарю от AlAdhan", "Повторить"],
   en: ["Time zone unavailable", "Choose a geographic time zone above.", "Prayer times are unavailable.", "Lunar date from AlAdhan", "Try again"],
   fa: ["منطقهٔ زمانی پیدا نشد", "یک منطقهٔ زمانی جغرافیایی از فهرست بالا انتخاب کنید.", "دریافت اوقات شرعی ممکن نشد.", "تاریخ قمری طبق علاءالاذان", "تلاش دوباره"],
   ar: ["المنطقة الزمنية غير متاحة", "اختر منطقة زمنية جغرافية من القائمة أعلاه.", "تعذّر تحميل مواقيت الصلاة.", "التاريخ الهجري من الأذان", "إعادة المحاولة"],
 };
-const tehranMethod = { fa: "روش دانشگاه تهران", ar: "طريقة جامعة طهران", ru: "Метод Тегеранского университета", tr: "Tahran Üniversitesi yöntemi" };
+const tehranMethod = { ps: "د تهران پوهنتون طریقه", fa: "روش دانشگاه تهران", ar: "طريقة جامعة طهران", ru: "Метод Тегеранского университета", tr: "Tahran Üniversitesi yöntemi" };
 const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const picker = document.querySelector("#time-zone");
 
@@ -85,6 +87,7 @@ async function chooseCity(zone, cityNames) {
       option.dataset.fa = fa ?? "";
       option.dataset.ar = ar ?? "";
       option.dataset.ru = referenceCityName(name, zone, cityNames.ru) ?? "";
+      option.dataset.ps = referenceCityName(name, zone, cityNames.ps) ?? "";
       option.dataset.tr = referenceCityName(name, zone, cityNames.tr) ?? "";
       option.textContent = option.dataset[document.documentElement.lang] || label;
       select.append(option);
@@ -102,7 +105,7 @@ async function chooseCity(zone, cityNames) {
   if (selected && !city) {
     for (const card of cards) {
       const status = card.querySelector("[data-status]");
-      status.textContent = { en: "This city is unavailable in the selected time zone.", fa: "این شهر در منطقهٔ زمانی انتخاب‌شده در دسترس نیست.", ar: "هذه المدينة غير متاحة في المنطقة الزمنية المحددة.", ru: "Этот город недоступен в выбранном часовом поясе.", tr: "Bu şehir seçilen saat diliminde bulunmuyor." }[card.lang];
+      status.textContent = { en: "This city is unavailable in the selected time zone.", fa: "این شهر در منطقهٔ زمانی انتخاب‌شده در دسترس نیست.", ar: "هذه المدينة غير متاحة في المنطقة الزمنية المحددة.", ru: "Этот город недоступен в выбранном часовом поясе.", ps: "دا ښار په ټاکل شوې وخت‌سیمه کې نشته.", tr: "Bu şehir seçilen saat diliminde bulunmuyor." }[card.lang];
     }
     return null;
   }
@@ -153,7 +156,7 @@ try {
   }
   for (const card of cards) {
     const localizedCity = selectedCity
-      ? { fa: selectedCity[6], ar: selectedCity[7], ru: referenceCityName(city, timeZone, cityNames.ru), tr: referenceCityName(city, timeZone, cityNames.tr) }[card.lang]
+      ? { fa: selectedCity[6], ar: selectedCity[7], ru: referenceCityName(city, timeZone, cityNames.ru), ps: referenceCityName(city, timeZone, cityNames.ps), tr: referenceCityName(city, timeZone, cityNames.tr) }[card.lang]
       : cityNames[card.lang]?.[timeZone];
     card.querySelector("[data-city]").textContent = localizedCity ?? city;
     for (const calendar of ["gregory", "persian"]) {
@@ -180,11 +183,11 @@ try {
     lunar.textContent = digits(`${lunarDay} ${months[language]?.[month.number - 1] ?? month.en} ${year}`);
     lunar.title = labels[language][3];
     const tiles = card.querySelector("[data-events]");
-    for (const [key, enLabel, faLabel, arLabel, ruLabel, trLabel] of events) {
+    for (const [key, enLabel, faLabel, arLabel, ruLabel, trLabel, psLabel] of events) {
       const tile = document.createElement("div");
       tile.className = key === "Sunrise" || key === "Sunset" ? "tile solar" : "tile";
       const label = document.createElement("dt");
-      label.textContent = { en: enLabel, fa: faLabel, ar: arLabel, ru: ruLabel, tr: trLabel }[language];
+      label.textContent = { en: enLabel, fa: faLabel, ar: arLabel, ru: ruLabel, tr: trLabel, ps: psLabel }[language];
       const time = document.createElement("dd");
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
