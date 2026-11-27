@@ -8,6 +8,7 @@ const languages = {
 };
 
 const preference = "owqat-language";
+const rtlLanguages = new Set(["fa", "ar", "ps"]);
 
 export function currentLanguage() {
   return languages[document.documentElement.lang];
@@ -48,6 +49,7 @@ function addLocalizedContent(guide) {
     const card = english.cloneNode(true);
     const cityId = `prayer-city-${language}`;
     card.lang = language;
+    card.dir = rtlLanguages.has(language) ? "rtl" : "ltr";
     card.setAttribute("aria-labelledby", cityId);
     card.querySelector(".hero > p").textContent = languages[language].title;
     card.querySelector("[data-city]").id = cityId;
@@ -147,7 +149,7 @@ export function setupLanguage(root) {
   const cityPicker = document.querySelector("#city");
   function applyLanguage(language) {
     document.documentElement.lang = language;
-    document.documentElement.dir = ["fa", "ar", "ps"].includes(language) ? "rtl" : "ltr";
+    document.documentElement.dir = rtlLanguages.has(language) ? "rtl" : "ltr";
     const copy = currentLanguage();
     themeSwitch.setAttribute("aria-label", copy.theme);
     options.setAttribute("aria-label", copy.menu);
