@@ -22,7 +22,7 @@ additional_names = {
     "ar": {"Africa/Asmara": "أسمرة", "America/Atikokan": "أتيكوكان", "Pacific/Chuuk": "تشوك", "Pacific/Pohnpei": "بوهنبي"},
 }
 localized = {}
-for language in ("fa", "ar", "ru", "tr"):
+for language in ("fa", "ar", "ru", "tr", "ps"):
     data = json.loads((source / f"{language}.json").read_text())
     tree = data["main"][language]["dates"]["timeZoneNames"]["zone"]
     names = dict(exemplar_cities(tree))

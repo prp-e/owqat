@@ -2,6 +2,7 @@ const languages = {
   en: { theme: "Dark mode", name: "English", flag: "usa.svg", menu: "Language", zone: "Time zone", zonePrompt: "Choose a time zone", myZone: "Open My Time Zone", city: "Choose a city", reference: "Time-zone reference location", source: "City data", title: "Prayer Times", consent: "Owqat needs your time zone to show local prayer times. Use this device’s time zone?" },
   fa: { theme: "حالت تیره", name: "فارسی", flag: "iran.svg", menu: "زبان", zone: "منطقهٔ زمانی", zonePrompt: "منطقهٔ زمانی را انتخاب کنید", myZone: "باز کردن منطقهٔ زمانی من", city: "انتخاب شهر", reference: "موقعیت مرجع منطقهٔ زمانی", source: "داده‌های شهرها", title: "اوقات شرعی", consent: "اوقات شرعی محلی به منطقهٔ زمانی شما نیاز دارد. از منطقهٔ زمانی این دستگاه استفاده شود؟" },
   ar: { theme: "الوضع الداكن", name: "العربية", flag: "saudi-arabia.svg", menu: "اللغة", zone: "المنطقة الزمنية", zonePrompt: "اختر منطقة زمنية", myZone: "افتح منطقتي الزمنية", city: "اختر مدينة", reference: "الموقع المرجعي للمنطقة الزمنية", source: "بيانات المدن", title: "مواقيت الصلاة", consent: "يحتاج أوقات إلى منطقتك الزمنية لعرض مواقيت الصلاة المحلية. هل تريد استخدام المنطقة الزمنية لهذا الجهاز؟" },
+  ps: { theme: "تیاره بڼه", name: "پښتو", flag: "afghanistan-emirate.svg", menu: "ژبه", zone: "وخت‌سیمه", zonePrompt: "یوه وخت‌سیمه وټاکئ", myZone: "زما وخت‌سیمه پرانیزئ", city: "ښار وټاکئ", reference: "د وخت‌سیمې مرجع ځای", source: "د ښارونو معلومات", title: "د لمانځه وختونه", consent: "د لمانځه د ځايي وختونو د ښودلو لپاره ستاسو وخت‌سیمې ته اړتیا ده. د دې وسیلې وخت‌سیمه وکاروو؟" },
   ru: { theme: "Тёмная тема", name: "Русский", flag: "russia.svg", menu: "Язык", zone: "Часовой пояс", zonePrompt: "Выберите часовой пояс", myZone: "Открыть мой часовой пояс", city: "Выберите город", reference: "Опорная точка часового пояса", source: "Данные о городах", title: "Время намаза", consent: "Owqat нужен ваш часовой пояс, чтобы показать местное время намаза. Использовать часовой пояс этого устройства?" },
   tr: { theme: "Koyu mod", name: "Türkçe", flag: "turkey.svg", menu: "Dil", zone: "Saat dilimi", zonePrompt: "Bir saat dilimi seçin", myZone: "Saat dilimimi aç", city: "Şehir seçin", reference: "Saat diliminin referans konumu", source: "Şehir verileri", title: "Namaz vakitleri", consent: "Owqat, yerel namaz vakitlerini göstermek için saat diliminize ihtiyaç duyar. Bu cihazın saat dilimi kullanılsın mı?" },
 };
@@ -24,6 +25,11 @@ export function updatePageTitle() {
 }
 
 const additionalContent = {
+  ps: {
+    city: "تهران", dates: ["میلادي نېټه", "هجري لمریزه نېټه", "هجري قمري نېټه"],
+    loading: "د نن ورځې د لمانځه وختونه بارېږي…", local: "ځايي وخت", guide: "د IANA وخت‌سیمو په اړه",
+    description: '<a href="https://www.iana.org/time-zones">د IANA ډیټابېس</a> د <bdi><code>Europe/Dublin</code></bdi> په څېر د وخت‌سیمو د ځايي وخت اصول ساتي. د یوه ښار د لمانځه وختونو د کتلو لپاره هغه ښار وټاکئ. په تلواله د وخت‌سیمې مرجع ځای کارول کېږي.',
+  },
   ru: {
     city: "Тегеран", dates: ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"],
     loading: "Загружаем время намаза на сегодня…", local: "Местное время", guide: "О часовых поясах IANA",
@@ -141,7 +147,7 @@ export function setupLanguage(root) {
   const cityPicker = document.querySelector("#city");
   function applyLanguage(language) {
     document.documentElement.lang = language;
-    document.documentElement.dir = ["fa", "ar"].includes(language) ? "rtl" : "ltr";
+    document.documentElement.dir = ["fa", "ar", "ps"].includes(language) ? "rtl" : "ltr";
     const copy = currentLanguage();
     themeSwitch.setAttribute("aria-label", copy.theme);
     options.setAttribute("aria-label", copy.menu);
