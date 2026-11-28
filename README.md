@@ -45,3 +45,4 @@ Persian and Arabic city labels prefer localized GeoNames names, with CLDR refere
 - Persian and Arabic help text about IANA time zones is visible again.
 - A localized **Try again** button appears if prayer times fail to load. The location picker remains available if a time-zone link is malformed.
 
+The Adhan player uses the [Rahim Moazzenzadeh Ardabili recording](https://dl.namaz.ir/s/c/other/azan/rahim_moazenzadeh.mp3) from the Prayer Establishment Headquarters and the [Mohammad Aghati recording](https://musictag.ir/details/24879/) published by MusicTag.
