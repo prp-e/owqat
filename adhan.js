@@ -86,3 +86,4 @@ export function setupAdhan(timeZone, day) {
   }
   for (const button of prayerButtons) {
     button.addEventListener("click", () => {
+      const [heading, dismiss] = labels[document.documentElement.lang];
