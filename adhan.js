@@ -42,3 +42,4 @@ export function setupAdhan(timeZone, day) {
     choice.dir = "rtl";
     choice.textContent = name;
     choice.setAttribute("aria-pressed", "false");
+    choice.addEventListener("click", () => {
