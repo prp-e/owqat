@@ -1,4 +1,4 @@
-import { currentLanguage, referenceCityName, setupLanguage, updatePageTitle } from "./language.js";
+import { catalogCityName, currentLanguage, setupLanguage, updatePageTitle } from "./language.js";
 const root = new URL(".", import.meta.url);
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(new URL("sw.js", root)).catch((error) => console.warn("Owqat offline setup failed:", error));
