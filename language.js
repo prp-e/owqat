@@ -26,6 +26,7 @@ const cityNameOverrides = {
   "141681": { fa: "بندر عباس" },
   "1735106": { ar: "جورج تاون" },
   "1138336": { ps: "قندهار" },
+  "1172451": { ur: "لاہور" },
 }
 
 export function updatePageTitle() {
