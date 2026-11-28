@@ -35,3 +35,4 @@ export function setupAdhan(timeZone, day) {
     status.hidden = false;
   }
   audio.addEventListener("error", showPlaybackError);
+  for (const { name, url, source } of recordings) {
