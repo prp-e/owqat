@@ -34,3 +34,4 @@ export function setupAdhan(timeZone, day) {
     status.querySelector("span").textContent = labels[document.documentElement.lang][2];
     status.hidden = false;
   }
+  audio.addEventListener("error", showPlaybackError);
