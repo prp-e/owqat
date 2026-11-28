@@ -20,6 +20,7 @@ export function referenceCityName(city, zone, names) {
   const reference = zone.split("/").at(-1).replaceAll("_", " ");
   if ([city, city.replace(/ City$/, "")].some((name) => name.toLowerCase() === reference.toLowerCase())) return names?.[zone];
 }
+}
 
 export function updatePageTitle() {
   const language = document.documentElement.lang;
