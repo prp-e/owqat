@@ -89,6 +89,7 @@ async function chooseCity(zone, cityNames) {
       option.dataset.fa = fa ?? "";
       option.dataset.ar = ar ?? "";
       option.dataset.ru = referenceCityName(name, zone, cityNames.ru) ?? "";
+      option.dataset.ur = referenceCityName(name, zone, cityNames.ur) ?? "";
       option.dataset.ps = referenceCityName(name, zone, cityNames.ps) ?? "";
       option.dataset.tr = referenceCityName(name, zone, cityNames.tr) ?? "";
       option.textContent = option.dataset[document.documentElement.lang] || label;
