@@ -163,6 +163,7 @@ export function setupLanguage(root) {
   const main = document.querySelector("main");
   main.prepend(locationSettings);
   const copyright = document.createElement("footer");
+  copyright.className = "site-footer";
   const citySource = guide.querySelector(".city-source");
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
