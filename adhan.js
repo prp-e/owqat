@@ -41,3 +41,4 @@ export function setupAdhan(timeZone, day) {
     choice.lang = "fa";
     choice.dir = "rtl";
     choice.textContent = name;
+    choice.setAttribute("aria-pressed", "false");
