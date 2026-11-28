@@ -88,3 +88,4 @@ export function setupAdhan(timeZone, day) {
     button.addEventListener("click", () => {
       const [heading, dismiss] = labels[document.documentElement.lang];
       title.textContent = `${button.textContent} · ${heading}`;
+      close.textContent = dismiss;
