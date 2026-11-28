@@ -39,3 +39,4 @@ export function setupAdhan(timeZone, day) {
     const choice = document.createElement("button");
     choice.type = "button";
     choice.lang = "fa";
+    choice.dir = "rtl";
