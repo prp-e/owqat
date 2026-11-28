@@ -80,7 +80,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, cityNames)
 
   function showStatus(key) {
     statusKey = key;
-    const label = suggestedCity && ({ fa: suggestedCity[6], ar: suggestedCity[7], ru: referenceCityName(suggestedCity[1], suggestedZone, cityNames.ru), ps: referenceCityName(suggestedCity[1], suggestedZone, cityNames.ps), ur: referenceCityName(suggestedCity[1], suggestedZone, cityNames.ur), ms: referenceCityName(suggestedCity[1], suggestedZone, cityNames.ms), tr: referenceCityName(suggestedCity[1], suggestedZone, cityNames.tr) }[language] || suggestedCity[5]);
+    const label = suggestedCity && (catalogCityName(suggestedCity, suggestedZone, language, cityNames) ?? suggestedCity[5]);
     status.textContent = key === "nearest" ? `${copy.nearest} · ${label}` : copy[key] ?? "";
     if (key === "nearest") select.textContent = `${copy.select} · ${label}`;
   }
