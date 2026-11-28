@@ -36,3 +36,4 @@ export function setupAdhan(timeZone, day) {
   }
   audio.addEventListener("error", showPlaybackError);
   for (const { name, url, source } of recordings) {
+    const choice = document.createElement("button");
