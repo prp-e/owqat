@@ -195,6 +195,7 @@ try {
       label.textContent = { en: enLabel, fa: faLabel, ar: arLabel, ru: ruLabel, tr: trLabel, ps: psLabel, ur: urLabel, ms: msLabel }[language];
       if (adhanPrayers.has(key)) {
         const text = Object.assign(document.createElement("span"), { textContent: label.textContent });
+        const button = Object.assign(document.createElement("button"), { type: "button", textContent: label.textContent, hidden: true });
       const time = document.createElement("dd");
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
