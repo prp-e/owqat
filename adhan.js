@@ -30,3 +30,4 @@ export function setupAdhan(timeZone, day) {
   audio.preload = "none";
   let activeRecording;
   function showPlaybackError() {
+    if (!dialog.open) return;
