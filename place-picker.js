@@ -54,7 +54,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, cityNames)
   const device = document.querySelector("[data-my-zone]");
   const zone = document.querySelector(".zone-picker");
   const zoneTools = zone.parentElement;
-  city.before(panel);
+  const settings = document.querySelector(".location-settings");
   panel.querySelector('[data-method-panel="city"]').append(city);
   panel.querySelector('[data-method-panel="device"]').append(device);
   panel.querySelector('[data-method-panel="zone"]').append(zone);
