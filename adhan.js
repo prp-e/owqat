@@ -4,3 +4,4 @@ const recordings = [
 ];
 
 const labels = {
+  en: ["Choose an Adhan", "Close", "The recording couldn’t play. Open the recording at its source."],
