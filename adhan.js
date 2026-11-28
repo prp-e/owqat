@@ -3,3 +3,4 @@ const recordings = [
   { name: "محمد آقاتی", url: "https://dl.musictag.ir/tracks/02/11/the%20call%20to%20prayerr%20-%205%20-%20128.mp3", source: "https://t.me/namaz_ir/1828" },
 ];
 
+const labels = {
