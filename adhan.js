@@ -81,3 +81,4 @@ export function setupAdhan(timeZone, day) {
     for (const button of prayerButtons) {
       const nearPrayer = today && Math.abs(currentMinute - minutes(button.dataset.adhanTime)) <= 15;
       button.hidden = !nearPrayer;
+      button.previousElementSibling.hidden = nearPrayer;
