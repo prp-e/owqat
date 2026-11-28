@@ -38,4 +38,5 @@ for language in ("fa", "ar", "ru", "tr", "ps", "ur", "ms"):
 
 catalogs = (path for path in Path("cities").rglob("*.json") if path.stem not in {"index", "points"})
 cities = {city_id.encode("ascii"): name for path in catalogs for city_id, name, *_ in json.loads(path.read_text())}
+localized["catalog"] = catalog_alternates(sys.argv[2], cities)
 Path("city-names.json").write_text(json.dumps(localized, ensure_ascii=False, separators=(",", ":")) + "\n")
