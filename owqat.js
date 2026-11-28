@@ -30,6 +30,7 @@ const months = {
   ar: ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"],
 };
 const labels = {
+  ms: ["Zon waktu tidak tersedia", "Pilih zon waktu geografi daripada senarai di atas.", "Waktu solat tidak dapat dimuatkan.", "Tarikh Hijrah daripada AlAdhan", "Cuba lagi"],
   ur: ["منطقۂ وقت دستیاب نہیں", "اوپر سے کوئی جغرافیائی منطقۂ وقت منتخب کریں۔", "اوقاتِ نماز لوڈ نہیں ہو سکے۔", "الاذان کے مطابق قمری تاریخ", "دوبارہ کوشش کریں"],
   ps: ["وخت‌سیمه نشته", "له پورته لېست څخه یوه جغرافیایي وخت‌سیمه وټاکئ.", "د لمانځه وختونه ترلاسه نه شول.", "د AlAdhan له مخې قمري نېټه", "بیا هڅه وکړئ"],
   tr: ["Saat dilimi kullanılamıyor", "Yukarıdan bir coğrafi saat dilimi seçin.", "Namaz vakitleri yüklenemedi.", "AlAdhan kaynaklı hicrî tarih", "Tekrar dene"],
