@@ -68,3 +68,4 @@ export function setupAdhan(timeZone, day) {
   document.body.append(dialog);
 
   const date = new Intl.DateTimeFormat("en-GB", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" });
+  const clock = new Intl.DateTimeFormat("en-GB", { timeZone, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
