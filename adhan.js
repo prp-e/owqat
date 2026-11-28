@@ -46,3 +46,4 @@ export function setupAdhan(timeZone, day) {
       activeRecording?.setAttribute("aria-pressed", "false");
       activeRecording = choice;
       choice.setAttribute("aria-pressed", "true");
+      status.hidden = true;
