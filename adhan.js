@@ -50,3 +50,4 @@ export function setupAdhan(timeZone, day) {
       audio.hidden = false;
       audio.setAttribute("aria-label", name);
       sourceLink.href = source;
+      sourceLink.textContent = name;
