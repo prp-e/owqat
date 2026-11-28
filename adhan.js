@@ -32,3 +32,4 @@ export function setupAdhan(timeZone, day) {
   function showPlaybackError() {
     if (!dialog.open) return;
     status.querySelector("span").textContent = labels[document.documentElement.lang][2];
+    status.hidden = false;
