@@ -19,6 +19,7 @@ def exemplar_cities(tree, prefix=""):
 
 additional_names = {
     "ms": {"Africa/Nairobi": "Nairobi"},
+    "tr": {"Africa/Nairobi": "Nairobi"},
     "fa": {"Africa/Asmara": "اسمره", "America/Atikokan": "اتیکوکان", "Pacific/Chuuk": "چوک", "Pacific/Pohnpei": "پونپی"},
     "ar": {"Africa/Asmara": "أسمرة", "America/Atikokan": "أتيكوكان", "Pacific/Chuuk": "تشوك", "Pacific/Pohnpei": "بوهنبي"},
 }
