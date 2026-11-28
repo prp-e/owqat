@@ -13,3 +13,4 @@ const labels = {
   ru: ["Выберите азан", "Закрыть", "Не удалось воспроизвести запись. Откройте запись в источнике."],
   tr: ["Ezanı seçin", "Kapat", "Kayıt oynatılamadı. Kaydı kaynağında açın."],
 };
+
