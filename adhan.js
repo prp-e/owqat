@@ -93,3 +93,4 @@ export function setupAdhan(timeZone, day) {
     });
   }
   refresh();
+  setInterval(refresh, 5000);
