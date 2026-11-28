@@ -28,3 +28,4 @@ export function setupAdhan(timeZone, day) {
   const sourceLink = status.querySelector("a");
   const close = dialog.querySelector("form button");
   audio.preload = "none";
+  let activeRecording;
