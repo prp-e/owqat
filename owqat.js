@@ -199,6 +199,7 @@ try {
         button.className = "adhan-trigger";
         button.dataset.adhanTime = timings[key];
         button.setAttribute("aria-haspopup", "dialog");
+        label.replaceChildren(text, button);
       const time = document.createElement("dd");
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
