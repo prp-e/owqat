@@ -9,7 +9,7 @@ const languages = {
 };
 
 const preference = "owqat-language";
-const rtlLanguages = new Set(["fa", "ar", "ps"]);
+const rtlLanguages = new Set(["fa", "ar", "ps", "ur"]);
 
 export function currentLanguage() {
   return languages[document.documentElement.lang];
