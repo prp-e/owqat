@@ -25,7 +25,7 @@ body {
   color: var(--text);
   font: 1rem/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-[lang="fa"], [lang="ar"], [lang="ps"] { font-family: Vazirmatn, Tahoma, sans-serif; }
+[lang="fa"], [lang="ar"], [lang="ps"], [lang="ur"] { font-family: Vazirmatn, Tahoma, sans-serif; }
 ::selection { background: var(--accent); color: var(--action-text); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 a { color: var(--accent); text-underline-offset: .2em; }
