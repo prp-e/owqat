@@ -52,3 +52,4 @@ export function setupAdhan(timeZone, day) {
       sourceLink.href = source;
       sourceLink.textContent = name;
       audio.src = url;
+      audio.play().catch((error) => { if (error.name !== "AbortError" && dialog.open && activeRecording === choice) showPlaybackError(); });
