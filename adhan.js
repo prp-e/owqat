@@ -44,3 +44,4 @@ export function setupAdhan(timeZone, day) {
     choice.setAttribute("aria-pressed", "false");
     choice.addEventListener("click", () => {
       activeRecording?.setAttribute("aria-pressed", "false");
+      activeRecording = choice;
