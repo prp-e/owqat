@@ -27,7 +27,7 @@ The Pashto picker uses the [Islamic Emirate of Afghanistan flag with Pashto subt
 
 After editing the shared HTML in `Asia/Tehran/index.html`, run `python3 scripts/generate-routes.py` from the repository root on a system with `zone.tab` and `tzdata.zi` under `/usr/share/zoneinfo`. The script generates one-line static pages and the zone catalog for GitHub Pages.
 
-Persian, Arabic, Russian, Turkish, Pashto, and Urdu reference city names use [Unicode CLDR 48.0.0](https://github.com/unicode-org/cldr-json/tree/48.0.0), under the [Unicode License](CLDR-LICENSE.txt), with local additions. To rebuild the names after regenerating the routes, save CLDR's Persian, Arabic, Russian, Turkish, Pashto, and Urdu `timeZoneNames.json` files as `fa.json`, `ar.json`, `ru.json`, `tr.json`, `ps.json`, and `ur.json` in a shared directory and pass it to `python3 scripts/generate-city-names.py`.
+Persian, Arabic, Russian, Turkish, Pashto, Urdu, and Malay reference city names use [Unicode CLDR 48.0.0](https://github.com/unicode-org/cldr-json/tree/48.0.0), under the [Unicode License](CLDR-LICENSE.txt), with local additions. To rebuild the names after regenerating the routes, save CLDR's Persian, Arabic, Russian, Turkish, Pashto, Urdu, and Malay `timeZoneNames.json` files as `fa.json`, `ar.json`, `ru.json`, `tr.json`, `ps.json`, `ur.json`, and `ms.json` in a shared directory and pass it to `python3 scripts/generate-city-names.py`.
 
 Cities are sourced from [GeoNames](https://www.geonames.org/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Rebuild with `python3 scripts/generate-cities.py cities15000.zip admin1CodesASCII.txt alternateNamesV2.zip` using the [GeoNames exports](https://download.geonames.org/export/dump/).
 
