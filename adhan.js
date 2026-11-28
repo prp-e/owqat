@@ -15,3 +15,4 @@ const labels = {
 };
 
 export const adhanPrayers = new Set(["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"]);
+
