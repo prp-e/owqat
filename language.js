@@ -30,6 +30,7 @@ const cityNameOverrides = {
   "1261481": { ru: "Нью-Дели", tr: "Yeni Delhi" },
 };
 
+export function catalogCityName([id, name, , , , , fa, ar], zone, language, cityNames) {
 }
 
 export function updatePageTitle() {
