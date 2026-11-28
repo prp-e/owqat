@@ -215,7 +215,7 @@ dl, dd { margin: 0; }
 .place-picker [role="status"]:empty { position: absolute; }
 .retry { justify-self: start; margin: 0 var(--card-gutter) 16px; }
 
-html:not([lang="en"]) .card[lang="en"], html:not([lang="fa"]) .card[lang="fa"], html:not([lang="ar"]) .card[lang="ar"], html:not([lang="ru"]) .card[lang="ru"], html:not([lang="tr"]) .card[lang="tr"], html:not([lang="ps"]) .card[lang="ps"], html:not([lang="ur"]) .card[lang="ur"] { display: none; }
+html:not([lang="en"]) .card[lang="en"], html:not([lang="fa"]) .card[lang="fa"], html:not([lang="ar"]) .card[lang="ar"], html:not([lang="ru"]) .card[lang="ru"], html:not([lang="tr"]) .card[lang="tr"], html:not([lang="ps"]) .card[lang="ps"], html:not([lang="ur"]) .card[lang="ur"], html:not([lang="ms"]) .card[lang="ms"] { display: none; }
 html:not([lang="en"]) .language-guide > :is(#guide-en, #guide-en + p), html:not([lang="fa"]) .language-guide > [lang="fa"], html:not([lang="ar"]) .language-guide > [lang="ar"], html:not([lang="ru"]) .language-guide > [lang="ru"], html:not([lang="tr"]) .language-guide > [lang="tr"], html:not([lang="ps"]) .language-guide > [lang="ps"], html:not([lang="ur"]) .language-guide > [lang="ur"] { display: none; }
 .guide:not(.language-guide) > [lang], .zone-picker label > span, .city-picker label > span { display: none; }
 .language-picker { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
