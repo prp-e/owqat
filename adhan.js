@@ -92,3 +92,4 @@ export function setupAdhan(timeZone, day) {
       dialog.showModal();
     });
   }
+  refresh();
