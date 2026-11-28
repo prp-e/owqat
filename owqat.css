@@ -104,6 +104,7 @@ dl, dd { margin: 0; }
 .card footer { border-block-start: 1px solid var(--edge); overflow-wrap: anywhere; }
 .location-settings { border: 1px solid var(--edge); border-radius: 24px; background: var(--surface); }
 .location-settings > summary { min-height: 44px; padding: 10px clamp(16px, 4vw, 24px); color: var(--accent); font-weight: 600; cursor: pointer; }
+.location-settings > summary:focus-visible { border-radius: 24px; }
 .language-guide h2 { font-size: 1rem; margin: 0; }
 .language-guide p { max-width: 68ch; margin-block: 8px 0; }
 .language-guide code { overflow-wrap: anywhere; }
