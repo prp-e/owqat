@@ -90,3 +90,4 @@ export function setupAdhan(timeZone, day) {
       title.textContent = `${button.textContent} · ${heading}`;
       close.textContent = dismiss;
       dialog.showModal();
+    });
