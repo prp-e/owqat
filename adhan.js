@@ -5,3 +5,4 @@ const recordings = [
 
 const labels = {
   en: ["Choose an Adhan", "Close", "The recording couldn’t play. Open the recording at its source."],
+  fa: ["انتخاب اذان", "بستن", "پخش اذان ممکن نشد. ضبط را در منبع اصلی باز کنید."],
