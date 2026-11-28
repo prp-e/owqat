@@ -50,7 +50,7 @@ export function setupAdhan(timeZone, day) {
       audio.hidden = false;
       audio.setAttribute("aria-label", `${name} · ${english}`);
       sourceLink.href = source;
-      sourceLink.textContent = name;
+      sourceLink.replaceChildren(persianName.cloneNode(true), " ", englishName.cloneNode(true));
       audio.src = url;
       audio.play().catch((error) => { if (error.name !== "AbortError" && dialog.open && activeRecording === choice) showPlaybackError(); });
     });
