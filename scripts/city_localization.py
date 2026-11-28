@@ -78,3 +78,4 @@ def catalog_alternates(archive, cities):
             raw_name, preferred, short, colloquial, historic = fields[:5]
             if b"1" in (short, colloquial, historic):
                 continue
+            name = unicodedata.normalize("NFC", raw_name.decode("utf-8").strip())
