@@ -262,3 +262,4 @@ html[dir="rtl"] .language-picker summary::after { transform: rotate(-45deg); }
 .adhan-dialog::backdrop { background: #161616a6; }
 .adhan-dialog h2 { margin: 0 0 16px; font-size: 1.25rem; }
 .adhan-recordings { display: grid; gap: 8px; }
+.adhan-dialog button { min-height: 44px; padding: 6px 12px; border: 1px solid var(--control-edge); border-radius: 12px; background: var(--control); color: inherit; }
