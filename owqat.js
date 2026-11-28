@@ -111,7 +111,7 @@ async function chooseCity(zone, cityNames) {
   if (selected && !city) {
     for (const card of cards) {
       const status = card.querySelector("[data-status]");
-      status.textContent = { en: "This city is unavailable in the selected time zone.", fa: "این شهر در منطقهٔ زمانی انتخاب‌شده در دسترس نیست.", ar: "هذه المدينة غير متاحة في المنطقة الزمنية المحددة.", ru: "Этот город недоступен в выбранном часовом поясе.", ps: "دا ښار په ټاکل شوې وخت‌سیمه کې نشته.", ur: "یہ شہر منتخب منطقۂ وقت میں دستیاب نہیں ہے۔", tr: "Bu şehir seçilen saat diliminde bulunmuyor." }[card.lang];
+      status.textContent = { en: "This city is unavailable in the selected time zone.", fa: "این شهر در منطقهٔ زمانی انتخاب‌شده در دسترس نیست.", ar: "هذه المدينة غير متاحة في المنطقة الزمنية المحددة.", ru: "Этот город недоступен в выбранном часовом поясе.", ps: "دا ښار په ټاکل شوې وخت‌سیمه کې نشته.", ur: "یہ شہر منتخب منطقۂ وقت میں دستیاب نہیں ہے۔", ms: "Bandar ini tidak tersedia dalam zon waktu yang dipilih.", tr: "Bu şehir seçilen saat diliminde bulunmuyor." }[card.lang];
     }
     return null;
   }
