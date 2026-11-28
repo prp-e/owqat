@@ -21,3 +21,4 @@ export function setupAdhan(timeZone, day) {
   dialog.className = "adhan-dialog";
   dialog.setAttribute("aria-labelledby", "adhan-title");
   dialog.innerHTML = '<h2 id="adhan-title"></h2><div class="adhan-recordings"></div><audio controls hidden></audio><p role="status" hidden><span></span> <a target="_blank" rel="noopener noreferrer" lang="fa" dir="rtl"></a></p><form method="dialog"><button></button></form>';
+  const title = dialog.querySelector("h2");
