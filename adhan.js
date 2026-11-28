@@ -60,3 +60,4 @@ export function setupAdhan(timeZone, day) {
     audio.pause();
     audio.removeAttribute("src");
     audio.load();
+    audio.hidden = true;
