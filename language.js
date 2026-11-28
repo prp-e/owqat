@@ -21,6 +21,7 @@ export function referenceCityName(city, zone, names) {
   if ([city, city.replace(/ City$/, "")].some((name) => name.toLowerCase() === reference.toLowerCase())) return names?.[zone];
 }
 
+const cityNameOverrides = {
 }
 
 export function updatePageTitle() {
