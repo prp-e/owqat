@@ -63,7 +63,7 @@ async function networkFirst(request, api) {
 
 self.addEventListener("fetch", (event) => {
   const request = event.request;
-  if (request.method !== "GET") return;
+  if (request.method !== "GET" || request.destination === "audio") return;
   const url = new URL(request.url);
   const own = url.origin === scope.origin && url.pathname.startsWith(scope.pathname);
   const api = url.origin === "https://api.aladhan.com" && /^\/v1\/timings\/\d{2}-\d{2}-\d{4}$/.test(url.pathname);
