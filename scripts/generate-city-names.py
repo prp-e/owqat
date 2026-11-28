@@ -36,4 +36,5 @@ for language in ("fa", "ar", "ru", "tr", "ps", "ur", "ms"):
         for zone, location in zones.items()
     }
 
+catalogs = (path for path in Path("cities").rglob("*.json") if path.stem not in {"index", "points"})
 Path("city-names.json").write_text(json.dumps(localized, ensure_ascii=False, separators=(",", ":")) + "\n")
