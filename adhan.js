@@ -78,3 +78,4 @@ export function setupAdhan(timeZone, day) {
     const now = new Date();
     const today = date.format(now).replaceAll("/", "-") === day;
     const currentMinute = minutes(clock.format(now));
+    for (const button of prayerButtons) {
