@@ -57,3 +57,4 @@ export function setupAdhan(timeZone, day) {
     choices.append(choice);
   }
   dialog.addEventListener("close", () => {
+    audio.pause();
