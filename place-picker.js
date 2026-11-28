@@ -166,6 +166,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, cityNames)
 
   function focusCityLink() {
     if (location.hash !== "#choose-city" || city.hidden) return;
+    settings.open = true;
     method.value = "city";
     showMethod();
     city.querySelector("select").focus();
