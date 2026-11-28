@@ -83,3 +83,4 @@ export function setupAdhan(timeZone, day) {
       button.hidden = !nearPrayer;
       button.previousElementSibling.hidden = nearPrayer;
     }
+  }
