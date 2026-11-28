@@ -55,3 +55,4 @@ export function setupAdhan(timeZone, day) {
       audio.play().catch((error) => { if (error.name !== "AbortError" && dialog.open && activeRecording === choice) showPlaybackError(); });
     });
     choices.append(choice);
+  }
