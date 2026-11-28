@@ -85,6 +85,7 @@ async function chooseCity(zone, cityNames) {
   const select = document.querySelector("#city");
   if (cities.length) {
     for (const city of cities) {
+      const [id, name, , , , label] = city;
       const option = document.createElement("option");
       option.value = id;
       option.dataset.en = label;
