@@ -39,7 +39,7 @@ export function setupAdhan(timeZone, day) {
     const choice = document.createElement("button");
     choice.type = "button";
     const persianName = Object.assign(document.createElement("bdi"), { lang: "fa", dir: "rtl", textContent: name });
-    choice.dir = "rtl";
+    const englishName = Object.assign(document.createElement("bdi"), { lang: "en", dir: "ltr", textContent: english });
     choice.textContent = name;
     choice.setAttribute("aria-pressed", "false");
     choice.addEventListener("click", () => {
