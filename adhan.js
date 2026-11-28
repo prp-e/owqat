@@ -49,3 +49,4 @@ export function setupAdhan(timeZone, day) {
       status.hidden = true;
       audio.hidden = false;
       audio.setAttribute("aria-label", name);
+      sourceLink.href = source;
