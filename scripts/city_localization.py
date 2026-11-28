@@ -70,3 +70,4 @@ def catalog_alternates(archive, cities):
     language_codes = {language.encode("ascii"): language for language in scripts}
     names = {language: {} for language in scripts}
     with ZipFile(archive) as source, source.open("alternateNamesV2.txt") as rows:
+        for row in rows:
