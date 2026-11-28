@@ -41,6 +41,7 @@ const additionalContent = {
   ms: {
     city: "Tehran", dates: ["Tarikh Masihi", "Tarikh Hijrah Syamsiah", "Tarikh Hijrah Qamariah"],
     loading: "Waktu solat hari ini sedang dimuatkan…", local: "Waktu setempat", guide: "Perihal zon waktu IANA",
+    description: '<a href="https://www.iana.org/time-zones">Pangkalan data IANA</a> menyimpan peraturan waktu setempat bagi zon waktu seperti <bdi><code>Europe/Dublin</code></bdi>. Pilih bandar untuk melihat waktu solatnya. Secara lalai, lokasi rujukan zon waktu digunakan.',
   },
   ru: {
     city: "Тегеран", dates: ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"],
