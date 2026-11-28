@@ -74,3 +74,4 @@ export function setupAdhan(timeZone, day) {
     const [hour, minute] = value.split(":").map(Number);
     return hour * 60 + minute;
   }
+  function refresh() {
