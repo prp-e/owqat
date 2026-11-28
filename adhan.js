@@ -40,3 +40,4 @@ export function setupAdhan(timeZone, day) {
     choice.type = "button";
     choice.lang = "fa";
     choice.dir = "rtl";
+    choice.textContent = name;
