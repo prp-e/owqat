@@ -48,3 +48,4 @@ export function setupAdhan(timeZone, day) {
       choice.setAttribute("aria-pressed", "true");
       status.hidden = true;
       audio.hidden = false;
+      audio.setAttribute("aria-label", name);
