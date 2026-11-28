@@ -8,7 +8,7 @@ let requestedZone = path;
 try { requestedZone = decodeURIComponent(path).replaceAll(" ", "_"); }
 catch { /* An invalid URL can still use the time-zone picker. */ }
 const events = [
-  ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah", "سهار", "فجر"],
+  ["Fajr", "Fajr", "اذان صبح", "الفجر", "Фаджр", "Sabah", "سهار", "فجر", "Subuh"],
   ["Sunrise", "Sunrise", "طلوع آفتاب", "الشروق", "Восход", "Güneş", "لمر خاته", "طلوعِ آفتاب"],
   ["Dhuhr", "Dhuhr", "اذان ظهر", "الظهر", "Зухр", "Öğle", "غرمه", "ظہر"],
   ["Asr", "Asr", "عصر", "العصر", "Аср", "İkindi", "مازیګر", "عصر"],
