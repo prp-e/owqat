@@ -30,7 +30,7 @@ for language in ("fa", "ar", "ru", "tr", "ps", "ur", "ms"):
     names = dict(exemplar_cities(tree))
     by_location = {tuple(zones[zone]): name for zone, name in names.items() if zone in zones}
     localized[language] = {
-        zone: names.get(zone) or by_location.get(tuple(location)) or additional_names.get(language, {}).get(zone)
+        zone: names.get(zone) or additional_names.get(language, {}).get(zone) or by_location.get(tuple(location))
         for zone, location in zones.items()
     }
 
