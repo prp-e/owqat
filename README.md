@@ -1,6 +1,6 @@
 # Owqat
 
-Daily prayer times, sunrise, and sunset with Gregorian, Solar Hijri, and Lunar Hijri dates. English is the default, and the language dropdown also offers Persian, Arabic, Pashto, Urdu, Russian, and Turkish. Owqat remembers your language choice across city pages.
+Daily prayer times, sunrise, and sunset with Gregorian, Solar Hijri, and Lunar Hijri dates. English is the default, and the language dropdown also offers Persian, Arabic, Pashto, Urdu, Malay, Russian, and Turkish. Owqat remembers your language choice across city pages.
 Open [Owqat](https://prp-e.github.io/owqat/) or go directly to [Tehran](https://prp-e.github.io/owqat/Asia/Tehran/), [Kabul](https://prp-e.github.io/owqat/Asia/Kabul/), or [New York](https://prp-e.github.io/owqat/America/New_York/).
 
 ## Choose a location
