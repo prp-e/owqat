@@ -263,6 +263,7 @@ html[dir="rtl"] .language-picker summary::after { transform: rotate(-45deg); }
 .adhan-dialog h2 { margin: 0 0 16px; font-size: 1.25rem; }
 .adhan-recordings { display: grid; gap: 8px; }
 .adhan-recordings bdi { display: block; }
+.adhan-recordings bdi[lang="en"] { color: var(--muted); font-size: .875rem; }
 .adhan-dialog button { min-height: 44px; padding: 6px 12px; border: 1px solid var(--control-edge); border-radius: 12px; background: var(--control); color: inherit; }
 .adhan-dialog button:hover { background: var(--control-hover); }
 .adhan-dialog button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--action-text); }
