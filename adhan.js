@@ -25,3 +25,4 @@ export function setupAdhan(timeZone, day) {
   const choices = dialog.querySelector(".adhan-recordings");
   const audio = dialog.querySelector("audio");
   const status = dialog.querySelector('[role="status"]');
+  const sourceLink = status.querySelector("a");
