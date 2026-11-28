@@ -24,6 +24,7 @@ export function referenceCityName(city, zone, names) {
 const cityNameOverrides = {
   "3448439": { en: "São Paulo" },
   "141681": { fa: "بندر عباس" },
+  "1735106": { ar: "جورج تاون" },
 }
 
 export function updatePageTitle() {
