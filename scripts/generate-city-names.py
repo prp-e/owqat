@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import sys
 
+from city_localization import catalog_alternates
 
 source = Path(sys.argv[1])
 zones = json.loads(Path("zones.json").read_text())
