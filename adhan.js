@@ -27,3 +27,4 @@ export function setupAdhan(timeZone, day) {
   const status = dialog.querySelector('[role="status"]');
   const sourceLink = status.querySelector("a");
   const close = dialog.querySelector("form button");
+  audio.preload = "none";
