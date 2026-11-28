@@ -40,6 +40,7 @@ const additionalContent = {
   },
   ms: {
     city: "Tehran", dates: ["Tarikh Masihi", "Tarikh Hijrah Syamsiah", "Tarikh Hijrah Qamariah"],
+    loading: "Waktu solat hari ini sedang dimuatkan…", local: "Waktu setempat", guide: "Perihal zon waktu IANA",
   },
   ru: {
     city: "Тегеран", dates: ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"],
