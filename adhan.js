@@ -31,3 +31,4 @@ export function setupAdhan(timeZone, day) {
   let activeRecording;
   function showPlaybackError() {
     if (!dialog.open) return;
+    status.querySelector("span").textContent = labels[document.documentElement.lang][2];
