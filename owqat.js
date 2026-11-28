@@ -93,7 +93,6 @@ async function chooseCity(zone, cityNames) {
       for (const language of Object.keys(cityNames)) {
         if (language !== "en") option.dataset[language] = catalogCityName(city, zone, language, cityNames) ?? "";
       }
-      option.dataset.ur = referenceCityName(name, zone, cityNames.ur) ?? "";
       option.dataset.ps = referenceCityName(name, zone, cityNames.ps) ?? "";
       option.dataset.tr = referenceCityName(name, zone, cityNames.tr) ?? "";
       option.textContent = option.dataset[document.documentElement.lang] || label;
