@@ -65,3 +65,4 @@ export function setupAdhan(timeZone, day) {
     activeRecording?.setAttribute("aria-pressed", "false");
     activeRecording = undefined;
   });
+  document.body.append(dialog);
