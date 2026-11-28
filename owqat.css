@@ -30,7 +30,7 @@ body {
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 a { color: var(--accent); text-underline-offset: .2em; }
 
-.masthead, main { max-width: 60rem; margin-inline: auto; }
+.masthead, main, .site-footer { max-width: 60rem; margin-inline: auto; }
 .masthead {
   display: flex;
   align-items: center;
