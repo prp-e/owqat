@@ -89,3 +89,4 @@ export function setupAdhan(timeZone, day) {
       const [heading, dismiss] = labels[document.documentElement.lang];
       title.textContent = `${button.textContent} · ${heading}`;
       close.textContent = dismiss;
+      dialog.showModal();
