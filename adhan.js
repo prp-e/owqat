@@ -11,3 +11,4 @@ const labels = {
   ur: ["اذان منتخب کریں", "بند کریں", "اذان نہیں چل سکی۔ ریکارڈنگ اصل ذریعے پر کھولیں۔"],
   ms: ["Pilih azan", "Tutup", "Rakaman tidak dapat dimainkan. Buka rakaman di sumber asal."],
   ru: ["Выберите азан", "Закрыть", "Не удалось воспроизвести запись. Откройте запись в источнике."],
+  tr: ["Ezanı seçin", "Kapat", "Kayıt oynatılamadı. Kaydı kaynağında açın."],
