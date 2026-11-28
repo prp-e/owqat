@@ -186,7 +186,7 @@ try {
     lunar.textContent = digits(`${lunarDay} ${months[language]?.[month.number - 1] ?? month.en} ${year}`);
     lunar.title = labels[language][3];
     const tiles = card.querySelector("[data-events]");
-    for (const [key, enLabel, faLabel, arLabel, ruLabel, trLabel, psLabel] of events) {
+    for (const [key, enLabel, faLabel, arLabel, ruLabel, trLabel, psLabel, urLabel] of events) {
       const tile = document.createElement("div");
       tile.className = key === "Sunrise" || key === "Sunset" ? "tile solar" : "tile";
       const label = document.createElement("dt");
