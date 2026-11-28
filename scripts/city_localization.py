@@ -83,3 +83,4 @@ def catalog_alternates(archive, cities):
             if not letters or not all(letter.startswith(scripts[language] + " ") for letter in letters):
                 continue
             city_id = geoname_id.decode("ascii")
+            ranked = (preferred == b"1", name == cities[geoname_id], name)
