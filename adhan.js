@@ -37,7 +37,7 @@ export function setupAdhan(timeZone, day) {
     status.hidden = false;
   }
   audio.addEventListener("error", showPlaybackError);
-  for (const { name, english, file, source } of recordings) {
+  for (const { name, lang = "fa", english, file, source } of recordings) {
     const choice = document.createElement("button");
     choice.type = "button";
     const persianName = Object.assign(document.createElement("bdi"), { lang: "fa", dir: "rtl", textContent: name });
