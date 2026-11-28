@@ -68,3 +68,4 @@ def catalog_alternates(archive, cities):
     """Read current GeoNames labels for languages missing from the city catalogs."""
     scripts = {"ms": "LATIN", "ps": "ARABIC", "ru": "CYRILLIC", "tr": "LATIN", "ur": "ARABIC"}
     language_codes = {language.encode("ascii"): language for language in scripts}
+    names = {language: {} for language in scripts}
