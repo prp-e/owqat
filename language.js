@@ -159,6 +159,7 @@ export function setupLanguage(root) {
   const locationSettings = document.createElement("details");
   locationSettings.className = "location-settings";
   const locationSummary = document.createElement("summary");
+  locationSettings.append(locationSummary, guide);
   const citySource = guide.querySelector(".city-source");
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
