@@ -75,3 +75,4 @@ def catalog_alternates(archive, cities):
             if geoname_id not in cities or code not in language_codes:
                 continue
             language = language_codes[code]
+            raw_name, preferred, short, colloquial, historic = fields[:5]
