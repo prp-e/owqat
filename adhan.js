@@ -40,7 +40,7 @@ export function setupAdhan(timeZone, day) {
   for (const { name, lang = "fa", english, file, source } of recordings) {
     const choice = document.createElement("button");
     choice.type = "button";
-    const persianName = Object.assign(document.createElement("bdi"), { lang: "fa", dir: "rtl", textContent: name });
+    const nativeName = Object.assign(document.createElement("bdi"), { lang, dir: "rtl", textContent: name });
     const englishName = Object.assign(document.createElement("bdi"), { lang: "en", dir: "ltr", textContent: english });
     choice.append(persianName, " ", englishName);
     choice.setAttribute("aria-pressed", "false");
