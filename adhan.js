@@ -38,3 +38,4 @@ export function setupAdhan(timeZone, day) {
   for (const { name, url, source } of recordings) {
     const choice = document.createElement("button");
     choice.type = "button";
+    choice.lang = "fa";
