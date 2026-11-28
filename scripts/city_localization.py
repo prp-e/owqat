@@ -76,3 +76,4 @@ def catalog_alternates(archive, cities):
                 continue
             language = language_codes[code]
             raw_name, preferred, short, colloquial, historic = fields[:5]
+            if b"1" in (short, colloquial, historic):
