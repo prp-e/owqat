@@ -175,6 +175,7 @@ export function setupLanguage(root) {
     document.documentElement.lang = language;
     document.documentElement.dir = rtlLanguages.has(language) ? "rtl" : "ltr";
     const copy = currentLanguage();
+    locationSummary.textContent = copy.locationSettings;
     themeSwitch.setAttribute("aria-label", copy.theme);
     options.setAttribute("aria-label", copy.menu);
     summary.lang = language;
