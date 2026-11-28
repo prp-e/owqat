@@ -165,6 +165,7 @@ export function setupLanguage(root) {
   const copyright = document.createElement("footer");
   copyright.className = "site-footer";
   copyright.lang = "en";
+  copyright.dir = "ltr";
   const citySource = guide.querySelector(".city-source");
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
