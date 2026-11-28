@@ -22,6 +22,7 @@ export function referenceCityName(city, zone, names) {
 }
 
 const cityNameOverrides = {
+  "3448439": { en: "São Paulo" },
 }
 
 export function updatePageTitle() {
