@@ -81,3 +81,4 @@ def catalog_alternates(archive, cities):
             name = unicodedata.normalize("NFC", raw_name.decode("utf-8").strip())
             letters = [unicodedata.name(char, "") for char in name if char.isalpha()]
             if not letters or not all(letter.startswith(scripts[language] + " ") for letter in letters):
+                continue
