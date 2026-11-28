@@ -90,7 +90,7 @@ async function chooseCity(zone, cityNames) {
       option.value = id;
       const english = catalogCityName(city, zone, "en", cityNames);
       option.dataset.en = english ? english + label.slice(name.length) : label;
-      for (const language of Object.keys(cityNames)) {
+      for (const { lang: language } of cards) {
         if (language !== "en") option.dataset[language] = catalogCityName(city, zone, language, cityNames) ?? "";
       }
       option.textContent = option.dataset[document.documentElement.lang] || label;
