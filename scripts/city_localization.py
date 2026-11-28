@@ -84,3 +84,4 @@ def catalog_alternates(archive, cities):
                 continue
             city_id = geoname_id.decode("ascii")
             ranked = (preferred == b"1", name == cities[geoname_id], name)
+            if city_id not in names[language] or ranked[:2] > names[language][city_id][:2]:
