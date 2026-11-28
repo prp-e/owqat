@@ -1,4 +1,4 @@
-import { adhanPrayers, setupAdhan } from "./adhan.js";
+import { adhanPrayers, setupAdhan } from "./adhan.js?v=2";
 import { catalogCityName, currentLanguage, setupLanguage, updatePageTitle } from "./language.js";
 const root = new URL(".", import.meta.url);
 if ("serviceWorker" in navigator) {
