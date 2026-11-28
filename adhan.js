@@ -75,3 +75,4 @@ export function setupAdhan(timeZone, day) {
     return hour * 60 + minute;
   }
   function refresh() {
+    const now = new Date();
