@@ -28,6 +28,7 @@ const cityNameOverrides = {
   "1138336": { ps: "قندهار" },
   "1172451": { ur: "لاہور" },
   "1261481": { ru: "Нью-Дели", tr: "Yeni Delhi" },
+};
 }
 
 export function updatePageTitle() {
