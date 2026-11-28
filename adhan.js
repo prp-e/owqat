@@ -71,3 +71,4 @@ export function setupAdhan(timeZone, day) {
   const clock = new Intl.DateTimeFormat("en-GB", { timeZone, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
   const prayerButtons = [...document.querySelectorAll("[data-adhan-time]")];
   function minutes(value) {
+    const [hour, minute] = value.split(":").map(Number);
