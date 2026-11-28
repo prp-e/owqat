@@ -209,6 +209,7 @@ try {
     }
     card.querySelector("[data-status]").hidden = true;
   }
+  setupAdhan(timeZone, day);
 } catch (error) {
   if (error.cause !== "city-selection") showError(error);
 }
