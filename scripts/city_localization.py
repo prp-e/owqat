@@ -65,3 +65,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
 
 
 def catalog_alternates(archive, cities):
+    """Read current GeoNames labels for languages missing from the city catalogs."""
