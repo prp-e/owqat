@@ -17,3 +17,4 @@ const labels = {
 export const adhanPrayers = new Set(["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"]);
 
 export function setupAdhan(timeZone, day) {
+  const dialog = document.createElement("dialog");
