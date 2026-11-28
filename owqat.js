@@ -196,6 +196,7 @@ try {
       if (adhanPrayers.has(key)) {
         const text = Object.assign(document.createElement("span"), { textContent: label.textContent });
         const button = Object.assign(document.createElement("button"), { type: "button", textContent: label.textContent, hidden: true });
+        button.className = "adhan-trigger";
       const time = document.createElement("dd");
       time.dir = "ltr";
       time.textContent = digits(timings[key]);
