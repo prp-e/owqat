@@ -63,3 +63,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
     ar = ar or fa.translate(TO_ARABIC)
     return [fa, ar]
 
+
