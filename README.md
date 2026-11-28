@@ -44,3 +44,4 @@ Persian and Arabic city labels prefer localized GeoNames names, with CLDR refere
 - The prayer timetable and three calendar dates take up less space on phones. Language and theme controls share the top bar.
 - Persian and Arabic help text about IANA time zones is visible again.
 - A localized **Try again** button appears if prayer times fail to load. The location picker remains available if a time-zone link is malformed.
+
