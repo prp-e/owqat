@@ -76,3 +76,4 @@ export function setupAdhan(timeZone, day) {
   }
   function refresh() {
     const now = new Date();
+    const today = date.format(now).replaceAll("/", "-") === day;
