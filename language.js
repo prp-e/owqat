@@ -39,6 +39,7 @@ const additionalContent = {
     description: '<a href="https://www.iana.org/time-zones">IANA کا ڈیٹابیس</a> <bdi><code>Europe/Dublin</code></bdi> جیسے منطقہ ہائے وقت کے مقامی وقت کے قواعد محفوظ رکھتا ہے۔ کسی شہر کے اوقاتِ نماز دیکھنے کے لیے وہ شہر منتخب کریں۔ پہلے سے طے شدہ طور پر منطقۂ وقت کا حوالہ جاتی مقام استعمال ہوتا ہے۔',
   },
   ms: {
+    city: "Tehran", dates: ["Tarikh Masihi", "Tarikh Hijrah Syamsiah", "Tarikh Hijrah Qamariah"],
   },
   ru: {
     city: "Тегеран", dates: ["Григорианский календарь", "Солнечная хиджра", "Лунная хиджра"],
