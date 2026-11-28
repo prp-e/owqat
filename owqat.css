@@ -267,3 +267,4 @@ html[dir="rtl"] .language-picker summary::after { transform: rotate(-45deg); }
 .adhan-dialog button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--action-text); }
 .adhan-dialog audio { width: 100%; margin-block-start: 16px; }
 .adhan-dialog p { margin: 8px 0 0; color: var(--muted); }
+.adhan-dialog form { margin-block-start: 16px; }
