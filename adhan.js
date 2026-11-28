@@ -1,6 +1,7 @@
 const recordings = [
   { name: "رحیم مؤذن‌زاده اردبیلی", english: "Rahim Moazzenzadeh Ardabili", file: "rahim-moazzenzadeh-ardabili.mp3", source: "https://t.me/namaz_ir/1860" },
   { name: "محمد آقاتی", english: "Mohammad Aghati", file: "mohammad-aghati.mp3", source: "https://t.me/namaz_ir/1828" },
+  { name: "مشاري راشد العفاسي", lang: "ar", english: "Mishary Rashid Alafasy", file: "mishary-rashid-alafasy.mp3", source: "https://cdn.aladhan.com/audio/adhans/a9.mp3" },
 ];
 
 const labels = {
