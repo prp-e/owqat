@@ -14,3 +14,4 @@ const labels = {
   tr: ["Ezanı seçin", "Kapat", "Kayıt oynatılamadı. Kaydı kaynağında açın."],
 };
 
+export const adhanPrayers = new Set(["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"]);
