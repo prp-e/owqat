@@ -82,3 +82,4 @@ def catalog_alternates(archive, cities):
             letters = [unicodedata.name(char, "") for char in name if char.isalpha()]
             if not letters or not all(letter.startswith(scripts[language] + " ") for letter in letters):
                 continue
+            city_id = geoname_id.decode("ascii")
