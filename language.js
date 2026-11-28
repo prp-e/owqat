@@ -167,6 +167,7 @@ export function setupLanguage(root) {
   copyright.lang = "en";
   copyright.dir = "ltr";
   copyright.textContent = `© ${new Date().getFullYear()} All Rights Reserved to Muhammadreza Haghiri`;
+  main.after(copyright);
   const citySource = guide.querySelector(".city-source");
   const zonePicker = header.querySelector("#time-zone");
   const cityPicker = document.querySelector("#city");
