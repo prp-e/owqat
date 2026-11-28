@@ -175,6 +175,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, cityNames)
   method.addEventListener("change", showMethod);
   settings.addEventListener("toggle", () => {
     if (settings.open && method.value === "map") map?.invalidateSize();
+  });
   window.addEventListener("hashchange", focusCityLink);
   focusCityLink();
 
