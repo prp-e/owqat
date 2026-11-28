@@ -32,7 +32,7 @@ const cityNameOverrides = {
 };
 
 export function catalogCityName([id, name, , , , , fa, ar], zone, language, cityNames) {
-  return cityNameOverrides[id]?.[language] ?? { fa, ar }[language] ?? referenceCityName(name, zone, cityNames[language]);
+  return cityNameOverrides[id]?.[language] ?? { fa, ar }[language] ?? referenceCityName(name, zone, cityNames[language]) ?? cityNames.catalog?.[language]?.[id];
 }
 
 export function updatePageTitle() {
