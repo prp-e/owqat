@@ -59,3 +59,4 @@ export function setupAdhan(timeZone, day) {
   dialog.addEventListener("close", () => {
     audio.pause();
     audio.removeAttribute("src");
+    audio.load();
