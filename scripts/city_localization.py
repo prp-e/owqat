@@ -79,3 +79,4 @@ def catalog_alternates(archive, cities):
             if b"1" in (short, colloquial, historic):
                 continue
             name = unicodedata.normalize("NFC", raw_name.decode("utf-8").strip())
+            letters = [unicodedata.name(char, "") for char in name if char.isalpha()]
