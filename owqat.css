@@ -180,7 +180,6 @@ dl, dd { margin: 0; }
   flex-wrap: wrap;
   gap: 12px;
   padding: 8px clamp(16px, 4vw, 24px) 16px;
-  background: var(--surface);
 }
 .place-picker [data-method-panel] { min-width: 0; }
 .place-picker [data-method-panel="map"] { width: 100%; }
