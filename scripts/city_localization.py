@@ -64,3 +64,4 @@ def city_names(zone, city_id, name, overrides, source_names, cldr):
     return [fa, ar]
 
 
+def catalog_alternates(archive, cities):
