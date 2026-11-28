@@ -66,3 +66,4 @@ export function setupAdhan(timeZone, day) {
     activeRecording = undefined;
   });
   document.body.append(dialog);
+
