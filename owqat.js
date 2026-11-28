@@ -89,7 +89,7 @@ async function chooseCity(zone, cityNames) {
       const option = document.createElement("option");
       option.value = id;
       const english = catalogCityName(city, zone, "en", cityNames);
-      option.dataset.fa = fa ?? "";
+      option.dataset.en = english ? english + label.slice(name.length) : label;
       option.dataset.ar = ar ?? "";
       option.dataset.ru = referenceCityName(name, zone, cityNames.ru) ?? "";
       option.dataset.ms = referenceCityName(name, zone, cityNames.ms) ?? "";
