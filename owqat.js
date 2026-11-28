@@ -15,7 +15,7 @@ const events = [
   ["Sunset", "Sunset", "غروب آفتاب", "الغروب", "Закат", "Gün batımı", "لمر لوېدل", "غروبِ آفتاب"],
   ["Maghrib", "Maghrib", "اذان مغرب", "المغرب", "Магриб", "Akşam", "ماښام", "مغرب"],
   ["Isha", "Isha", "عشاء", "العشاء", "Иша", "Yatsı", "ماخوستن", "عشاء"],
-  ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي", "Религиозная полночь", "Dinî gece yarısı", "شرعي نیمه شپه"],
+  ["Midnight", "Religious midnight", "نیمه‌شب شرعی", "منتصف الليل الشرعي", "Религиозная полночь", "Dinî gece yarısı", "شرعي نیمه شپه", "شرعی نصف شب"],
 ];
 setupLanguage(root);
 const cards = [...document.querySelectorAll(".card")];
