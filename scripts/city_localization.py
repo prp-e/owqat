@@ -71,3 +71,4 @@ def catalog_alternates(archive, cities):
     names = {language: {} for language in scripts}
     with ZipFile(archive) as source, source.open("alternateNamesV2.txt") as rows:
         for row in rows:
+            _, geoname_id, code, *fields = row.rstrip(b"\r\n").split(b"\t")
