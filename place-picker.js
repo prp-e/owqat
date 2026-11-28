@@ -173,6 +173,7 @@ export function mountPlacePicker(root, readData, latitude, longitude, cityNames)
   }
 
   method.addEventListener("change", showMethod);
+  settings.addEventListener("toggle", () => {
   window.addEventListener("hashchange", focusCityLink);
   focusCityLink();
 
