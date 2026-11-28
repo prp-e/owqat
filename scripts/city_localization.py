@@ -73,3 +73,4 @@ def catalog_alternates(archive, cities):
         for row in rows:
             _, geoname_id, code, *fields = row.rstrip(b"\r\n").split(b"\t")
             if geoname_id not in cities or code not in language_codes:
+                continue
